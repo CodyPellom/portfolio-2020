@@ -3,6 +3,14 @@ var linkTwo = document.getElementById("navbarLinkTwo");
 var linkThree = document.getElementById("navbarLinkThree");
 var linkFour = document.getElementById("navbarLinkFour");
 
+$(window).scroll(function(){
+    
+$("#navbarSection").css("opacity", "10");
+$("#navbarSection").css("transition", "all 1s");
+
+});
+
+
 
 function rainbow() {
     linkOne.classList.add("rainbow-text");
