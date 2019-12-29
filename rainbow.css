@@ -1,0 +1,160 @@
+@keyframes rainbow-text {
+    0% {
+      color: #7de8b5;
+    }
+    2% {
+      color: rgb(146, 232, 125);
+    }
+    4% {
+      color: #7de886;
+    }
+    6% {
+      color: #7de8b5;
+    }
+    8% {
+      color: #8ce6ba;
+    }
+    10% {
+      color: #8ce6d7;
+    }
+    12% {
+      color: #77e0cf;
+    }
+    14% {
+      color: #8ce6ba;
+    }
+    16% {
+      color: #6bd3a1;
+    }
+    18% {
+      color: #8ce6ba;
+    }
+    20% {
+      color: #7de8db;
+    }
+    22% {
+      color: #a7faf0;
+    }
+    24% {
+      color: #7de8db;
+    }
+    26% {
+      color: #7de8c8;
+    }
+    28% {
+      color: #91fadb;
+    }
+    30% {
+      color: #4ae9ac;
+    }
+    32% {
+      color: #30fd97;
+    }
+    34% {
+      color: #91fadb;
+    }
+    36% {
+      color: #4ae9ac;
+    }
+    38% {
+      color: #30fd97;
+    }
+    40% {
+      color: #7de8a8;
+    }
+    42% {
+      color: #7de8b5;
+    }
+    44% {
+      color: #7de8c1;
+    }
+    46% {
+      color: #7de8ce;
+    }
+    48% {
+      color: #7de8db;
+    }
+    50% {
+      color: #30fd97;
+    }
+    52% {
+      color: #51f8c6;
+    }
+    54% {
+      color: #66fc7f;
+    }
+    56% {
+      color: #51f8c6;
+    }
+    58% {
+      color: #66fc7f;
+    }
+    60% {
+      color: #7de8db;
+    }
+      62% {
+        color: #72ebdd;
+      }
+      64% {
+        color: #5decdc;
+      }
+      66% {
+        color: #5decc8;
+      }
+      68% {
+        color: #5decb5;
+      }
+      70% {
+        color: #88ffd1;
+      }
+      72% {
+        color: #66fc7f;
+      }
+      74% {
+        color: #66fc7f;
+      }
+      76% {
+        color: #5decc8;
+      }
+      78% {
+        color: #5decb5;
+      }
+      80% {
+        color: #88ffd1;
+      }
+      82% {
+        color: #66fc7f;
+      }
+      84% {
+        color: #66fc7f;
+      }
+      86% {
+        color: #5decc8;
+      }
+      88% {
+        color: #7de8c8;
+      }
+      90% {
+        color: #66fc7f;
+      }
+      92% {
+        color: #66fc7f;
+      }
+      94% {
+        color: #30fd97;
+      }
+      96% {
+        color: #91fadb;
+      }
+      98% {
+        color: #7de8c8;
+      }
+      100% {
+        color: #30fd97;
+      }
+      
+    
+  }
+  .rainbow-text {
+    animation: rainbow-text 1s infinite;
+  }

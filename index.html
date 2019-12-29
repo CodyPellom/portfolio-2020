@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cody Pellom</title>
+    <!--Stylesheets Start-->
     <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./rainbow.css">
+    <link rel="stylesheet" href="./odometer-theme.css">
+    <!--Stylesheets End-->
+    <!--Jquery Start-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!--Jquery End-->
 </head>
 <!--Navbar Start-->
 <div class="navbar-section">
@@ -20,7 +29,25 @@
     </div>
 </div>
 <!--Navbar End-->
+
 <body>
+    <!--Hero Section Start-->
+    <div class="hero-section">
+
+        <h1 id="heroLogo" class="ml2">Cody Pellom</h1>
+        <p class="ml5">
+            <span class="text-wrapper">
+                <span class="line line1"></span>
+                <span class="letters letters-left">Web Developer</span>
+                <span class="letters letters-left">+</span>
+                <span class="letters letters-right">Software Engineer</span>
+                <span class="line line2"></span>
+            </span>
+        </p>
+
+    </div>
+    <!--Hero Section End-->
+    <!--50/50 Split Section Start-->
     <div class="split-section">
         <div class="split-section-text-area">
             <h3>Episerver</h3>
@@ -28,6 +55,9 @@
         </div>
         <div class="split-section-background-area" style="background-image: url('./images/epi-logo-1.png');"></div>
     </div>
+    <!--50/50 Split Section End-->
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 <script src="./main.js"></script>
+
 </html>
