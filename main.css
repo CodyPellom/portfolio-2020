@@ -3,6 +3,14 @@
 @import url('https://fonts.googleapis.com/css?family=Major+Mono+Display|VT323&display=swap');
 
 /*Font Imports End*/
+/*Font Globals Start*/
+h3 {
+  font-family: 'Major Mono Display';
+}
+p {
+  font-family: 'VT323';
+}
+/*Font Globals Start*/
 
 /*Navbar Start*/
 .navbar-section {
@@ -39,80 +47,99 @@
     align-content: stretch;
 }
 
-#navbarLink {
+#navbarLinkOne {
     font-family: 'VT323';
     text-decoration: none;
     color: black;
     margin-right: 2.5%;
     margin-left: 2.5%;
 }
-#navbarLink:hover {
-    opacity: 0.5;
-    transition: opacity 1s;
+#navbarLinkTwo {
+  font-family: 'VT323';
+  text-decoration: none;
+  color: black;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
 }
+#navbarLinkThree {
+  font-family: 'VT323';
+  text-decoration: none;
+  color: black;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+}
+#navbarLinkFour {
+  font-family: 'VT323';
+  text-decoration: none;
+  color: black;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+}
+
+
 
 /*Navbar End*/
 
 @keyframes rainbow-text {
     0% {
-      color: #e87d7d;
+      color: #7de8b5;
     }
     2% {
-      color: #e88a7d;
+      color: rgb(146, 232, 125);
     }
     4% {
-      color: #e8977d;
+      color: #7de886;
     }
     6% {
-      color: #e8a47d;
+      color: #7de8b5;
     }
     8% {
-      color: #e8b07d;
+      color: #8ce6ba;
     }
     10% {
-      color: #e8bd7d;
+      color: #8ce6d7;
     }
     12% {
-      color: #e8ca7d;
+      color: #77e0cf;
     }
     14% {
-      color: #e8d77d;
+      color: #8ce6ba;
     }
     16% {
-      color: #e8e47d;
+      color: #6bd3a1;
     }
     18% {
-      color: #dfe87d;
+      color: #8ce6ba;
     }
     20% {
-      color: #d3e87d;
+      color: #7de8db;
     }
     22% {
-      color: #c6e87d;
+      color: #a7faf0;
     }
     24% {
-      color: #b9e87d;
+      color: #7de8db;
     }
     26% {
-      color: #ace87d;
+      color: #7de8c8;
     }
     28% {
-      color: #9fe87d;
+      color: #91fadb;
     }
     30% {
-      color: #92e87d;
+      color: #4ae9ac;
     }
     32% {
-      color: #86e87d;
+      color: #30fd97;
     }
     34% {
-      color: #7de881;
+      color: #91fadb;
     }
     36% {
-      color: #7de88e;
+      color: #4ae9ac;
     }
     38% {
-      color: #7de89b;
+      color: #30fd97;
     }
     40% {
       color: #7de8a8;
@@ -130,84 +157,128 @@
       color: #7de8db;
     }
     50% {
-      color: #7de8e8;
+      color: #30fd97;
     }
     52% {
-      color: #7ddbe8;
+      color: #51f8c6;
     }
     54% {
-      color: #7dcee8;
+      color: #66fc7f;
     }
     56% {
-      color: #7dc1e8;
+      color: #51f8c6;
     }
     58% {
-      color: #7db5e8;
+      color: #66fc7f;
     }
     60% {
-      color: #7da8e8;
+      color: #7de8db;
     }
-    62% {
-      color: #7d9be8;
-    }
-    64% {
-      color: #7d8ee8;
-    }
-    66% {
-      color: #7d81e8;
-    }
-    68% {
-      color: #867de8;
-    }
-    70% {
-      color: #927de8;
-    }
-    72% {
-      color: #9f7de8;
-    }
-    74% {
-      color: #ac7de8;
-    }
-    76% {
-      color: #b97de8;
-    }
-    78% {
-      color: #c67de8;
-    }
-    80% {
-      color: #d37de8;
-    }
-    82% {
-      color: #df7de8;
-    }
-    84% {
-      color: #e87de4;
-    }
-    86% {
-      color: #e87dd7;
-    }
-    88% {
-      color: #e87dca;
-    }
-    90% {
-      color: #e87dbd;
-    }
-    92% {
-      color: #e87db0;
-    }
-    94% {
-      color: #e87da4;
-    }
-    96% {
-      color: #e87d97;
-    }
-    98% {
-      color: #e87d8a;
-    }
-    100% {
-      color: #e87d7d;
-    }
+      62% {
+        color: #72ebdd;
+      }
+      64% {
+        color: #5decdc;
+      }
+      66% {
+        color: #5decc8;
+      }
+      68% {
+        color: #5decb5;
+      }
+      70% {
+        color: #88ffd1;
+      }
+      72% {
+        color: #66fc7f;
+      }
+      74% {
+        color: #66fc7f;
+      }
+      76% {
+        color: #5decc8;
+      }
+      78% {
+        color: #5decb5;
+      }
+      80% {
+        color: #88ffd1;
+      }
+      82% {
+        color: #66fc7f;
+      }
+      84% {
+        color: #66fc7f;
+      }
+      86% {
+        color: #5decc8;
+      }
+      88% {
+        color: #7de8c8;
+      }
+      90% {
+        color: #66fc7f;
+      }
+      92% {
+        color: #66fc7f;
+      }
+      94% {
+        color: #30fd97;
+      }
+      96% {
+        color: #91fadb;
+      }
+      98% {
+        color: #7de8c8;
+      }
+      100% {
+        color: #30fd97;
+      }
+      
+    
   }
   .rainbow-text {
     animation: rainbow-text 1s infinite;
   }
+
+  .split-section{
+display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+  }
+  
+  .split-section-text-area {
+    width: 150px;
+    height: 150px;
+    text-align: left;
+  }
+  .split-section-background-area {
+    width: 150px;
+    height: 150px;
+    background-position: 50%;
+    background-size: cover;
+  }
+
+  @media (max-width: 600px) { 
+.split-section {
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+.split-section-text-area {
+  height: 50vh;
+  text-align: left;
+}
+.split-section-background-area {
+  height: 50vh;
+  background-position: 100%;
+  background-size: cover;
+  border: solid black 5px;
+}
+}  
