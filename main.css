@@ -79,6 +79,7 @@ p {
   position: fixed;
   z-index: 200;
   height: 25px;
+  top: 0;
 
 }
 
@@ -139,7 +140,7 @@ p {
   align-items: center;
   align-content: center;
   background-color: rgb(126, 126, 126);
-
+  height: 98vh;
 }
 
 #heroLogo {
@@ -179,6 +180,10 @@ p {
   justify-content: center;
   align-items: center;
   align-content: center;
+
+}
+.split-section-text-area p {
+  width: 80%;
 }
 
 .split-section-background-area {
@@ -186,6 +191,7 @@ p {
   height: 250px;
   background-position: 50%;
   background-size: cover;
+
 }
 
 @media (max-width: 600px) {
@@ -197,16 +203,22 @@ p {
     align-items: center;
     align-content: center;
   }
+  .split-section-image-left {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
 
   .split-section-text-area {
     height: 50vh;
     text-align: left;
+    
   }
 
   .split-section-background-area {
     height: 50vh;
-    background-position: 100%;
-    background-size: cover;
-    border: solid black 5px;
   }
 }

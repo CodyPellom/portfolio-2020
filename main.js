@@ -1,14 +1,15 @@
+$(window).scroll(function() {
+    if ($(window).scrollTop() >= 100) {
+        $("#navbarSection").css("opacity", "10");
+        $("#navbarSection").css("transition", "all 1s");
+            }
+    });
 var linkOne = document.getElementById("navbarLinkOne");
 var linkTwo = document.getElementById("navbarLinkTwo");
 var linkThree = document.getElementById("navbarLinkThree");
 var linkFour = document.getElementById("navbarLinkFour");
 
-$(window).scroll(function(){
-    
-$("#navbarSection").css("opacity", "10");
-$("#navbarSection").css("transition", "all 1s");
 
-});
 
 
 
@@ -56,11 +57,11 @@ textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='let
 anime.timeline({loop: false})
   .add({
     targets: '.ml2 .letter',
-    scale: [4,1],
+    scale: [6,1],
     opacity: [0,1],
     translateZ: 0,
     easing: "easeOutExpo",
-    duration: 2950,
+    duration: 3950,
     delay: (el, i) => 70*i
   });
 
@@ -70,10 +71,10 @@ anime.timeline({loop: false})
     opacity: [0.5,1],
     scaleX: [0, 1],
     easing: "easeInOutExpo",
-    duration: 700
+    duration: 1700
   }).add({
     targets: '.ml5 .line',
-    duration: 600,
+    duration: 700,
     easing: "easeOutExpo",
     translateY: (el, i) => (-0.625 + 0.625*2*i) + "em"
   }).add({
@@ -88,13 +89,13 @@ anime.timeline({loop: false})
     opacity: [0,1],
     translateX: ["0.5em", 0],
     easing: "easeOutExpo",
-    duration: 600,
+    duration: 800,
     offset: '-=300'
   }).add({
     targets: '.ml5 .letters-right',
     opacity: [0,1],
     translateX: ["-0.5em", 0],
     easing: "easeOutExpo",
-    duration: 600,
+    duration: 800,
     offset: '-=600'
   });
