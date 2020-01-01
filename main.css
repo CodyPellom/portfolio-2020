@@ -63,7 +63,7 @@ p {
 }
 
 .ml5 .ampersand {
-  font-family: Baskerville, "EB Garamond", serif;
+  font-family: 'VT323';
   font-style: italic;
   font-weight: 400;
   margin-right: -0.1em;
@@ -102,6 +102,8 @@ p {
   z-index: 200;
   height: 50px;
   top: 0;
+  left: 0;
+  right:0;
 
 }
 
@@ -286,6 +288,7 @@ p {
   align-content: center;
   text-align: center;
   width: 100%;
+  background-color: #c2c2c2;
 }
 .experience-section-companies {
   display: flex;
@@ -316,7 +319,7 @@ margin-right: 25px;
   margin-right: 25px;
 }
 #devVector {
-  width: 300px;
+  width: 350px;
   height: 175px;
 }
 /*Experience Section Ends*/
