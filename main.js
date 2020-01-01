@@ -1,10 +1,28 @@
-$(window).scroll(function () {
-  if ($(window).scrollTop() >= 100) {
+ if(window.scrollY==0){
     $("#navbarSection").css("opacity", "10");
     $("#navbarSection").css("transition", "all 1s");
-  } else {
-    $("#navbarSection").css("opacity", "0");
+    $('.hero-section').addClass("navbar-background-changer");
+    $('.overview-section').addClass("navbar-background-changer");
+    $('.hero-section').css("transition", "all 0.5s");
+    $('.overview-section').css("transition", "all 0.5s");
+  };
+
+
+$(window).scroll(function () {
+  if ($(window).scrollTop() < 5) {
+    $("#navbarSection").css("opacity", "10");
     $("#navbarSection").css("transition", "all 1s");
+    $('.hero-section').addClass("navbar-background-changer");
+    $('.overview-section').addClass("navbar-background-changer");
+    $('.hero-section').css("transition", "all 0.5s");
+    $('.overview-section').css("transition", "all 0.5s");
+  } else {
+    $('.hero-section').removeClass("navbar-background-changer");
+    $('.overview-section').removeClass("navbar-background-changer");
+    $('.hero-section').css("transition", "all 1s");
+    $('.overview-section').css("transition", "all 0.5s");
+    $("#navbarSection").css("opacity", "0");
+    $("#navbarSection").css("transition", "all 0.5s");
   }
 });
 var linkOne = document.getElementById("navbarLinkOne");
@@ -68,53 +86,31 @@ anime.timeline({
     opacity: [0, 1],
     translateZ: 0,
     easing: "easeOutExpo",
-    duration: 1000,
+    duration: 2000,
     delay: (el, i) => 70 * (i + 1)
-  }).add({
-    targets: '.ml1 .line',
-    scaleX: [0, 1],
-    opacity: [0.5, 1],
-    easing: "easeOutExpo",
-    duration: 1000,
-    offset: '-=875',
-    delay: (el, i, l) => 80 * (l - i)
-  })
-/*Hero Logo Animation End*/
-/*Hero Text Animation Start*/
-anime.timeline({
-    loop: false
-  })
-  .add({
-    targets: '.ml5 .line',
-    opacity: [0.5, 1],
-    scaleX: [0, 1],
-    easing: "easeInOutExpo",
-    duration: 1200
-  }).add({
-    targets: '.ml5 .line',
-    duration: 1200,
-    easing: "easeOutExpo",
-    translateY: (el, i) => (-0.625 + 0.625 * 2 * i) + "em"
-  }).add({
+  }) .add({
     targets: '.ml5 .letters-left',
     opacity: [0, 1],
     translateX: ["0.5em", 0],
     easing: "easeOutExpo",
-    duration: 1200,
+    duration: 2200,
     offset: '-=300'
   }).add({
     targets: '.ml5 .letters-right',
     opacity: [0, 1],
     translateX: ["-0.5em", 0],
     easing: "easeOutExpo",
-    duration: 1200,
+    duration: 2200,
     offset: '-=600'
   }).add({
     targets: '.ml5 .ampersand',
     opacity: [0, 1],
     scaleY: [0.5, 1],
     easing: "easeOutExpo",
-    duration: 200,
+    duration: 1200,
     offset: '-=600'
   })
+/*Hero Logo Animation End*/
+
+ 
 /*Hero Text Animation Ends*/
