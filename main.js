@@ -71,4 +71,50 @@ anime.timeline({
 /*Hero Logo Animation End*/
 
  
-/*Hero Text Animation Ends*/
+/*Animation Section Start*/
+$.fn.isInViewport = function() {
+  var elementTop = $(this).offset().top;
+  var elementBottom = elementTop + $(this).outerHeight();
+  var viewportTop = $(window).scrollTop();
+  var viewportBottom = viewportTop + $(window).height();
+  return elementBottom > viewportTop && elementTop < viewportBottom;
+  };
+$(window).on('resize scroll', function() {
+$('#animationSection').each(function(){
+  if($('#animationSection').isInViewport()){
+  
+    anime({
+      targets: '#animationSection #animationTarget',
+      strokeDashoffset: [anime.setDashoffset, 0],
+      easing: 'easeInOutSine',
+      duration: 1500,
+      delay: function(el, i) { return i * 250 },
+      direction: 'alternate',
+      loop: true
+    });
+  
+  
+  
+  
+  
+  
+  
+    /*  anime({
+      targets: '#triangleOne',
+      translateX: 250, // -> '250px'
+      rotate: 540,
+      duration: 2000
+    });
+    anime({
+      targets: '#triangleTwo',
+      translateX: 220, // -> '250px'
+      rotate: 500,
+      duration: 2000,
+      delay: 500
+    })
+*/
+ 
+
+  }
+})
+});
