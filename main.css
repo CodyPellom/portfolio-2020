@@ -324,9 +324,15 @@ margin-right: 25px;
 }
 /*Experience Section Ends*/
 /*Animation Section Start*/
-#animationSection{
+.animation-section{
   width: 100%;
   height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+
 }
 #triangleOne {
   width: 0; 

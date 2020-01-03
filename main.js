@@ -80,14 +80,13 @@ $.fn.isInViewport = function() {
   return elementBottom > viewportTop && elementTop < viewportBottom;
   };
 $(window).on('resize scroll', function() {
-$('#animationSection').each(function(){
-  if($('#animationSection').isInViewport()){
-  
+$('.animation-section').each(function(){
+  if($('.animation-section').isInViewport()){
     anime({
-      targets: '#animationSection #animationTarget',
+      targets: '.animation-section .lines path',
       strokeDashoffset: [anime.setDashoffset, 0],
       easing: 'easeInOutSine',
-      duration: 1500,
+      duration: 2500,
       delay: function(el, i) { return i * 250 },
       direction: 'alternate',
       loop: true
@@ -99,6 +98,10 @@ $('#animationSection').each(function(){
   
   
   
+
+ }
+})
+});
     /*  anime({
       targets: '#triangleOne',
       translateX: 250, // -> '250px'
@@ -113,8 +116,3 @@ $('#animationSection').each(function(){
       delay: 500
     })
 */
- 
-
-  }
-})
-});
