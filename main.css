@@ -302,21 +302,29 @@ p {
 width: 125px;
 height: 50px;
 margin-right: 25px;
+transition: opacity 2s;
+opacity: 0;
 }
 #hdLogo {
 height: 75px;
 width: 100px;
 margin-right: 25px;
+transition: opacity 4s;
+opacity: 0;
 }
 #hpLogo {
   width: 100px;
   height: 50px;
   margin-right: 25px;
+  transition: opacity 6s;
+  opacity: 0;
 }
 #trustfuelLogo {
   width: 100px;
   height: 65px;
   margin-right: 25px;
+  transition: opacity 8s;
+  opacity: 0;
 }
 #devVector {
   width: 350px;
@@ -327,6 +335,8 @@ margin-right: 25px;
 .animation-section{
   width: 100%;
   height: 100vh;
+  opacity: 0;
+  transition: opacity 2;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
