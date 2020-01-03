@@ -131,18 +131,6 @@ $(window).on('resize scroll', function () {
             }}
       )}
 )
-              /*Companies Fade In End*/
-              /*  anime({
-      targets: '#triangleOne',
-      translateX: 250, // -> '250px'
-      rotate: 540,
-      duration: 2000
-    });
-    anime({
-      targets: '#triangleTwo',
-      translateX: 220, // -> '250px'
-      rotate: 500,
-      duration: 2000,
-      delay: 500
-    })
-*/
+             /*Footer Code*/
+
+    
