@@ -11,6 +11,7 @@ h3 {
 
 p {
   font-family: 'VT323';
+  margin-bottom: 0px;
 }
 
 /*Font Globals Start*/
@@ -25,6 +26,25 @@ p {
   border-radius: 12px;
   font-family: fantasy;
 }
+
+.row-center {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.column-center {
+  display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+}
+
 /*Globals End*/
 /*Animated Text Classes Start*/
 .ml2 {
@@ -77,11 +97,12 @@ p {
 
 #heroText {
   font-size: 24px;
- 
+
 }
-@media only screen and (max-width: 600px){
+
+@media only screen and (max-width: 600px) {
   #heroText {
-  font-size: 12px;
+    font-size: 12px;
   }
 }
 
@@ -103,7 +124,7 @@ p {
   height: 50px;
   top: 0;
   left: 0;
-  right:0;
+  right: 0;
 
 }
 
@@ -152,8 +173,9 @@ p {
   margin-right: 1.5%;
   margin-left: 1.5%;
 }
-#navButton {
-}
+
+#navButton {}
+
 /*Navbar End*/
 
 /*Hero Section Start*/
@@ -175,6 +197,7 @@ p {
 #heroText {
   color: white;
 }
+
 #profilePic {
   width: 100px;
   height: 100px;
@@ -194,7 +217,69 @@ p {
   margin-bottom: 5%;
 
 }
+
 /*Overview Section End*/
+
+/*Skills Section Start*/
+.skills-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+  border-radius: 25px;
+  background-color: rgb(126, 126, 126);
+  padding: 20px;
+  width: 90%;
+  height: 100vh;
+}
+
+.skills-section p {
+  margin-bottom: -12px;
+}
+
+.skills-section-languages {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+#skillsLanguageSection {
+  height: 150vh;
+}
+
+.skills-section-technologies {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+#skillsTechnologySection {
+  height: 150vh;
+}
+
+.skills-section-experience {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+#skillsFrameworkSection {
+  height: 150vh;
+  text-align: center;
+}
+
+/*Skills Section Ends*/
 
 /*Hero Section End*/
 .split-section-image-right {
@@ -227,6 +312,7 @@ p {
   align-content: center;
 
 }
+
 .split-section-text-area p {
   width: 80%;
 }
@@ -248,6 +334,7 @@ p {
     align-items: center;
     align-content: center;
   }
+
   .split-section-image-left {
     display: flex;
     flex-direction: column;
@@ -260,7 +347,7 @@ p {
   .split-section-text-area {
     height: 50vh;
     text-align: left;
-    
+
   }
 
   .split-section-background-area {
@@ -273,7 +360,9 @@ p {
   -webkit-filter: url(#blur-filter);
   filter: url(#blur-filter);
   -webkit-filter: blur(3px);
-  filter: blur(3px);}
+  filter: blur(3px);
+}
+
 .navbar-in-focus {
   opacity: 1;
 }
@@ -290,28 +379,32 @@ p {
   width: 100%;
   background-color: #c2c2c2;
 }
+
 .experience-section-companies {
   display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
+
 #appliedLogo {
-width: 125px;
-height: 50px;
-margin-right: 25px;
-transition: opacity 2s;
-opacity: 0;
+  width: 125px;
+  height: 50px;
+  margin-right: 25px;
+  transition: opacity 2s;
+  opacity: 0;
 }
+
 #hdLogo {
-height: 75px;
-width: 100px;
-margin-right: 25px;
-transition: opacity 4s;
-opacity: 0;
+  height: 75px;
+  width: 100px;
+  margin-right: 25px;
+  transition: opacity 4s;
+  opacity: 0;
 }
+
 #hpLogo {
   width: 100px;
   height: 50px;
@@ -319,6 +412,7 @@ opacity: 0;
   transition: opacity 6s;
   opacity: 0;
 }
+
 #trustfuelLogo {
   width: 100px;
   height: 65px;
@@ -326,13 +420,17 @@ opacity: 0;
   transition: opacity 8s;
   opacity: 0;
 }
+
 #devVector {
   width: 350px;
   height: 175px;
+  margin-bottom: -25px;
+
 }
+
 /*Experience Section Ends*/
 /*Animation Section Start*/
-.animation-section{
+.animation-section {
   width: 100%;
   height: 100vh;
   opacity: 0;
@@ -344,26 +442,30 @@ opacity: 0;
   text-align: center;
 
 }
+
 #triangleOne {
-  width: 0; 
-  height: 0; 
+  width: 0;
+  height: 0;
   border-left: 25px solid transparent;
   border-right: 25px solid transparent;
   border-bottom: 40px solid rgb(50, 255, 238);
 }
+
 #triangleTwo {
-  width: 0; 
-  height: 0; 
+  width: 0;
+  height: 0;
   border-left: 25px solid transparent;
   border-right: 25px solid transparent;
   border-bottom: 40px solid rgb(255, 166, 166);
 }
+
 #circleOne {
   border-radius: 50%;
   width: 35px;
   height: 35px;
   background-color: rgb(0, 255, 213);
 }
+
 /*Animation Section End*/
 
 /*Footer Section Start*/
@@ -378,7 +480,9 @@ opacity: 0;
   width: 100%;
   background-color: #dfdfdf;
 }
+
 .footer-svg {
   margin-right: 25px;
 }
+
 /*Footer Section Stop*/
