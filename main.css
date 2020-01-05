@@ -38,11 +38,11 @@ p {
 
 .column-center {
   display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-items: center;
-	align-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
 }
 
 /*Globals End*/
@@ -220,140 +220,98 @@ p {
 
 /*Overview Section End*/
 
-/*Skills Section Start*/
-.skills-section {
+
+.skill-section-img-right-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.skill-section-img-left-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.skill-section-img-right {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: stretch;
-  align-content: stretch;
-  border-radius: 25px;
-  background-color: rgb(126, 126, 126);
-  padding: 20px;
-  width: 90%;
-  height: 100vh;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  border: solid black 2px;
+  background-image: url('./images/backgrounds/geo-bg-magenta.png');
+  background-size: contain;
 }
 
-.skills-section p {
+.skill-section-img-left {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  border: solid black 2px;
+  background-image: url('./images/backgrounds/geo-bg-green.png');
+  background-size: contain;
+
+}
+
+.skill-section-img-right-text-area {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  border: solid black 2px;
+}
+.skill-section-img-right-text-area p {
   margin-bottom: -12px;
 }
 
-.skills-section-languages {
+
+.skill-section-img-left-text-area {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   align-content: center;
   text-align: center;
+  width: 200px;
+  height: 200px;
+  border: solid black 2px;
 }
-#skillsLanguageSection {
-  height: 150vh;
+.skill-section-img-left-text-area p {
+margin-bottom: -12px;
 }
-
-.skills-section-technologies {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  text-align: center;
+#skillsFrameworksText {
+  font-size: 14px;
 }
-#skillsTechnologySection {
-  height: 150vh;
+#skillsExpText p {
+  font-size: 14px;
 }
-
-.skills-section-experience {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  text-align: center;
-}
-#skillsFrameworkSection {
-  height: 150vh;
-  text-align: center;
-}
-
-/*Skills Section Ends*/
-
 /*Hero Section End*/
-.split-section-image-right {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
 
-.split-section-image-left {
-  display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-
-.split-section-text-area {
-  width: 250px;
-  height: 250px;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-
-}
-
-.split-section-text-area p {
-  width: 80%;
-}
-
-.split-section-background-area {
-  width: 250px;
-  height: 250px;
-  background-position: 50%;
-  background-size: cover;
-
-}
-
-@media (max-width: 600px) {
-  .split-section-image-right {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-  }
-
-  .split-section-image-left {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-  }
-
-  .split-section-text-area {
-    height: 50vh;
-    text-align: left;
-
-  }
-
-  .split-section-background-area {
-    height: 50vh;
-  }
-}
 
 .navbar-background-changer {
   filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
@@ -367,6 +325,17 @@ p {
   opacity: 1;
 }
 
+/*Progress Bar Starts*/
+.progress {
+  height: 300px;
+}
+
+.progress>svg {
+  height: 100%;
+  display: block;
+}
+
+/*Progress Bar Ends*/
 /*Experience Section Start*/
 .experience-section {
   display: flex;

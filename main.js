@@ -17,8 +17,6 @@ if (window.scrollY == 0) {
   $('.hero-section').css("transition", "all 0.5s");
   $('.overview-section').css("transition", "all 0.5s");
 };
-
-
 $(window).scroll(function () {
   if ($(window).scrollTop() < 5) {
     $("#navbarSection").css("opacity", "10");
@@ -36,8 +34,6 @@ $(window).scroll(function () {
     $("#navbarSection").css("transition", "all 0.5s");
   }
 });
-
-
 var heroLogo = document.getElementById("heroLogo");
 var heroText = document.getElementById("heroText");
 
@@ -82,6 +78,21 @@ anime.timeline({
 /*Hero Logo Animation End*/
 
 
+/*Companies Fade In Start*/
+$(window).on('resize scroll', function () {
+  $('.experience-section-companies').each(function () {
+    if ($('.experience-section-companies').isInViewport()) {
+      counterTwo++;
+      if (counterTwo <= 1) {
+
+        $('#appliedLogo').css("opacity", "1");
+        $('#hdLogo').css("opacity", "1");
+        $('#hpLogo').css("opacity", "1");
+        $('#trustfuelLogo').css("opacity", "1");
+      };
+    }
+  })
+})
 /*Animation Section Start*/
 
 $(window).on('resize scroll', function () {
@@ -104,33 +115,16 @@ $(window).on('resize scroll', function () {
         $('#svgFill').css("transition", "fill 12.5s");
         $('#svgFill').css("fill", "red");
       };
-
-
-
-
-
-
-
-
     }
   })
 });
+/*Animation Section End*/
 
-/*Companies Fade In Start*/
-$(window).on('resize scroll', function () {
-      $('.experience-section-companies').each(function () {
-            if ($('.experience-section-companies').isInViewport()) {
-              counterTwo++;
-              if (counter <= 1) {
-                
-                $('#appliedLogo').css("opacity", "1");
-                $('#hdLogo').css("opacity", "1");
-                $('#hpLogo').css("opacity", "1");
-                $('#trustfuelLogo').css("opacity", "1");
-              };
-            }}
-      )}
-)
-             /*Footer Code*/
+/*Skills Section*/
+var counterThree = 0;
 
-    
+var counterFour = 0;
+
+
+var counterFive = 0;
+/*Skills Section*/

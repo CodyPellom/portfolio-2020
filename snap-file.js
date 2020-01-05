@@ -3,11 +3,17 @@ var linkedIn = Snap("#linkedInLogo");
 var github = Snap("#githubLogo");
 var gmail = Snap("#gmailLogo");
 var mobile = Snap("#mobileLogo");
+var laptop = Snap("#laptopIcon");
+var world = Snap("#worldIcon");
+var framework = Snap("#frameworkIcon");
 
 $('#linkedInLogo').css("transition", "fill 1s");
 $('#githubLogo').css("transition", "fill 1s");
 $('#gmailLogo').css("transition", "fill 1s");
 $('#mobileLogo').css("transition", "fill 1s");
+$('#laptopIcon').css("transition", "fill 1s");
+$('#worldIcon').css("transition", "fill 1s");
+$('#frameworkIcon').css("transition", "fill 1s");
 
 linkedIn.node.onmouseover = function(){
     linkedIn.attr({
@@ -52,3 +58,32 @@ mobile.node.onmouseleave = function(){
         fill: "black"
     });
 };
+
+
+$('#skillsLanguages').mouseenter(function(){
+    laptop.attr({
+        fill: "gray"
+    })
+})
+$('#skillsLanguages').mouseleave(function(){
+    laptop.attr({
+        fill: "black"
+    })
+})
+
+$('#skillsTechnologySection').mouseenter(function(){
+    world.attr({
+        fill: "blue"
+    })
+})
+$('#skillsTechnologySection').mouseleave(function(){
+    world.attr({
+        fill: "black"
+    })
+})
+
+$('#skillsFrameworkSection').mouseenter(function(){
+    framework.attr({
+        fill: "#46e29f"
+    })
+})
