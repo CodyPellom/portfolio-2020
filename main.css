@@ -252,10 +252,25 @@ p {
   width: 200px;
   height: 200px;
   border: solid black 2px;
-  background-image: url('./images/backgrounds/geo-bg-magenta.png');
-  background-size: contain;
 }
-
+#particles-js {
+  z-index: -200;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+#particles-jsTwo {
+  z-index: -200;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+#particles-jsThree {
+  z-index: -200;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
 .skill-section-img-left {
   display: flex;
   flex-direction: column;
@@ -267,7 +282,6 @@ p {
   width: 200px;
   height: 200px;
   border: solid black 2px;
-  background-image: url('./images/backgrounds/geo-bg-green.png');
   background-size: contain;
 
 }

@@ -93,8 +93,21 @@ $(window).on('resize scroll', function () {
     }
   })
 })
-/*Animation Section Start*/
+/*Companies Fade In End*/
 
+/*Skills Section Starts*/
+particlesJS.load('particles-js', './particles.json', function(){
+  console.log('callback - particles.js config loaded');
+})
+particlesJS.load('particles-jsTwo', './particle2.json', function(){
+  console.log('callback - particles.js config loaded');
+})
+particlesJS.load('particles-jsThree', './particles3.json', function(){
+  console.log('callback - particles.js config loaded');
+})
+
+/*Skills Sections Ends*/
+/*Animation Section Start*/
 $(window).on('resize scroll', function () {
   $('.animation-trigger').each(function () {
     if ($('.animation-trigger').isInViewport()) {
