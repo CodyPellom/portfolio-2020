@@ -21,13 +21,9 @@ $(window).scroll(function () {
   if ($(window).scrollTop() < 5) {
     $("#navbarSection").css("opacity", "10");
     $("#navbarSection").css("transition", "all 1s");
-    $('.hero-section').addClass("navbar-background-changer");
-    $('.overview-section').addClass("navbar-background-changer");
     $('.hero-section').css("transition", "all 0.5s");
     $('.overview-section').css("transition", "all 0.5s");
   } else {
-    $('.hero-section').removeClass("navbar-background-changer");
-    $('.overview-section').removeClass("navbar-background-changer");
     $('.hero-section').css("transition", "all 1s");
     $('.overview-section').css("transition", "all 0.5s");
     $("#navbarSection").css("opacity", "0");
@@ -118,14 +114,14 @@ $(window).on('resize scroll', function () {
           targets: '.animation-section .lines path',
           strokeDashoffset: [anime.setDashoffset, 0],
           easing: 'easeInOutSine',
-          duration: 10000,
+          duration: 25000,
           delay: function (el, i) {
             return i * 250
           },
           direction: 'alternate',
           loop: false
         });
-        $('#svgFill').css("transition", "fill 12.5s");
+        $('#svgFill').css("transition", "fill 15s");
         $('#svgFill').css("fill", "red");
       };
     }
@@ -141,3 +137,24 @@ var counterFour = 0;
 
 var counterFive = 0;
 /*Skills Section*/
+$('#skillsLanguages').mouseover(function(){
+  $('#particles-js').css("transition", "opacity 5s");
+  $('#particles-js').css("opacity", "1");
+});
+$('#skillsLanguages').mouseleave(function(){
+  $('#particles-js').css("opacity", "0");
+});
+$('#skillsFrameworks').mouseover(function(){
+  $('#particles-jsTwo').css("transition", "opacity 5s");
+  $('#particles-jsTwo').css("opacity", "1");
+})
+$('#skillsFrameworks').mouseleave(function(){
+  $('#particles-jsTwo').css("opacity", "0");
+})
+$('#skillsExp').mouseover(function(){
+  $('#particles-jsThree').css("transition", "opacity 5s");
+  $('#particles-jsThree').css("opacity", "1");
+})
+$('#skillsExp').mouseleave(function(){
+  $('#particles-jsThree').css("opacity", "0");
+})

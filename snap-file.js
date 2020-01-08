@@ -60,30 +60,3 @@ mobile.node.onmouseleave = function(){
 };
 
 
-$('#skillsLanguages').mouseenter(function(){
-    laptop.attr({
-        fill: "gray"
-    })
-})
-$('#skillsLanguages').mouseleave(function(){
-    laptop.attr({
-        fill: "black"
-    })
-})
-
-$('#skillsTechnologySection').mouseenter(function(){
-    world.attr({
-        fill: "blue"
-    })
-})
-$('#skillsTechnologySection').mouseleave(function(){
-    world.attr({
-        fill: "black"
-    })
-})
-
-$('#skillsFrameworkSection').mouseenter(function(){
-    framework.attr({
-        fill: "#46e29f"
-    })
-})

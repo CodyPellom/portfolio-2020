@@ -1,6 +1,6 @@
 /*Font Imports Start*/
 
-@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display|VT323&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display|Gelasio|Ibarra+Real+Nova|Source+Sans+Pro|VT323&display=swap');
 
 /*Font Imports End*/
 /*Font Globals Start*/
@@ -10,8 +10,9 @@ h3 {
 }
 
 p {
-  font-family: 'VT323';
+  font-family: 'Ibarra Real Nova';
   margin-bottom: 0px;
+  font-size: 10px;
 }
 
 /*Font Globals Start*/
@@ -143,38 +144,40 @@ p {
 }
 
 #navbarLinkOne {
-  font-family: 'VT323';
+  font-family: 'Ibarra Real Nova';
   text-decoration: none;
   color: black;
-  margin-right: 1.5%;
-  margin-left: 1.5%;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+  font-size: 10px;
 }
 
 #navbarLinkTwo {
-  font-family: 'VT323';
+  font-family: 'Ibarra Real Nova';
   text-decoration: none;
   color: black;
-  margin-right: 1.5%;
-  margin-left: 1.5%;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+  font-size: 10px;
 }
 
 #navbarLinkThree {
-  font-family: 'VT323';
+  font-family: 'Ibarra Real Nova';
   text-decoration: none;
   color: black;
-  margin-right: 1.5%;
-  margin-left: 1.5%;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+  font-size: 10px;
 }
 
 #navbarLinkFour {
-  font-family: 'VT323';
+  font-family: 'Ibarra Real Nova';
   text-decoration: none;
   color: black;
-  margin-right: 1.5%;
-  margin-left: 1.5%;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+  font-size: 10px;
 }
-
-#navButton {}
 
 /*Navbar End*/
 
@@ -186,8 +189,8 @@ p {
   justify-content: center;
   align-items: center;
   align-content: center;
-  background-color: rgb(126, 126, 126);
-  height: 98vh;
+  background-color: #c2c2c2;
+  height: 275px;
 }
 
 #heroLogo {
@@ -202,6 +205,7 @@ p {
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  margin-top: 5%;
 }
 
 /*Overview Section Start*/
@@ -217,6 +221,9 @@ p {
   margin-bottom: 5%;
 
 }
+#overviewText {
+  width: 80%;
+}
 
 /*Overview Section End*/
 
@@ -229,6 +236,7 @@ p {
   justify-content: center;
   align-items: center;
   align-content: center;
+  margin: 10px;
 }
 
 .skill-section-img-left-section {
@@ -239,6 +247,7 @@ p {
   justify-content: center;
   align-items: center;
   align-content: center;
+  margin: 10px;
 }
 
 .skill-section-img-right {
@@ -252,24 +261,29 @@ p {
   width: 200px;
   height: 200px;
   border: solid black 2px;
+  margin: 10px;
+
 }
 #particles-js {
   z-index: -200;
   position: absolute;
   width: 200px;
   height: 200px;
+  opacity: 0;
 }
 #particles-jsTwo {
   z-index: -200;
   position: absolute;
   width: 200px;
   height: 200px;
+  opacity: 0;
 }
 #particles-jsThree {
   z-index: -200;
   position: absolute;
   width: 200px;
   height: 200px;
+  opacity: 0;
 }
 .skill-section-img-left {
   display: flex;
@@ -283,6 +297,7 @@ p {
   height: 200px;
   border: solid black 2px;
   background-size: contain;
+  margin: 10px;
 
 }
 
@@ -290,16 +305,17 @@ p {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: flex-start;
   align-items: center;
   align-content: center;
   text-align: center;
   width: 200px;
   height: 200px;
   border: solid black 2px;
+  margin: 10px;
+
 }
 .skill-section-img-right-text-area p {
-  margin-bottom: -12px;
+  line-height: 2px;
 }
 
 
@@ -314,26 +330,54 @@ p {
   width: 200px;
   height: 200px;
   border: solid black 2px;
+  margin: 10px;
+
 }
 .skill-section-img-left-text-area p {
-margin-bottom: -12px;
+line-height: 2px;
+}
+@media (max-width: 500px){
+  .skill-section-img-left-text-area p {
+    font-size: 12px;
+    }
+    .skill-section-img-right-text-area p {
+      font-size: 12px;
+      }
+      p {
+        font-size: 12px;
+        width: 80%;
+        text-align: center;
+      }
+}
+#skillsLanguagesText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 2px;
+
+
 }
 #skillsFrameworksText {
-  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 2px;
+
 }
-#skillsExpText p {
-  font-size: 14px;
+#skillsExpText  {
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 2px;
+
 }
 /*Hero Section End*/
 
 
-.navbar-background-changer {
-  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
-  -webkit-filter: url(#blur-filter);
-  filter: url(#blur-filter);
-  -webkit-filter: blur(3px);
-  filter: blur(3px);
-}
 
 .navbar-in-focus {
   opacity: 1;
@@ -361,6 +405,7 @@ margin-bottom: -12px;
   text-align: center;
   width: 100%;
   background-color: #c2c2c2;
+  height: 150px;
 }
 
 .experience-section-companies {
@@ -370,6 +415,7 @@ margin-bottom: -12px;
   justify-content: center;
   align-items: center;
   align-content: center;
+  margin-top: 5%;
 }
 
 #appliedLogo {
@@ -415,7 +461,7 @@ margin-bottom: -12px;
 /*Animation Section Start*/
 .animation-section {
   width: 100%;
-  height: 100vh;
+  height: 50vh;
   opacity: 0;
   transition: opacity 2;
   display: flex;
@@ -423,6 +469,13 @@ margin-bottom: -12px;
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
+
+}
+.animation-section svg {
+}
+#svgFill{
+  width: 50px;
+
 
 }
 
@@ -451,6 +504,35 @@ margin-bottom: -12px;
 
 /*Animation Section End*/
 
+/*Certificates Section Start*/
+.certificates-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 300px;
+}
+.certs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+#certOne{
+  width: 125px;
+  height: 75px;
+  margin-right: 25px;
+}
+#certTwo {
+  width: 50px;
+  height: 50px;
+}
+/*Certificates Section Ends*/
+
 /*Footer Section Start*/
 .footer-section {
   display: flex;
@@ -459,9 +541,14 @@ margin-bottom: -12px;
   justify-content: center;
   align-items: center;
   align-content: center;
-  height: 25vh;
-  width: 100%;
-  background-color: #dfdfdf;
+  height: 75px;
+  background-color: #c2c2c2;
+}
+@media (max-width: 411px){
+  .footer-section{
+    margin-bottom: 0%;
+
+  }
 }
 
 .footer-svg {
