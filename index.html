@@ -13,17 +13,18 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <!--Jquery End-->
-    <script src="./node_modules/animejs/lib/anime.min.js"></script>
-    <script src="./node_modules/snapsvg/dist/snap.svg-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
     <script src="./particles.js"></script>
 </head>
 <!--Navbar Start-->
 <div id="navbarSection">
     <div class="navbar-link-section">
-        <a href="#" id="navbarLinkOne">Home</a>
-        <a href="#overviewSec" id="navbarLinkTwo">About</a>
-        <a href="#skillsExp" id="navbarLinkThree">Experience</a>
-        <a href="mailto:paulpellom@gmail.com" id="navbarLinkFour">Contact</a>
+        <a href="#" class="navbar-link">Home</a>
+        <a href="#overviewSec" class="navbar-link">About</a>
+        <a href="#skillsExp" class="navbar-link">Experience</a>
+        <a href="#blogSection" class="navbar-link" id="disabled-link" >Blog</a>
+        <a href="mailto:paulpellom@gmail.com" class="navbar-link">Contact</a>
     </div>
 
 </div>
@@ -55,10 +56,11 @@
     <div class="overview-section" id="overviewSec">
         <p id="overviewText">Hello! I'm web developer from Atlanta, GA. Some
             of my interests include machine learning, Windows application development in .NET
-            animation and interactive UX/UI design.<br/><br/>Some of my hobbies include playing the guitar
+            animation and interactive UX/UI design.<br /><br />Some of my hobbies include playing the guitar
             and practicing Brazilian Jiu Jitsu!
         </p>
-        <img src="./images/profile-pic.png" alt="profile-pic" id="profilePic">
+        <img src="https://lh3.googleusercontent.com/4TrwnJXsotQ36PKAgDMEuAZkV5uh9E8WmG83gVjF_hKnx_wLfmO1QYGO3pBMM3U6ciq4f4LGsQGvWNOYTLjzKFld8p8Lb1BSUa9DvjTeb0JEiPaXfOXTjSQXbY832dZ1Acd6x7WqrDkMtF73YyGXyYkFCjihFpZTIX_7uXhjC4rCn3aCkujK9OW18G-5c4ZcBJq3HhtP8dWJ1UYQ7AVuG74dFaCQIWEf405hrM06gV8IgsrRfnTJMK2ePlEyCRvOpYPX4NyyQ027v-z69PUvExX5dDOWdpxtEE4RZiOkMSJnLopWXEoAGPjOMo4aISuJxCQsvfrysuT2Tvg-e2qlSGSj5kGZclSQlhA69h50VUafYoRL42yDIv28na-_XURpGFs2sR8EP4-mkyUWsKg0U7FmySrrBSHWVWZqWGH9xQi1zKcWbXp7PpmZc_XIe2CsEhZFij5CefFtlxEUZ3a2U3IPKFFVtVoyXKdGIEWVK4X1yLvkv-5_gUaGuSQlFTC_W9oa7oW9xFsFJBTod6URaJyqwKKsEzMZHQNnKoLHGFEi2ielzgQloWhHewAL6c3lPx8_TdDP4S41-_XDl8ME0MowHSlGSk8AVQmJHfzlzLdXTzA9_wSFdbBM2LbVzgqhfi0Mcp-0kH05i0VGf3ObwqovmUMguofOGXpLzPocYgT61tuminm3bXA=s500-no"
+            alt="profile-pic" id="profilePic">
 
     </div>
     <!--Overview Section End-->
@@ -69,17 +71,21 @@
     <div class="experience-section">
         <p>Here are some of the companies I've collaborated with:</p>
         <div class="experience-section-companies">
-            <img src="./images/applied-systems-logo.png" alt="applied-systems-logo" id="appliedLogo">
-            <img src="./images/hewlett-packard-logo.png" alt="hewlett-packard-logo" id="hpLogo">
-            <img src="./images/home-depot-logo.png" alt="home-depot-logo" id="hdLogo">
-            <img src="./images/trustfuel-logo.png" alt="trustfuel-logo" id="trustfuelLogo">
+            <img src="https://lh3.googleusercontent.com/yThbfDGHs3oel8onahcXqaJHZ6vv-gJvsvumX4q3INJhOVRbURx1ytGq4UAPAW50DlFLOKUMfeFUrigEI8Ldgl1yaFe4ehoQOByizUloqOQxBlPn7wJm0thQA4922MjreYM7LnRpko6cb-2R269ycB8vGe8lO5-jVwHd-0ZC4luuKKrEShi2QkStDNnHy3Ay5tHoDfnMs9Cv4boEXciqYAcsyhZ-4jK_WdOqjFHbUkTJGM4_v56IY857VdjUtY0vke9eIFAcdOkv7rdXSLp_J_TGir3PV0v6V2s6IfECCB3oKqP1ynhnlchP8XCeq_6OKb_HMz5THmg3OYKD__kJJDlCpDo_jwQdFMADt7LZ1UzFvQR4sJTIjTElNVyswvth0dndPMkdhoj8K1kHNTKSjqiynYoFY1XwIlMmXhcUEz4dDaQGB7dcuPNHwEbfnIhEQiH9NDrFBcFH3-UhB-A4inQXG7kKKNFkcq3N8TyDivKjdEboSLIoefP58ltHZtXsOIb2SbMuFwd0lCnFQbVz1yMhdNimUJBMMl4K2XgrUTb45SgF4KuOCzfkOmgwc_0Q00loKY4KGKh4kRDcawiLPMuGvPp_hzO_wfsfESiTd5NypHIEfX7NgkA14P5XakonmZ80YXeBkG-wGndrDA6b2dYM5OSDT2LaBrDW2NvSTa0wM0tqa7f8sGc=w796-h270-no"
+                alt="applied-systems-logo" id="appliedLogo">
+            <img src="https://lh3.googleusercontent.com/m_HGJA2xIbJIejXdb4z2CT0K89VRshzHzOYKyLmAaXou1Tgl6Ivcp0SITGsYYShaCkiXwPG4MZ_ZG8IDuedy6EbNxki5aiXcg4o7sTUJFBw6l7z1kEFgEcZ6TKU_YICA_Jl6r_puSmILLzNX4VeVr-u86LWYSXCGXsSiR6cSrvT2SFVrd7ozATMbpa4Qox3llRr0O7vSsgMvMY0vLYz8D6GIiAn2WPHSfJubui9OW5s1SmKRLdt8h37ABn8QI1o8ZgzfICZjlrxq6PIKWB-vr_DuhHHWYCS2zPyDze6M4UG-N38JIrNyVdEAcoJAT-Joswhb0qglHNoaf9cuhDvjJyWzYwJOiUfS3OHKymeZ6_9tcnepGexg2l0j4W4S-LvC2xcRvAjo4v_efN9C6hUCDFXrvsZ3BY8nXZmIUnG78VH_OfNPx5p4LBXXkOJeNo-l1WB0rf8QkFeR3cEt7V0_QUlyWJU2ftc4tYec-9ZxftCDTjrKmJj7td6--Pvt0heIIOFa6jd5MwZXInKSbBa36eZpo-CIhI6gXGy8piyrhEh-19yRh0Xs9Wms32sfqDkdU8q3JxOcAwIz7q-2vpmUYo9LaZFuYan6iGCHjcUys-Lqtu8CniEI1aMJgAnKMH4rkGojPZqjH2BpTLDvM-StkrrFFmqb9m9MMOyqnPeT0YhmH14ANHoyP_8=w800-h334-no"
+                alt="hewlett-packard-logo" id="hpLogo">
+            <img src="https://lh3.googleusercontent.com/Y1OtaTnvI_ZlYjd-c7CO6uRt0F0NBAWD70im3odoXMVKYgIGc7JJps00kV-4QDhn7RGFr5YGPWjOx17sH-VYRRRWvSn-TKT0i6ceNzyxBWQzTp9RMAk_Z0O8H5EtlDalE09bI10UxGAgkHohy4U5n9i7jmdmBvB6zMDktisNZ_V8qfA-Gu9AzShw2asUNjbkjO_0RIjPPTfNxXXZMGRrC0PnmInHpFzMJpihKTpzhz8f-wwJ84B1qmi9sM2yKWsUGTx5eqaKsQe7z-OJ6vrMTdh5Xv5MqEeeXdTeIN2ou7V0Mr-Isqa3HhIozKk_-wX-X9pt_LDCdsdTM0mqcq3c3GT9g4JLhSvsUHGOQK0M6HDi75VGePKhaKuHOJZ7R4zDmjcNg3GF2XsiEv7fDeKsaiepdK6eeEvqNar2IEiFIrAmEI7sjGXpJGtkP48x2OyFQ8pj1KdlgAU3PS218yZ9wTh7awY7cRvwWD1NX2wK7NHjZekfVLE3Bg3n8NitnMPNQM2968fIR1k_G7bH2g3Z8-OhreDRvM9s4UlxcnnuJKGWz7PgFh-x_NjehNR5hWn0A4hQUI-wXao7rReDBFOonLTY3Z1Mt-AhotCeTqO6uk7IdyT44Yz7r7zbD5uucH2973WXrjlBhFtuSlHj4xX_HBx2RsGT2CROaR36LGE9FAVFYmgHFUzaCsQ=w200-h150-no"
+                alt="home-depot-logo" id="hdLogo">
+            <img src="https://lh3.googleusercontent.com/UnCttOCQPF-bK_fCr4FORvzl-WBPXfii7LUTLc1MrC7SaniKryuQ8F-IpX3wPDS4A7eF_YCvUfc6KPf6sgPX1u_Z57bF5lZIFy7NMlpXC7oVMvjXToOz98Sx7K5Dqv3D1G-RqGAZn4cYDQ7wD7C8-1AFvVeFaJrIil3kX3l3f7ltFwusaBf3WmjhFnr3dcEQeXBE5c4-kORlQ7JsVKWcivE_4T_NcKqFxsHgqrYeXIj_DHGyX_-RQJqs-0nEzme80uW-yU8_UOvTFjynZGPqd9DV6_4glql3YPzx0CW49q5EshMOfRTdNVjn8BIn-QpzKipNEJv95W1cp9ymJD9D021U3T1rgZmSLUBgUFRQ_xONOPGb6jCJTJrmIZt20yo4-xcg_XJo9IGhrYyeULgLQxzqYBv5t_TlXx-2uNB0hqepNtMAB6h57C9q11B-lZoy79_s6Zis23VzVrZOw-WGAZTwUoP8v3VugxlJuFTgp6FBsYBGwVCVkSClPsfNltpcNm0kck2JCbqlhXRhSaKRcrAodHoOuCFZNjtnybPkfJWJPANrdHCA5BxXbatX_s5BEaqWJV1uloKbTMFbREqVTeWGHWJwybTWnAea1QUVXTF1VZn9DKif2UpGKwfeh_hKisU6IifysbTcdVu1Xf2qVPcfdn0OEv6cYKqI2F9-zL2pmx_P3PMPBnM=w200-h150-no"
+                alt="trustfuel-logo" id="trustfuelLogo">
         </div>
     </div>
     <!--Experience Section End-->
 
     <!--Skill Section Starts-->
     <div class="skill-section-img-right-section" id="skillsExp">
-        <div class="skill-section-img-right">
+        <div class="skill-section-img-right skill-section-trigger">
             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
                 <path
                     d="M13.144 8.171c-.035-.066.342-.102.409-.102.074.009-.196.452-.409.102zm-2.152-3.072l.108-.031c.064.055-.072.095-.051.136.086.155.021.248.008.332-.014.085-.104.048-.149.093-.053.066.258.075.262.085.011.033-.375.089-.304.171.096.136.824-.195.708-.176.225-.113.029-.125-.097-.19-.043-.215-.079-.547-.213-.68l.088-.102c-.206-.299-.36.362-.36.362zm13.008 6.901c0 6.627-5.373 12-12 12-6.628 0-12-5.373-12-12s5.372-12 12-12c6.627 0 12 5.373 12 12zm-8.31-5.371c-.006-.146-.19-.284-.382-.031-.135.174-.111.439-.184.557-.104.175.567.339.567.174.025-.277.732-.063.87-.025.248.069.643-.226.211-.381-.355-.13-.542-.269-.574-.523 0 0 .188-.176.106-.166-.218.027-.614.786-.614.395zm6.296 5.371c0-1.035-.177-2.08-.357-2.632-.058-.174-.189-.312-.359-.378-.256-.1-1.337.597-1.5.254-.107-.229-.324.146-.572.008-.12-.066-.454-.515-.605-.46-.309.111.474.964.688 1.076.201-.152.852-.465.992-.038.268.804-.737 1.685-1.251 2.149-.768.694-.624-.449-1.147-.852-.275-.211-.272-.66-.55-.815-.124-.07-.693-.725-.688-.813l-.017.166c-.094.071-.294-.268-.315-.321 0 .295.48.765.639 1.001.271.405.416.995.748 1.326.178.178.858.914 1.035.898.193-.017.803-.458.911-.433.644.152-1.516 3.205-1.721 3.583-.169.317.138 1.101.113 1.476-.029.433-.37.573-.693.809-.346.253-.265.745-.556.925-.517.318-.889 1.353-1.623 1.348-.216-.001-1.14.36-1.261.007-.094-.256-.22-.45-.353-.703-.13-.248-.015-.505-.173-.724-.109-.152-.475-.497-.508-.677-.002-.155.117-.626.28-.708.229-.117.044-.458.016-.656-.048-.354-.267-.646-.53-.851-.389-.299-.188-.537-.097-.964 0-.204-.124-.472-.398-.392-.564.164-.393-.44-.804-.413-.296.021-.538.209-.813.292-.346.104-.7-.082-1.042-.125-1.407-.178-1.866-1.786-1.499-2.946.037-.19-.114-.542-.048-.689.158-.352.48-.747.762-1.014.158-.15.361-.112.547-.229.287-.181.291-.553.572-.781.4-.325.946-.318 1.468-.388.278-.037 1.336-.266 1.503-.06 0 .038.191.604-.019.572.433.023 1.05.749 1.461.579.211-.088.134-.736.567-.423.262.188 1.436.272 1.68.069.15-.124.234-.93.052-1.021.116.115-.611.124-.679.098-.12-.044-.232.114-.425.025.116.055-.646-.354-.218-.667-.179.131-.346-.037-.539.107-.133.108.062.18-.128.274-.302.153-.53-.525-.644-.602-.116-.076-1.014-.706-.77-.295l.789.785c-.039.025-.207-.286-.207-.059.053-.135.02.579-.104.347-.055-.089.09-.139.006-.268 0-.085-.228-.168-.272-.226-.125-.155-.457-.497-.637-.579-.05-.023-.764.087-.824.11-.07.098-.13.201-.179.311-.148.055-.287.126-.419.214l-.157.353c-.068.061-.765.291-.769.3.029-.075-.487-.171-.453-.321.038-.165.213-.68.168-.868-.048-.197 1.074.284 1.146-.235.029-.225.046-.487-.313-.525.068.008.695-.246.799-.36.146-.168.481-.442.724-.442.284 0 .223-.413.354-.615.131.053-.07.376.087.507-.01-.103.445.057.489.033.104-.054.684-.022.594-.294-.1-.277.051-.195.181-.253-.022.009.34-.619.402-.413-.043-.212-.421.074-.553.063-.305-.024-.176-.52-.061-.665.089-.115-.243-.256-.247-.036-.006.329-.312.627-.241 1.064.108.659-.735-.159-.809-.114-.28.17-.509-.214-.364-.444.148-.235.505-.224.652-.476.104-.178.225-.385.385-.52.535-.449.683-.09 1.216-.041.521.048.176.124.104.324-.069.19.286.258.409.099.07-.092.229-.323.298-.494.089-.222.901-.197.334-.536-.374-.223-2.004-.672-3.096-.672-.236 0-.401.263-.581.412-.356.295-1.268.874-1.775.698-.519-.179-1.63.66-1.808.666-.065.004.004-.634.358-.681-.153.023 1.247-.707 1.209-.859-.046-.18-2.799.822-2.676 1.023.059.092.299.092-.016.294-.18.109-.372.801-.541.801-.505.221-.537-.435-1.099.409l-.894.36c-1.328 1.411-2.247 3.198-2.58 5.183-.013.079.334.226.379.28.112.134.112.712.167.901.138.478.479.744.74 1.179.154.259.41.914.329 1.186.108-.178 1.07.815 1.246 1.022.414.487.733 1.077.061 1.559-.217.156.33 1.129.048 1.368l-.361.093c-.356.219-.195.756.021.982 1.818 1.901 4.38 3.087 7.22 3.087 5.517 0 9.989-4.472 9.989-9.989zm-11.507-6.357c.125-.055.293-.053.311-.22.015-.148.044-.046.08-.1.035-.053-.067-.138-.11-.146-.064-.014-.108.069-.149.104l-.072.019-.068.087.008.048-.087.106c-.085.084.002.139.087.102z" />
@@ -102,7 +108,7 @@
     </div>
     <!--Languages S-->
     <div class="skill-section-img-left-section" id="skillsLanguages">
-        <div class="skill-section-img-left">
+        <div class="skill-section-img-left language-section-trigger">
             <svg id="laptopIcon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
                 <path
                     d="M22 17v-11.8c0-.663-.537-1.2-1.2-1.2h-17.6c-.663 0-1.2.537-1.2 1.2v11.8h20zm-18-11h16v9h-16v-9zm20 12v.8c0 .663-.537 1.2-1.2 1.2h-21.6c-.663 0-1.2-.537-1.2-1.2v-.8h10c0 .276.224.5.5.5h3c.276 0 .5-.224.5-.5h10z" />
@@ -134,7 +140,7 @@
             <h3>Frameworks & Libraries</h3>
             <div id="particles-jsTwo"></div>
         </div>
-        <div class="skill-section-img-left-text-area" id="skillsFrameworksText">
+        <div class="skill-section-img-left-text-area framework-trigger" id="skillsFrameworksText">
             <p>Episerver(.NET)</p>
             <p>Anime.js</p>
             <p>Three.js</p>
@@ -150,25 +156,41 @@
     </div>
     <!--Certificates Section Starts-->
     <div class="row-center">
-    <div class="certificates-section">
-        <h2>Certificates</h2>
-            <img src="./images/general-assembly-logo-2.png" alt="ga-logo" id="certOne">
+        <div class="certificates-section">
+            <h2>Certificates</h2>
+            <img src="https://lh3.googleusercontent.com/cE7OJqOYMgZ5_fZCtg-Hbd5ENK9G3vDvpqX8hK9GbHdd-rijAAlMz-L6p40dyhB4xljOO2vr1agyTaEkwF6zYiC39aJC50imOlpGA3ZKlraibJj9EfpktpjagFzorliW62joKlHoxDMiS2m7vhjUmRQGKk4D-WinVWS9I8ZGoM6hm7ayvIXyAq5cK2khEdrJlnKbBFcK0ieY4uIg4Q0Kxqu65jRLghpbzde2o3V31cmfj7b0-jQnbHkTPNNofg8JpMQP7758TwfK3ilyb3EvAfHjU6uHAalxAcS_326rB3O8PSayS8R4L0phons_OgYMe2NyycRDFaKJePPFPd1oICm7txJGV_5UwDRlKxmXCUCGpNUvH5c9nwVazsRLwXsMMooyqfYbmPiZYUvYN4WN79YShYZpH3I085ILG4genbLcvp_nnKtw7Wkmaa004fM0EJ6Z7MOrmjf9r6yHa6SqAI-e3pYcplkPJB-ze_zyjPVumnC_yLyNGTZdEX_MEZDkrhR7UvX7b4DbFfhb1zNM2Nq8unCg15bNT4yxN_M2r3netnUJYhxFy39llRC7veq3yQg96brF6wNg0p5nPl3ZmA74m00YFQcthw79nfkSBaxSurJoSPT0MwtIb5dIBK6nC3PWqoucR7E_VOP71KvzhFllARI4vdrpx_U6Jww_Dyue7m71j9mL748=w1200-h630-no"
+                alt="ga-logo" id="certOne">
             <p>General Assembly's Web Development Immersive Program (2018)</p>
-            <img src="./images/epi-logo-1.png" alt="epi" id="certTwo">
-        <p>Episerver's Development Fundamentals (2019)</p>
+            <img src="https://lh3.googleusercontent.com/OFAY56koJFkWvLj3QSbI7y1tREQixVZjjYokPRgCj96uyGkgB7H55YweqHjOLoIlvBkfHeWtzdptDDwj-tH7tx_1zC-8Gx-ZgLo6ckODiemG1yVkAUTMy43NKv0fjjZ3doMZMXQHwsN-Y3l9rMS7kCz87p10hHMkBnwvvoJRxPdNrWloi3OCJ69cW7iKWUFyH2JjYUSHiZ8u-4Ppkeb0K5XGs5ge-5b29RH-wTz1yHQyQcvp3scpj4_MO2oDf8ta10VlQInOr4bG5PBpHpN0zytJH10HbVelXzFhkdkH9kfnYh_Sjno7cBemGO7Kw93sOn9FEysMQq728P2fwYjW-Es1EZBwaTLXK8W9AP5irrno1Eorsbax0lxI0EvRSl2qEppEXJ0SUcwzJ1Y1aP0J8CDVv4KmnzcEs4jXjjKZibE5a5Vp44urbS75-EDIjevmxgKuK-qhAvuqCDL1zjvpoxhQUgH6cQezblqkWZmXw1Mc8atwgsQHos3cCGeNb_rr4SYkZ1gO5H4BGIiQigCe3pTRKgyX2nRyAkWMqTAx93jZGVZQSW1H4Gt7XsqYAbh99JUEehGb-YYFhPN4DT73wZsGLB9CHKHMdHGvsE-WZsJeefQJCRVgIsWrOl5WH2VwfYTj4rOkyfLxBJkYP_ImwMQxN9bE2aKWpoV4U2N7oTLci1L9OrBLSmY=s851-no"
+                alt="epi" id="certTwo">
+            <p>Episerver's Development Fundamentals (2019)</p>
+        </div>
     </div>
-</div>
     <!--Certificates Section End-->
 
     <!--Work Examples Section Start-->
     <div class="work-examples-section">
         <h2>Work Examples</h2>
- <a href="https://www.appliedsystems.com" target="_blank"><img src="./images/applied-systems-logo.png" alt="applied-systems-logo2" id="workExamplesAppliedLogo"></a>
-        <p>At Applied Systems, I built out content blocks and page types within Episerver (.NET) for both the international corporate site and blogs.</p>
-        <a href="http://www.williamwordtree.com" target="_blank"> <img src="./images/WilliamWordLogo.png" alt="" id="wwtreeLogo"></a>
-       <p>William Word Tree Services is a business website built for a local tree servicing company. </p>
+        <a href="https://www.appliedsystems.com" target="_blank"><img
+                src="https://lh3.googleusercontent.com/yThbfDGHs3oel8onahcXqaJHZ6vv-gJvsvumX4q3INJhOVRbURx1ytGq4UAPAW50DlFLOKUMfeFUrigEI8Ldgl1yaFe4ehoQOByizUloqOQxBlPn7wJm0thQA4922MjreYM7LnRpko6cb-2R269ycB8vGe8lO5-jVwHd-0ZC4luuKKrEShi2QkStDNnHy3Ay5tHoDfnMs9Cv4boEXciqYAcsyhZ-4jK_WdOqjFHbUkTJGM4_v56IY857VdjUtY0vke9eIFAcdOkv7rdXSLp_J_TGir3PV0v6V2s6IfECCB3oKqP1ynhnlchP8XCeq_6OKb_HMz5THmg3OYKD__kJJDlCpDo_jwQdFMADt7LZ1UzFvQR4sJTIjTElNVyswvth0dndPMkdhoj8K1kHNTKSjqiynYoFY1XwIlMmXhcUEz4dDaQGB7dcuPNHwEbfnIhEQiH9NDrFBcFH3-UhB-A4inQXG7kKKNFkcq3N8TyDivKjdEboSLIoefP58ltHZtXsOIb2SbMuFwd0lCnFQbVz1yMhdNimUJBMMl4K2XgrUTb45SgF4KuOCzfkOmgwc_0Q00loKY4KGKh4kRDcawiLPMuGvPp_hzO_wfsfESiTd5NypHIEfX7NgkA14P5XakonmZ80YXeBkG-wGndrDA6b2dYM5OSDT2LaBrDW2NvSTa0wM0tqa7f8sGc=w796-h270-no"
+                alt="applied-systems-logo2" id="workExamplesAppliedLogo"></a>
+        <p>At Applied Systems, I built out content blocks and page types within Episerver (.NET) for both the
+            international corporate site and blogs.</p>
+        <a href="http://www.williamwordtree.com" target="_blank"> <img
+                src="https://lh3.googleusercontent.com/EqJo7Hns4epBc160fhBzhbsZJMZBjDX2Xt0qMe-q0xjXUCkUpdTw0K0eD9bCVqPy4ZvoUPy38b5soxoO3k0H-G2T91aYiyuJG6vAaAV-HIFMDZD9Y96BqDrg-XJYJtZ12-Uqu04coEz1240wXViXFLzLQgL1MXsaf2zUiMZev_86hMF-4oRbdlB086YQrdxjDCDb2zLFzGSKamM6bV4Mb0u1WvLdkKdPsy31vYtc0LMt44mEi9a-o6EGAJOIlfOtC6Gjqie3Bn94YsiS2S3EZ5ttbIO3somKfMvEfTKKeaW85jwen6-8DFaw9UUZOqslCnC6xP3Pl_sozpqO3_IMGwMA8bVB8LljPiB6V41QAdUpLPNCL82RbHINIFgkvw9Jqkq4Uxjx4Vq5rfjFv5jRFbrnF2TA3HBdEB8EUhP3lJcufdS48QvKKThjgvXT9T28I9LykMOhspgSK4g-MLPv_ngOP-grCLAoqcWPvu07QmghC0UpttI4cPuuLEQUs8sUXZLSYIbsFzKWn9vNDVrIP9_7EPtCejB018biPL5Sd97x_6q7FAOV4edCX9kd7kIxF2TmK9QDzNMioC-c-9dNRLWD-ZXLJVeg1afsdQyFy9sPLWq7rgxfRgVnyDJA81LWg0L_jjZr9Cl-gmf_9keYQpA0aDWgeKFqOIFWviViOPs_jp-raL9JyVk=s250-no"
+                alt="" id="wwtreeLogo"></a>
+        <p>William Word Tree Services is a business website built for a local tree servicing company. </p>
     </div>
     <!--Work Examples Section Ends-->
+
+    <!--Blog Section Start-
+    <div class="column-center">
+        <div class="blog-section">
+<h2>Blog</h2>
+<p>My blog discusses web development fundamentals, emerging technologies, machine learning, interactive UX/UI and animation principles. The blog will be released on this website in the spring of 2020. </p>
+        </div>
+    </div>
+    <!--Blog Section End-->
 
     <!--Footer Start-->
     <footer>
@@ -207,4 +229,5 @@
 </body>
 <script src="./main.js"></script>
 <script src="./snap-file.js"></script>
+
 </html>

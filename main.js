@@ -1,7 +1,7 @@
 /*Navbar*/
 
 
-/*Navbar End*/ 
+/*Navbar End*/
 var counter = 0;
 var counterTwo = 0;
 
@@ -93,16 +93,29 @@ $(window).on('resize scroll', function () {
     }
   })
 })
+
+$(window).on('resize scroll', function () {
+  $('.overview-section').each(function () {
+    if ($('#profilePic').isInViewport()) {
+
+
+      $('#profilePic').css("transition", "opacity 2s");
+      $('#profilePic').css("opacity", "1");
+
+    }
+  })
+})
+
 /*Companies Fade In End*/
 
 /*Skills Section Starts*/
-particlesJS.load('particles-js', './particles.json', function(){
+particlesJS.load('particles-js', './particles.json', function () {
   console.log('callback - particles.js config loaded');
 })
-particlesJS.load('particles-jsTwo', './particle2.json', function(){
+particlesJS.load('particles-jsTwo', './particle2.json', function () {
   console.log('callback - particles.js config loaded');
 })
-particlesJS.load('particles-jsThree', './particles3.json', function(){
+particlesJS.load('particles-jsThree', './particles3.json', function () {
   console.log('callback - particles.js config loaded');
 })
 
@@ -141,24 +154,3 @@ var counterFour = 0;
 
 var counterFive = 0;
 /*Skills Section*/
-$('#skillsLanguages').mouseover(function(){
-  $('#particles-js').css("transition", "opacity 5s");
-  $('#particles-js').css("opacity", "1");
-});
-$('#skillsLanguages').mouseleave(function(){
-  $('#particles-js').css("opacity", "0");
-});
-$('#skillsFrameworks').mouseover(function(){
-  $('#particles-jsTwo').css("transition", "opacity 5s");
-  $('#particles-jsTwo').css("opacity", "1");
-})
-$('#skillsFrameworks').mouseleave(function(){
-  $('#particles-jsTwo').css("opacity", "0");
-})
-$('#skillsExp').mouseover(function(){
-  $('#particles-jsThree').css("transition", "opacity 5s");
-  $('#particles-jsThree').css("opacity", "1");
-})
-$('#skillsExp').mouseleave(function(){
-  $('#particles-jsThree').css("opacity", "0");
-})

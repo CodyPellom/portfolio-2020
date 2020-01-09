@@ -12,7 +12,19 @@ h3 {
 p {
   font-family: 'Ibarra Real Nova';
   margin-bottom: 0px;
-  font-size: 10px;
+  font-size: 16px;
+}
+
+@media (max-width: 500px){
+      p {
+        font-size: 16px;
+        width: 80%;
+        text-align: center;
+      }
+}
+
+#disabled-link {
+  color: #c2c2c2;
 }
 
 /*Font Globals Start*/
@@ -145,43 +157,18 @@ html {
   height: inherit;
   width: 100%;
 }
-
-#navbarLinkOne {
-  font-family: 'Ibarra Real Nova';
+.navbar-link {
+  font-family: 'VT323';
   text-decoration: none;
   color: black;
   margin-right: 2.5%;
   margin-left: 2.5%;
-  font-size: 10px;
+  font-size: 18px;
 }
-
-#navbarLinkTwo {
-  font-family: 'Ibarra Real Nova';
-  text-decoration: none;
-  color: black;
-  margin-right: 2.5%;
-  margin-left: 2.5%;
-  font-size: 10px;
+.navbar-link:hover {
+  transition: color 1s;
+  color: red;
 }
-
-#navbarLinkThree {
-  font-family: 'Ibarra Real Nova';
-  text-decoration: none;
-  color: black;
-  margin-right: 2.5%;
-  margin-left: 2.5%;
-  font-size: 10px;
-}
-
-#navbarLinkFour {
-  font-family: 'Ibarra Real Nova';
-  text-decoration: none;
-  color: black;
-  margin-right: 2.5%;
-  margin-left: 2.5%;
-  font-size: 10px;
-}
-
 /*Navbar End*/
 
 /*Hero Section Start*/
@@ -193,7 +180,7 @@ html {
   align-items: center;
   align-content: center;
   background-color: #c2c2c2;
-  height: 275px;
+  height: 325px;
 }
 
 #heroLogo {
@@ -205,10 +192,11 @@ html {
 }
 
 #profilePic {
-  width: 100px;
-  height: 100px;
+  width: 125px;
+  height: 125px;
   border-radius: 50%;
   margin-top: 5%;
+  opacity: 0;
 }
 
 /*Overview Section Start*/
@@ -259,31 +247,28 @@ html {
   align-items: center;
   align-content: center;
   text-align: center;
-  width: 200px;
-  height: 200px;
+  width: 45vh;
+  height: 45vh;
   border: solid black 2px;
 
 }
 #particles-js {
   z-index: -200;
   position: absolute;
-  width: 200px;
-  height: 200px;
-  opacity: 0;
+  width: 45vh;
+  height: 45vh;
 }
 #particles-jsTwo {
   z-index: -200;
   position: absolute;
-  width: 200px;
-  height: 200px;
-  opacity: 0;
+  width: 45vh;
+  height: 45vh;
 }
 #particles-jsThree {
   z-index: -200;
   position: absolute;
-  width: 200px;
-  height: 200px;
-  opacity: 0;
+  width: 45vh;
+  height: 45vh;
 }
 .skill-section-img-left {
   display: flex;
@@ -293,8 +278,8 @@ html {
   align-items: center;
   align-content: center;
   text-align: center;
-  width: 200px;
-  height: 200px;
+  width: 45vh;
+  height: 45vh;
   border: solid black 2px;
   background-size: contain;
 
@@ -307,14 +292,15 @@ html {
   align-items: center;
   align-content: center;
   text-align: center;
-  width: 200px;
-  height: 200px;
+  width: 45vh;
+  height: 45vh;
   border: solid black 2px;
   margin: 10px;
 
 }
 .skill-section-img-right-text-area p {
   line-height: 2px;
+  font-size: 14px;
 }
 
 
@@ -326,27 +312,25 @@ html {
   align-items: center;
   align-content: center;
   text-align: center;
-  width: 200px;
-  height: 200px;
+  width: 45vh;
+  height: 45vh;
   border: solid black 2px;
   margin: 10px;
 
 }
 .skill-section-img-left-text-area p {
 line-height: 2px;
+font-size: 14px;
 }
+
 @media (max-width: 500px){
   .skill-section-img-left-text-area p {
-    font-size: 12px;
+    font-size: 14px;
     }
     .skill-section-img-right-text-area p {
-      font-size: 12px;
+      font-size: 14px;
       }
-      p {
-        font-size: 12px;
-        width: 80%;
-        text-align: center;
-      }
+      
 }
 #skillsLanguagesText {
   display: flex;
@@ -415,32 +399,32 @@ line-height: 2px;
 }
 
 #appliedLogo {
-  width: 135px;
-  height: 50px;
+  width: 200px;
+  height: 75px;
   margin-right: 25px;
   transition: opacity 2s;
   opacity: 0;
 }
 
 #hdLogo {
-  height: 75px;
-  width: 100px;
+  height: 125px;
+  width: 150px;
   margin-right: 25px;
   transition: opacity 4s;
   opacity: 0;
 }
 
 #hpLogo {
-  width: 100px;
-  height: 50px;
+  height: 75px;
+  width: 150px;
   margin-right: 25px;
   transition: opacity 6s;
   opacity: 0;
 }
 
 #trustfuelLogo {
-  width: 100px;
-  height: 65px;
+  width: 150px;
+  height: 85px;
   margin-right: 25px;
   transition: opacity 8s;
   opacity: 0;
@@ -485,8 +469,10 @@ line-height: 2px;
   align-content: center;
 padding-bottom: 10%;
 border: solid red 1px;
-width: 300px;
-
+padding: 2.5%;
+}
+.certificates-section p {
+  text-align: center;
 }
 .certs {
   display: flex;
@@ -516,12 +502,19 @@ width: 300px;
   justify-content: center;
   align-items: center;
   align-content: center;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
+  margin-top: 2.5%;
  
 }
 .work-examples-section p {
-  width: 65%;
+  width: 50%;
   text-align: center;
+}
+@media (max-width: 500px){
+.work-examples-section p {
+  width: 75%;
+  text-align: center;
+}
 }
 #workExamplesAppliedLogo {
   width: 175px;
@@ -529,10 +522,25 @@ width: 300px;
 
 }
 #wwtreeLogo {
-  width: 50px;
-  height: 50px;
+  width: 75px;
+  height: 75px;
 }
 /*Work Examples Section Ends*/
+
+/*Blog Section Start*/
+.blog-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.blog-section p{
+width: 65%;
+text-align: center;
+}
+/*Blog Section Ends*/
 /*Footer Section Start*/
 .footer-section {
   display: flex;
