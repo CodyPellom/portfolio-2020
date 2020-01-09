@@ -1,3 +1,7 @@
+/*Navbar*/
+
+
+/*Navbar End*/ 
 var counter = 0;
 var counterTwo = 0;
 

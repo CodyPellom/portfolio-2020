@@ -7,13 +7,13 @@ var laptop = Snap("#laptopIcon");
 var world = Snap("#worldIcon");
 var framework = Snap("#frameworkIcon");
 
-$('#linkedInLogo').css("transition", "fill 1s");
-$('#githubLogo').css("transition", "fill 1s");
-$('#gmailLogo').css("transition", "fill 1s");
-$('#mobileLogo').css("transition", "fill 1s");
-$('#laptopIcon').css("transition", "fill 1s");
-$('#worldIcon').css("transition", "fill 1s");
-$('#frameworkIcon').css("transition", "fill 1s");
+$('#linkedInLogo').css("transition", "fill 0.5s");
+$('#githubLogo').css("transition", "fill 0.5s");
+$('#gmailLogo').css("transition", "fill 0.5s");
+$('#mobileLogo').css("transition", "fill 0.5s");
+$('#laptopIcon').css("transition", "fill 0.5s");
+$('#worldIcon').css("transition", "fill 0.5s");
+$('#frameworkIcon').css("transition", "fill 0.5s");
 
 linkedIn.node.onmouseover = function(){
     linkedIn.attr({

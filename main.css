@@ -4,7 +4,7 @@
 
 /*Font Imports End*/
 /*Font Globals Start*/
-h1,
+h1,h2,
 h3 {
   font-family: 'Major Mono Display';
 }
@@ -17,6 +17,9 @@ p {
 
 /*Font Globals Start*/
 /*Globals Start*/
+html {
+  scroll-behavior: smooth;
+}
 .button {
   background-color: rgb(197, 197, 197);
   border: none;
@@ -231,12 +234,11 @@ p {
 .skill-section-img-right-section {
   width: 100%;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   align-content: center;
-  margin: 10px;
 }
 
 .skill-section-img-left-section {
@@ -247,7 +249,6 @@ p {
   justify-content: center;
   align-items: center;
   align-content: center;
-  margin: 10px;
 }
 
 .skill-section-img-right {
@@ -261,7 +262,6 @@ p {
   width: 200px;
   height: 200px;
   border: solid black 2px;
-  margin: 10px;
 
 }
 #particles-js {
@@ -297,7 +297,6 @@ p {
   height: 200px;
   border: solid black 2px;
   background-size: contain;
-  margin: 10px;
 
 }
 
@@ -373,7 +372,11 @@ line-height: 2px;
   justify-content: center;
   align-items: center;
   line-height: 2px;
+  
 
+}
+@media (max-width: 500px){
+#skillsExp {margin-top: 5%;}
 }
 /*Hero Section End*/
 
@@ -383,17 +386,9 @@ line-height: 2px;
   opacity: 1;
 }
 
-/*Progress Bar Starts*/
-.progress {
-  height: 300px;
-}
 
-.progress>svg {
-  height: 100%;
-  display: block;
-}
 
-/*Progress Bar Ends*/
+
 /*Experience Section Start*/
 .experience-section {
   display: flex;
@@ -405,7 +400,8 @@ line-height: 2px;
   text-align: center;
   width: 100%;
   background-color: #c2c2c2;
-  height: 150px;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .experience-section-companies {
@@ -419,7 +415,7 @@ line-height: 2px;
 }
 
 #appliedLogo {
-  width: 125px;
+  width: 135px;
   height: 50px;
   margin-right: 25px;
   transition: opacity 2s;
@@ -469,37 +465,12 @@ line-height: 2px;
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
+}
 
-}
-.animation-section svg {
-}
 #svgFill{
   width: 50px;
 
 
-}
-
-#triangleOne {
-  width: 0;
-  height: 0;
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
-  border-bottom: 40px solid rgb(50, 255, 238);
-}
-
-#triangleTwo {
-  width: 0;
-  height: 0;
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
-  border-bottom: 40px solid rgb(255, 166, 166);
-}
-
-#circleOne {
-  border-radius: 50%;
-  width: 35px;
-  height: 35px;
-  background-color: rgb(0, 255, 213);
 }
 
 /*Animation Section End*/
@@ -512,7 +483,10 @@ line-height: 2px;
   justify-content: center;
   align-items: center;
   align-content: center;
-  height: 300px;
+padding-bottom: 10%;
+border: solid red 1px;
+width: 300px;
+
 }
 .certs {
   display: flex;
@@ -523,16 +497,42 @@ line-height: 2px;
   align-content: center;
 }
 #certOne{
-  width: 125px;
+  width: 150px;
   height: 75px;
   margin-right: 25px;
 }
 #certTwo {
   width: 50px;
   height: 50px;
+  margin-top: 5%;
 }
 /*Certificates Section Ends*/
 
+/*Work Examples Section Start*/
+.work-examples-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 10%;
+ 
+}
+.work-examples-section p {
+  width: 65%;
+  text-align: center;
+}
+#workExamplesAppliedLogo {
+  width: 175px;
+  height: 60px;
+
+}
+#wwtreeLogo {
+  width: 50px;
+  height: 50px;
+}
+/*Work Examples Section Ends*/
 /*Footer Section Start*/
 .footer-section {
   display: flex;
@@ -551,7 +551,7 @@ line-height: 2px;
   }
 }
 
-.footer-svg {
+.footer-section svg {
   margin-right: 25px;
 }
 
