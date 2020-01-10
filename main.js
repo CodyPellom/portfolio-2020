@@ -118,6 +118,9 @@ particlesJS.load('particles-jsTwo', './particle2.json', function () {
 particlesJS.load('particles-jsThree', './particles3.json', function () {
   console.log('callback - particles.js config loaded');
 })
+particlesJS.load('particles-jsResearch', './particles3.json', function () {
+  console.log('callback - particles.js config loaded');
+})
 
 /*Skills Sections Ends*/
 /*Animation Section Start*/

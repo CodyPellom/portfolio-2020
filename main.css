@@ -4,7 +4,8 @@
 
 /*Font Imports End*/
 /*Font Globals Start*/
-h1,h2,
+h1,
+h2,
 h3 {
   font-family: 'Major Mono Display';
 }
@@ -15,12 +16,12 @@ p {
   font-size: 16px;
 }
 
-@media (max-width: 500px){
-      p {
-        font-size: 16px;
-        width: 80%;
-        text-align: center;
-      }
+@media (max-width: 500px) {
+  p {
+    font-size: 16px;
+    width: 80%;
+    text-align: center;
+  }
 }
 
 #disabled-link {
@@ -32,6 +33,7 @@ p {
 html {
   scroll-behavior: smooth;
 }
+
 .button {
   background-color: rgb(197, 197, 197);
   border: none;
@@ -157,6 +159,7 @@ html {
   height: inherit;
   width: 100%;
 }
+
 .navbar-link {
   font-family: 'VT323';
   text-decoration: none;
@@ -165,10 +168,12 @@ html {
   margin-left: 2.5%;
   font-size: 18px;
 }
+
 .navbar-link:hover {
   transition: color 1s;
   color: red;
 }
+
 /*Navbar End*/
 
 /*Hero Section Start*/
@@ -212,6 +217,7 @@ html {
   margin-bottom: 5%;
 
 }
+
 #overviewText {
   width: 80%;
 }
@@ -252,24 +258,28 @@ html {
   border: solid black 2px;
 
 }
+
 #particles-js {
   z-index: -200;
   position: absolute;
   width: 45vh;
   height: 45vh;
 }
+
 #particles-jsTwo {
   z-index: -200;
   position: absolute;
   width: 45vh;
   height: 45vh;
 }
+
 #particles-jsThree {
   z-index: -200;
   position: absolute;
   width: 45vh;
   height: 45vh;
 }
+
 .skill-section-img-left {
   display: flex;
   flex-direction: column;
@@ -298,6 +308,7 @@ html {
   margin: 10px;
 
 }
+
 .skill-section-img-right-text-area p {
   line-height: 2px;
   font-size: 14px;
@@ -318,20 +329,23 @@ html {
   margin: 10px;
 
 }
+
 .skill-section-img-left-text-area p {
-line-height: 2px;
-font-size: 14px;
+  line-height: 2px;
+  font-size: 14px;
 }
 
-@media (max-width: 500px){
+@media (max-width: 500px) {
   .skill-section-img-left-text-area p {
     font-size: 14px;
-    }
-    .skill-section-img-right-text-area p {
-      font-size: 14px;
-      }
-      
+  }
+
+  .skill-section-img-right-text-area p {
+    font-size: 14px;
+  }
+
 }
+
 #skillsLanguagesText {
   display: flex;
   flex-direction: column;
@@ -341,6 +355,7 @@ font-size: 14px;
 
 
 }
+
 #skillsFrameworksText {
   display: flex;
   flex-direction: column;
@@ -349,19 +364,24 @@ font-size: 14px;
   line-height: 2px;
 
 }
-#skillsExpText  {
+
+#skillsExpText {
   font-size: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   line-height: 2px;
-  
+
 
 }
-@media (max-width: 500px){
-#skillsExp {margin-top: 5%;}
+
+@media (max-width: 500px) {
+  #skillsExp {
+    margin-top: 5%;
+  }
 }
+
 /*Hero Section End*/
 
 
@@ -451,7 +471,7 @@ font-size: 14px;
   text-align: center;
 }
 
-#svgFill{
+#svgFill {
   width: 50px;
 
 
@@ -467,13 +487,15 @@ font-size: 14px;
   justify-content: center;
   align-items: center;
   align-content: center;
-padding-bottom: 10%;
-border: solid red 1px;
-padding: 2.5%;
+  padding-bottom: 10%;
+  border: solid red 1px;
+  padding: 2.5%;
 }
+
 .certificates-section p {
   text-align: center;
 }
+
 .certs {
   display: flex;
   flex-direction: row;
@@ -482,16 +504,19 @@ padding: 2.5%;
   align-items: center;
   align-content: center;
 }
-#certOne{
+
+#certOne {
   width: 150px;
   height: 75px;
   margin-right: 25px;
 }
+
 #certTwo {
   width: 50px;
   height: 50px;
   margin-top: 5%;
 }
+
 /*Certificates Section Ends*/
 
 /*Work Examples Section Start*/
@@ -504,28 +529,93 @@ padding: 2.5%;
   align-content: center;
   margin-bottom: 5%;
   margin-top: 2.5%;
- 
+
 }
+
 .work-examples-section p {
   width: 50%;
   text-align: center;
 }
-@media (max-width: 500px){
-.work-examples-section p {
-  width: 75%;
-  text-align: center;
+
+@media (max-width: 500px) {
+  .work-examples-section p {
+    width: 75%;
+    text-align: center;
+  }
 }
-}
+
 #workExamplesAppliedLogo {
   width: 175px;
   height: 60px;
 
 }
+
 #wwtreeLogo {
   width: 75px;
   height: 75px;
 }
+
 /*Work Examples Section Ends*/
+
+/*Research Section Starts*/
+.research-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 500px;
+  border: solid purple 1px;
+  margin: 5%;
+  text-align: center;
+}
+
+@media (max-width: 500px){
+  .research-section {
+    height: 120vh;
+  }
+  
+}
+.research-section p {
+  width: 80%;
+  margin-bottom: 5%;
+}
+
+.research-item-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.research-item-section p {
+  width: 50%;
+  text-align: left;
+}
+
+
+#tensorflowIcon {
+  width: 100px;
+  height: 75px;
+  margin-right: 5%;
+  margin-top: -5%
+}
+#ibmWatsonIcon {
+  width: 100px;
+  height: 75px;
+  margin-right: 5%;
+  margin-top: -5%;
+}
+#threeJSIcon {
+  width: 100px;
+  height: 50px;
+  margin-right: 5%;
+  margin-top: -5%
+}
+
+/*Research Section Ends*/
 
 /*Blog Section Start*/
 .blog-section {
@@ -536,10 +626,12 @@ padding: 2.5%;
   align-items: center;
   align-content: center;
 }
-.blog-section p{
-width: 65%;
-text-align: center;
+
+.blog-section p {
+  width: 65%;
+  text-align: center;
 }
+
 /*Blog Section Ends*/
 /*Footer Section Start*/
 .footer-section {
@@ -552,8 +644,9 @@ text-align: center;
   height: 75px;
   background-color: #c2c2c2;
 }
-@media (max-width: 411px){
-  .footer-section{
+
+@media (max-width: 411px) {
+  .footer-section {
     margin-bottom: 0%;
 
   }
