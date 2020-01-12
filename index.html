@@ -16,6 +16,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
     <script src="./particles.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 </head>
 <!--Navbar Start-->
 <div id="navbarSection">
@@ -186,12 +187,12 @@
     <!--Research Section Starts-->
     <div class="research-section">
         <h1>Research</h1>
-        <p>Here are a few of my favorite areas of research within Web Development and Engineering. Click on the stickies to learn more about them! </p>
+        <div id="research-typed-element-container"><div id="research-typed-element"></div> <span id="typed"></span></div>
         <div class="research-item-section">
-<a href="https://www.tensorflow.org/js/" target="_blank"><img src="./images/tensorflow-sticky.png" alt="" class="sticky-note"></a>
-<a href="https://dotnet.microsoft.com/" target="_blank"><img src="./images/net-sticky.png" alt="" class="sticky-note"></a>
-<a href="https://www.ibm.com/watson/developer" target="_blank"><img src="./images/ibm-sticky.png" alt="" class="sticky-note"></a>
-<a href="https://threejs.org/" target="_blank"><img src="./images/threejs-sticky.png" class="sticky-note" alt=""></a>
+<a href="https://www.tensorflow.org/js/" target="_blank"><img src="https://lh3.googleusercontent.com/AD6nsZ4SwqVUJYZNnfRdXI6sKfsi0megZcoJeAqt3S3nws3HPnhg2CwPYgRfue08RZMFIva9blyUnm_xWvGWmCseGcBPBZkgHJdrS2E49GhR4-lqSdqUw7yixzEG9tKJrPnKbu_bTyP4edZY2GGKQyrXxsVas9CB9RIvfRtZPsMCKZXmpEmHLmBZWdO8PfM347rfK6Y3PXCQsMYvX_p7s2BtIKiWX43QgXwgWo9EzRUMl2E_PtLRntlMDodU2A_4xxIObcQSk83tiNJpb-dbqT4oP-bblM1F88P1ASkL8Ew7yWS0svM1RroqDt4lm7IVIh5GJEmlxPeWTwRC3Ifil00y3WPElApxKHki8dMaNQe-loRb1NcFWZTiO3Oe3ySKEvQeAht1636sCoRwJl8kO7RutpCpRK7YMo2NBu-vSdQSWW4IIgcl4T7dXAnQgVxdC9CK8F0S-e7a8Osql3_XKvFel803pH0ZR9TdOL1gzVSJrLz0qJOqs-GqBNw8v0SKYXgSvJEDrSL637YOUT83Pp4LlbMiPWnEut3JOXnjCTamL_yNoi5nUJprxMNwuqSb7tyZtQkWiibM1i9QD1AbjYsx86nmoGJ7ZfXep8sdFRkcUNwverh9A97BsLb7oezWK7wnUmCSHus6gMOrbxKjdXkNDy1vLL6QkOTM2nov2KAkIBYdoWwWysE=s500-no" alt="" class="sticky-note"></a>
+<a href="https://dotnet.microsoft.com/" target="_blank"><img src="https://lh3.googleusercontent.com/GPkGyq3u1g8YdfRyBHXLF8qoxUwuofl215mOTtTMIBIjjOzy1im37SxWGQ1HzPgsIanHluLkiFnXgobpnXrZkDSJZ62fqUBZAMQwhui85DLbNa5lXwOTk-e-MHjuPAGIMz4Wfa1zoP9puXaYUPF0aWiyAWX-sU-ornD8P1olRp3-ocJNTHJy23KH6Rirtw28r5YxBgw0Clus66Dg2NkjrD6HbClNd9LUVcFh0pIb2eXCHe8muiZoIgrOZle1JT4kHdcnw6qhUmGg52Y7xdu5OmTALX4MOowqmDfP0XVY5M4QC9wcmYYpUEfVsz8qdqF445HbIdeQW_vObYEW-GcajGVetx1y-AQmPsENXoBxQFplK2yt6t-9XuxB2iA8Ycrg8a6a5WztXTvktFILWtNeOtGpzF9jdenmG1nKAqa91ygkp87qOn_o8ZBe-Lrp7rayU1haPPP-zYu5JT3o242409N4tvgWtgnjaNwOoBSCZhLJcxLrU07JxBDk8GWRbxcVu6N_hZs3uTvDU2sPVNn9eG44-cZMt7WYg9ru_4EBPf0FI81OKa078kcmEMqBpLbyvo_q1iklMOVSr0KdYyymBnrqpa3HyqNkXZMDFGYgNXHzSPeQ3ICoVzzOL8g_POTFn24L3f-jpPMX6kQDPPVfXK2EHE9YplJrgRfxRPjVfBLVvMmB9LF9XkI=s500-no" alt="" class="sticky-note"></a>
+<a href="https://www.ibm.com/watson/developer" target="_blank"><img src="https://lh3.googleusercontent.com/f0r5TX3J8NOUpQ0iqC-udlzNGuCPcl8ZUdgkhRF3DtYT9BAZbGovHj3wqU-xzty9l7T65lrCJTGLElGERi8fcyllDWvxD3kzX__m89d6cV53GYaw0gNI2Fdq0G42owkZcWhs44OPHfptqsvS-_xMbKMzkIcAM8dYLWoLXxpyGYk32XWOVQnEnhQ2Fnwm3DCDvrJffJYu3kz98_R3IDh9bRiEAuxivMIO9cn12vMkw13JDtgkdyleQpqBf06OSu5fR_LV6BLXiIcYI5hkzqBiSaIE-QTR8ogsQOMzd9JgF3HYmX-0h-o6-p54Mvbjfi_vF2E9LcDj1ulNRNxZZKdFy8Xs1henrBz6eg5uHwzt6qUQZgXf67SwjMfEpr6j4NK59cKzYyvtCnvAyaMLQi60oCDFRjCuc5dz95AJ2KzZ4RvWdSS6VYZvOkOsElEDqze8RaAf8jSettZO126iRNsBdHpXoxAuClNTB3UCJEY-BV1hPjixZJciC2m01nVJS301YVBMP1CEqvCX39-9oKVycEGex1sav-LXBC-SS75bvmFCnx_-ms41A1cUOWcQrzVTOPJ0NIPHiESQOXxmZg_WxefnXQQif_qUjGn__3gFTazBAAd2-x2u17FWHGI4J1vDuIij8YdL_Dr0SHoboTvRR0pXvsz-oOXoFI8CE5xAfRaxLOOLsFqaVt4=s500-no" alt="" class="sticky-note"></a>
+<a href="https://threejs.org/" target="_blank"><img src="https://lh3.googleusercontent.com/uaNKZ-WfY7oMp6fMcjlWEUpSqsoBkg1ampBXr3Gc6AGZDJgNVxBr-c0TbfsGZoxWudM8fmyAjc6f9zKjZ4bpjbdaI_Ik7qp_4XhSnHYkHf02OnzZCN57YQXDn3G0aRTgdC1Ye_nKJnld8b9WBU6hpW7_PBunHmVVQvtuHkkUflIqdub1ziZyKAfo6_bDnzqoiyJEc7Hll3TsMtoYddksEI1Tsj-9j7JAVD_BXw3yUYw0ir-buKdf4j9Wkwt9gsY4Ffg0WSrv-krBNP76HEMdGq1g8fggTnJ8dtapx3AfwWlHEOsVUMTHJMW_csTDZDYF-gZOQs64twHtCLT2_q1N5ginrZhw-kucudk7J8aHucVEninyRifMyE8ZBEgZdbEPd64rGNT7iW43FjRNrrkKHL_hu0BfA1Q9BYOoNNEOhrTl_Uup2vQaFjw1kcOSQ7gcaifZ98WilTejxdiSo8zfhP94UUc5gbYxAbI280Wec2BmbpTK1rsyBXCZyCoU5w0jFANxfcoz20M7GtucHWxsayNY9d4S1ZoKfYNWh3f7vXZe-D-TIK79yto0zk62B9SQiTttyMTvi--MZ_f1Bod_25YkACC5OVzTDWPhdwKVmopKLQ6wf_87w8scPXnDhbNoLJSYnXtgg8R5B4TYOlrm8DuOAjiP823NPlWGKvImaMbJMRjRZxwi54U=s500-no" class="sticky-note" alt=""></a>
 </div>
        
     </div>

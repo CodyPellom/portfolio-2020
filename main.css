@@ -565,7 +565,7 @@ html {
   justify-content: center;
   align-items: center;
   align-content: center;
-  height: 500px;
+  height: 400px;
   border: solid rgb(118, 162, 212) 1px;
   margin: 5%;
   text-align: center;
@@ -578,10 +578,12 @@ html {
 
 @media (max-width: 500px){
   .research-section {
-    height: 120vh;
+    height: 1150px;
   }
-  .sticky-note
-  
+  #research-typed-element-container {
+    min-height: 50px;
+  }
+
 }
 .research-section p {
   width: 80%;

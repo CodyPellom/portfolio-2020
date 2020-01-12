@@ -148,7 +148,25 @@ $(window).on('resize scroll', function () {
   })
 });
 /*Animation Section End*/
-
+/*Research Area*/
+// Can also be included with a regular script tag
+var typedCounter = 0;
+$(window).on('resize scroll', function () {
+  $('#research-typed-element').each(function () {
+    if ($('#research-typed-element').isInViewport()) {
+typedCounter++;
+if (typedCounter <= 1){
+var typed = new Typed('#typed', {
+  strings: ['Here are some examples of the areas of web development and software engineering that interest me the most!','Click on the sticky notes to find out more!'],
+  typeSpeed: 50,
+  backSpeed: 15,
+  backDelay: 1000,
+  showCursor: false,
+  
+});
+}
+    }})})
+/*Research Area Ends*/
 /*Skills Section*/
 var counterThree = 0;
 
