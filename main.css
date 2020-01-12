@@ -566,15 +566,21 @@ html {
   align-items: center;
   align-content: center;
   height: 500px;
-  border: solid purple 1px;
+  border: solid rgb(118, 162, 212) 1px;
   margin: 5%;
   text-align: center;
+  
+}
+.sticky-note {
+  width: 250px;
+  height: 250px;
 }
 
 @media (max-width: 500px){
   .research-section {
     height: 120vh;
   }
+  .sticky-note
   
 }
 .research-section p {
