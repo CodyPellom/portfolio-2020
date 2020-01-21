@@ -119,7 +119,7 @@ html {
 }
 
 #heroText {
-  font-size: 24px;
+  font-size: 20px;
 
 }
 
@@ -189,19 +189,41 @@ html {
   justify-content: center;
   align-items: center;
   align-content: center;
-  background-image: url('https://lh3.googleusercontent.com/x3-t8_mOlmKZ-unY0osVg1PfY-nAkbPlcvXiHgDgU8X_X0swig6oWqyWh_paGbGCuQeS0hk6q-7ODjTjkpHaYT6TeV05Ckoics-Whu0YnMvirY-5ZAklCugzRxTxlxdIyiGEUgAJl1FHujYG6ZjSD3Pm9JvRkCMUK2lRPtDUlRi_mQn5F-UxmsBEOLsvd398vQn1E488a4IVZ9CtLuQh_k8H5HSwcm9sLBWJz0TEyeqnR4pL7IMnWPIHYi4r76LDmPwY6JzN0I5Axz-y2W69XhIQg6HlHId7ac0GScY356EXuVqQwl8ng3DMgvy1Vh1WlOV2HKEdjvjBG2DhCGk-NNGoUf80k5FfQTTn0CFgJFyXbRXZnTIt1jA3NH8GG9MG55_gohuN19gW0WZrV6bOTljbH9mdwSkBQdCZ0Ioa9-PkmvxtxiSMwzJDlqmvBrBCL3oojVPhk1jyU9xzi74Wtz8DReC_aWKpo38fMrhZ_9SrbRBjKKQ1S0ouPmYp_YqGTWUxbWPQzFm96cgAMcVRPPZ30HKpp97xsC_tB4nqswL3lWCtKe9TaQ694FF-wDpcbTFp80SP_SEAeC7F1hTdIlU5CPLemkZ06epYGRNTZmvH_1lqbMUFoRt_BwaoDmdHf5-FICueZBI5atzJs4Y4eoE9YGA8676hk6ajEJ8Hod5ySwHwcYOyhQM=w1362-h851-no');
-  background-size: cover;
-  background-repeat: no-repeat;
   height: 100vh;
-  background-position: 25% 100%;
-}
 
+}
+#bgVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+.videoContent {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  
+
+}
+@media(max-width: 500px){
+.hero-section h1 span{
+  font-size: 32px;
+}
+}
 #heroLogo {
   color: white;
+  font-size: 12px;
+  position: relative;
 }
 
 #heroText {
   color: white;
+  font-size: 12px;
+
 }
 
 #profilePic {
@@ -253,23 +275,28 @@ html {
   justify-content: center;
   align-items: center;
   align-content: center;
-  padding-top: 2.5%;
-  padding-bottom: 2.5%;
+
 }
 
 .skill-section-img-right {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
   text-align: center;
   width: 40vw;
   height: 45vh;
   border: solid black 2px;
   padding-top: 2.5%;
   padding-bottom: 2.5%;
+}
+@media(max-width: 767px){
+  .skill-section-img-right {
+    width: 80vw;
+    height: 50vh;
+  }
 }
 
 #particles-js {
@@ -308,6 +335,12 @@ html {
   padding-top: 2.5%;
   padding-bottom: 2.5%;
 }
+@media(max-width: 767px) {
+  .skill-section-img-left {
+    width: 80vw;
+    height: 50vh;
+  }
+}
 
 .skill-section-img-right-text-area {
   display: flex;
@@ -322,6 +355,20 @@ html {
   margin: 10px;
   padding-top: 2.5%;
   padding-bottom: 2.5%;
+  
+
+}
+.skill-section-img-right-text-area p {
+  font-family: 'VT323';
+  font-size: 18px;
+}
+
+@media(max-width: 767px) {
+  .skill-section-img-right-text-area {
+
+    width: 80vw;
+    height: 50vh;
+  }
 }
 
 .skill-section-img-right-text-area p {
@@ -344,21 +391,26 @@ html {
   margin: 10px;
   padding-top: 2.5%;
   padding-bottom: 2.5%;
-
+}
+@media(max-width: 767px){
+  .skill-section-img-left-text-area {
+    width: 80vw;
+  height: 50vh;
+  }
 }
 
 .skill-section-img-left-text-area p {
   line-height: 2px;
-  font-size: 18px;
-}
+  font-family: 'VT323';
+  font-size: 18px;}
 
 @media (max-width: 500px) {
   .skill-section-img-left-text-area p {
-    font-size: 16px;
+    font-size: 24px;
   }
 
   .skill-section-img-right-text-area p {
-    font-size: 16px;
+    font-size: 24px;
   }
 
 }
@@ -419,10 +471,14 @@ html {
   align-items: center;
   align-content: center;
   text-align: center;
-  width: 100%;
+  width: 80vw;
   background-color: #c2c2c2;
   padding-top: 2.5%;
   padding-bottom: 2.5%;
+  border: 1px solid red;
+}
+.experience-section p {
+  width: 80%;
 }
 
 .experience-section-companies {
@@ -466,6 +522,23 @@ html {
   transition: opacity 8s;
   opacity: 0;
 }
+@media(max-width: 767px){
+  #appliedLogo{
+    margin-right: 0;
+  }
+  #hdLogo {
+    height: 100px;
+    width: 175px;
+    margin-right: 0;
+
+  }
+  #hpLogo {
+    margin-right: 0;
+  }
+  #trustfuelLogo {
+    margin-right: 0;
+  }
+}
 
 #devVector {
   width: 350px;
@@ -507,6 +580,10 @@ html {
   padding-bottom: 10%;
   border: solid transparent 1px;
   padding: 2.5%;
+  width: 80vw;
+  background-color: #c2c2c2;
+  color: white;
+
 }
 
 .certificates-section p {
@@ -523,31 +600,46 @@ html {
 }
 
 #certOne {
-  width: 150px;
-  height: 75px;
+  width: 300px;
+  height: auto;
   margin-right: 25px;
 }
-
 #certTwo {
-  width: 50px;
-  height: 50px;
+  width: 200px;
+  height: auto;
   margin-top: 5%;
 }
+@media(max-width: 767px){
+  #certOne{
+    width: 200px;
+    height: auto;
+   
+  }
+  #certTwo {
+    width: 150px;
+    height: auto;
+    margin-top: 5%;  
+  }
+}
+
+
 
 /*Certificates Section Ends*/
 /*Resume Section Start*/
 .resume-section {
-  width: 100%;
+  width: 80vw;
   height: 250px;
   border: solid red 1px;
   padding: 2.5%;
   margin: 2.5%;
 
 }
+
 #resume-icon {
   width: auto;
   height: 10vh;
 }
+
 /*Resume Section Ends*/
 
 
@@ -562,7 +654,9 @@ html {
   border: solid 1px blue;
   padding: 2.5%;
   margin: 2.5%;
-
+  width: 80vw;
+  background-color: #c2c2c2;
+  color: white;
 
 }
 
@@ -599,7 +693,8 @@ html {
   justify-content: center;
   align-items: center;
   align-content: center;
-  height: 70vh;
+  min-height: 500px;
+  width: 80vw;
   border: solid rgb(118, 162, 212) 1px;
   margin-bottom: 2.5%;
   text-align: center;
