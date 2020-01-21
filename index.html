@@ -17,6 +17,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
     <script src="./particles.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+
+
 </head>
 <!--Navbar Start-->
 <div id="navbarSection">
@@ -26,6 +30,7 @@
         <a href="#skillsExp" class="navbar-link">Experience</a>
         <a href="#blogSection" class="navbar-link" id="disabled-link">Blog</a>
         <a href="mailto:paulpellom@gmail.com" class="navbar-link">Contact</a>
+        <a href="./tutoring.html" class="navbar-link">Tutoring</a>
     </div>
 
 </div>
@@ -37,7 +42,7 @@
         <!--Hero Logo Animation Start-->
         <h1 class="ml1" id="heroLogo">
             <span class="text-wrapper">
-                <span class="letters">Cody Pellom</span>
+                <span class="letters" style="font-size: 48px;">Cody Pellom</span>
             </span>
         </h1>
         <!--Hero Logo Animation End-->
@@ -45,9 +50,10 @@
         <!--Hero Text Animation Start-->
         <p class="ml5" id="heroText">
             <span class="text-wrapper">
-                <span class="letters letters-left" style="font-family: 'VT323';">Web Developer</span>
-                <span class="letters ampersand" style="font-family: 'VT323';">+</span>
-                <span class="letters letters-right" style="font-family: 'VT323';">Software Engineer</span>
+                <span class="letters letters-left" style="font-family: 'VT323'; font-size: 24px;">Web Developer</span>
+                <span class="letters ampersand" style="font-family: 'VT323'; font-size: 24px;">+</span>
+                <span class="letters letters-right" style="font-family: 'VT323'; font-size: 24px;">Software
+                    Engineer</span>
             </span>
         </p>
         <!--Hero Text Animation End-->
@@ -87,11 +93,11 @@
     <!--Skill Section Starts-->
     <div class="skill-section-img-right-section" id="skillsExp">
         <div class="skill-section-img-right skill-section-trigger">
-            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24">
                 <path
                     d="M13.144 8.171c-.035-.066.342-.102.409-.102.074.009-.196.452-.409.102zm-2.152-3.072l.108-.031c.064.055-.072.095-.051.136.086.155.021.248.008.332-.014.085-.104.048-.149.093-.053.066.258.075.262.085.011.033-.375.089-.304.171.096.136.824-.195.708-.176.225-.113.029-.125-.097-.19-.043-.215-.079-.547-.213-.68l.088-.102c-.206-.299-.36.362-.36.362zm13.008 6.901c0 6.627-5.373 12-12 12-6.628 0-12-5.373-12-12s5.372-12 12-12c6.627 0 12 5.373 12 12zm-8.31-5.371c-.006-.146-.19-.284-.382-.031-.135.174-.111.439-.184.557-.104.175.567.339.567.174.025-.277.732-.063.87-.025.248.069.643-.226.211-.381-.355-.13-.542-.269-.574-.523 0 0 .188-.176.106-.166-.218.027-.614.786-.614.395zm6.296 5.371c0-1.035-.177-2.08-.357-2.632-.058-.174-.189-.312-.359-.378-.256-.1-1.337.597-1.5.254-.107-.229-.324.146-.572.008-.12-.066-.454-.515-.605-.46-.309.111.474.964.688 1.076.201-.152.852-.465.992-.038.268.804-.737 1.685-1.251 2.149-.768.694-.624-.449-1.147-.852-.275-.211-.272-.66-.55-.815-.124-.07-.693-.725-.688-.813l-.017.166c-.094.071-.294-.268-.315-.321 0 .295.48.765.639 1.001.271.405.416.995.748 1.326.178.178.858.914 1.035.898.193-.017.803-.458.911-.433.644.152-1.516 3.205-1.721 3.583-.169.317.138 1.101.113 1.476-.029.433-.37.573-.693.809-.346.253-.265.745-.556.925-.517.318-.889 1.353-1.623 1.348-.216-.001-1.14.36-1.261.007-.094-.256-.22-.45-.353-.703-.13-.248-.015-.505-.173-.724-.109-.152-.475-.497-.508-.677-.002-.155.117-.626.28-.708.229-.117.044-.458.016-.656-.048-.354-.267-.646-.53-.851-.389-.299-.188-.537-.097-.964 0-.204-.124-.472-.398-.392-.564.164-.393-.44-.804-.413-.296.021-.538.209-.813.292-.346.104-.7-.082-1.042-.125-1.407-.178-1.866-1.786-1.499-2.946.037-.19-.114-.542-.048-.689.158-.352.48-.747.762-1.014.158-.15.361-.112.547-.229.287-.181.291-.553.572-.781.4-.325.946-.318 1.468-.388.278-.037 1.336-.266 1.503-.06 0 .038.191.604-.019.572.433.023 1.05.749 1.461.579.211-.088.134-.736.567-.423.262.188 1.436.272 1.68.069.15-.124.234-.93.052-1.021.116.115-.611.124-.679.098-.12-.044-.232.114-.425.025.116.055-.646-.354-.218-.667-.179.131-.346-.037-.539.107-.133.108.062.18-.128.274-.302.153-.53-.525-.644-.602-.116-.076-1.014-.706-.77-.295l.789.785c-.039.025-.207-.286-.207-.059.053-.135.02.579-.104.347-.055-.089.09-.139.006-.268 0-.085-.228-.168-.272-.226-.125-.155-.457-.497-.637-.579-.05-.023-.764.087-.824.11-.07.098-.13.201-.179.311-.148.055-.287.126-.419.214l-.157.353c-.068.061-.765.291-.769.3.029-.075-.487-.171-.453-.321.038-.165.213-.68.168-.868-.048-.197 1.074.284 1.146-.235.029-.225.046-.487-.313-.525.068.008.695-.246.799-.36.146-.168.481-.442.724-.442.284 0 .223-.413.354-.615.131.053-.07.376.087.507-.01-.103.445.057.489.033.104-.054.684-.022.594-.294-.1-.277.051-.195.181-.253-.022.009.34-.619.402-.413-.043-.212-.421.074-.553.063-.305-.024-.176-.52-.061-.665.089-.115-.243-.256-.247-.036-.006.329-.312.627-.241 1.064.108.659-.735-.159-.809-.114-.28.17-.509-.214-.364-.444.148-.235.505-.224.652-.476.104-.178.225-.385.385-.52.535-.449.683-.09 1.216-.041.521.048.176.124.104.324-.069.19.286.258.409.099.07-.092.229-.323.298-.494.089-.222.901-.197.334-.536-.374-.223-2.004-.672-3.096-.672-.236 0-.401.263-.581.412-.356.295-1.268.874-1.775.698-.519-.179-1.63.66-1.808.666-.065.004.004-.634.358-.681-.153.023 1.247-.707 1.209-.859-.046-.18-2.799.822-2.676 1.023.059.092.299.092-.016.294-.18.109-.372.801-.541.801-.505.221-.537-.435-1.099.409l-.894.36c-1.328 1.411-2.247 3.198-2.58 5.183-.013.079.334.226.379.28.112.134.112.712.167.901.138.478.479.744.74 1.179.154.259.41.914.329 1.186.108-.178 1.07.815 1.246 1.022.414.487.733 1.077.061 1.559-.217.156.33 1.129.048 1.368l-.361.093c-.356.219-.195.756.021.982 1.818 1.901 4.38 3.087 7.22 3.087 5.517 0 9.989-4.472 9.989-9.989zm-11.507-6.357c.125-.055.293-.053.311-.22.015-.148.044-.046.08-.1.035-.053-.067-.138-.11-.146-.064-.014-.108.069-.149.104l-.072.019-.068.087.008.048-.087.106c-.085.084.002.139.087.102z" />
             </svg>
-            <h3>Skills</h3>
+            <h2>Skills</h2>
             <div id="particles-jsThree"></div>
         </div>
         <div class="skill-section-img-right-text-area" id="skillsExpText">
@@ -110,11 +116,11 @@
     <!--Languages S-->
     <div class="skill-section-img-left-section" id="skillsLanguages">
         <div class="skill-section-img-left language-section-trigger">
-            <svg id="laptopIcon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+            <svg id="laptopIcon" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24">
                 <path
                     d="M22 17v-11.8c0-.663-.537-1.2-1.2-1.2h-17.6c-.663 0-1.2.537-1.2 1.2v11.8h20zm-18-11h16v9h-16v-9zm20 12v.8c0 .663-.537 1.2-1.2 1.2h-21.6c-.663 0-1.2-.537-1.2-1.2v-.8h10c0 .276.224.5.5.5h3c.276 0 .5-.224.5-.5h10z" />
             </svg>
-            <h3>Languages</h3>
+            <h2>Languages</h2>
             <div id="particles-js"></div>
         </div>
         <div class="skill-section-img-right-text-area" id="skillsLanguagesText">
@@ -133,12 +139,12 @@
 
     <div class="skill-section-img-right-section" id="skillsFrameworks">
         <div class="skill-section-img-right">
-            <svg viewBox="0 0 24 24" width="50" height="50" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+            <svg viewBox="0 0 24 24" width="100" height="100" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
                 clip-rule="evenodd">
                 <path
                     d="M15.517 24h-11.646c.522-3.035.897-6.162-.422-8.028-1.666-2.357-2.43-4.742-2.449-6.883-.045-5.19 4.231-9.114 10.203-9.089 7.236.03 9.328 6.156 9.773 7.943.34 1.369-.898 1.869-.166 2.702.596.679 1.035 1.364 1.789 2.177.292.315.405.646.401.943-.006.434-.291.798-.748.958-.429.15-.76.32-1.215.443-.145 1.16-.521 2.572-.798 3.557-.737 2.62-2.896 1.059-3.881 2.607-.426.668-.64 1.738-.841 2.67zm-3.844-19h-1.346c-.243.681-.312 1.122-.842 1.341-.53.22-.888-.041-1.545-.353l-.952.952c.311.654.573 1.015.353 1.545-.219.53-.66.599-1.341.841v1.347c.68.242 1.122.312 1.341.842.222.534-.047.902-.353 1.544l.952.952c.652-.309 1.015-.573 1.545-.353v.001c.529.219.599.657.842 1.341h1.346c.243-.682.313-1.121.845-1.343h.001c.526-.219.883.042 1.541.354l.952-.952c-.31-.651-.573-1.014-.354-1.544.219-.529.662-.6 1.342-.842v-1.347c-.688-.244-1.123-.313-1.341-.841-.22-.53.041-.89.353-1.545l-.952-.952c-.651.31-1.014.573-1.545.353-.529-.219-.598-.657-.842-1.341zm-.673 6.667c-.92 0-1.667-.747-1.667-1.667 0-.921.747-1.667 1.667-1.667s1.667.746 1.667 1.667c0 .92-.747 1.667-1.667 1.667z" />
             </svg>
-            <h3>Frameworks & Libraries</h3>
+            <h2>Frameworks & Libraries</h2>
             <div id="particles-jsTwo"></div>
         </div>
         <div class="skill-section-img-left-text-area framework-trigger" id="skillsFrameworksText">
@@ -169,32 +175,54 @@
     </div>
     <!--Certificates Section End-->
 
+    <!--Resume Section Starts-->
+    <div class="row-center">
+        <div class="resume-section column-center">
+            <h2>Resume</h2>
+            <a class="fancybox" href="./Cody Pellom (Spring 2020 Resume).pdf"><img src="https://lh3.googleusercontent.com/uL1lGk6QUgBTARDYPGV9hPq-A57nSa_qDjpPSqCZk0vCfkAPBcKcwhG6VoJNGSYqw48e2yqj2SjB7sFKGr-FhBPe0pURdMyUgq1OsjUObqqTOZ1gSpnINU5a0icqAuyt9m0Sps9Ds7rB00IL3jwzDUK7xbVYwoVCt4wsZ3GcYPic4elTzlGrFZVwfndbPjwKM583FgblbioJ91tCrKJfKCYI_vhCz62xlRuW9FKaEjd105OczzhavoaC6RtDw90Z8S_p3GMi58BPS9cWCMAjGIKk1mZ1dtyZilmuYJnWmd0wTkmO8x6KcGLynca3SzQKNUXryLLbPgerC64oE8z1VR-ipAHX8lSq8b5iysDT9NOBHjNw0kFxPe-CFqVjFTEN3O6jnI4z8Nz-58dtMvDLJRQa4GXKuJTXFPMel28-QVbJq_IvCgfJIKketb9bG7gVInTuvzVnOZorkFk_J5N9jUIgemrB0aym7RZmJnxJjP5Ipp8GW8FYL99dM31jrTxjstVZKRikCJ0e7nnpsDJfbcrNNrlMdYb2D0Cr8AEMePKLVyc8SgzNeft6OP9ZHsyhxaOKpO7AzHxgALz1VoDuPPQrrk11Kbk2WAF4z1V315aQaYvI7KU2dlyY4xTsyMqheeBBo8P7Ic4mOXcsYlChttpWM1MUOKtSNiMYyP2L7n8z4Yh02x3Gc64=w920-h840-no" id="resume-icon" alt=""></a>
+            <p>Here is a copy of my most recent resume.</p>
+        </div>
+    </div>
+    <!--Resume Section End-->
+
     <!--Work Examples Section Start-->
-    <div class="work-examples-section">
-        <h2>Work Examples</h2>
-        <a href="https://www.appliedsystems.com" target="_blank"><img
-                src="https://lh3.googleusercontent.com/yThbfDGHs3oel8onahcXqaJHZ6vv-gJvsvumX4q3INJhOVRbURx1ytGq4UAPAW50DlFLOKUMfeFUrigEI8Ldgl1yaFe4ehoQOByizUloqOQxBlPn7wJm0thQA4922MjreYM7LnRpko6cb-2R269ycB8vGe8lO5-jVwHd-0ZC4luuKKrEShi2QkStDNnHy3Ay5tHoDfnMs9Cv4boEXciqYAcsyhZ-4jK_WdOqjFHbUkTJGM4_v56IY857VdjUtY0vke9eIFAcdOkv7rdXSLp_J_TGir3PV0v6V2s6IfECCB3oKqP1ynhnlchP8XCeq_6OKb_HMz5THmg3OYKD__kJJDlCpDo_jwQdFMADt7LZ1UzFvQR4sJTIjTElNVyswvth0dndPMkdhoj8K1kHNTKSjqiynYoFY1XwIlMmXhcUEz4dDaQGB7dcuPNHwEbfnIhEQiH9NDrFBcFH3-UhB-A4inQXG7kKKNFkcq3N8TyDivKjdEboSLIoefP58ltHZtXsOIb2SbMuFwd0lCnFQbVz1yMhdNimUJBMMl4K2XgrUTb45SgF4KuOCzfkOmgwc_0Q00loKY4KGKh4kRDcawiLPMuGvPp_hzO_wfsfESiTd5NypHIEfX7NgkA14P5XakonmZ80YXeBkG-wGndrDA6b2dYM5OSDT2LaBrDW2NvSTa0wM0tqa7f8sGc=w796-h270-no"
-                alt="applied-systems-logo2" id="workExamplesAppliedLogo"></a>
-        <p>At Applied Systems, I built out content blocks and page types within Episerver (.NET) for both the
-            international corporate site and blogs.</p>
-        <a href="http://www.williamwordtree.com" target="_blank"> <img
-                src="https://lh3.googleusercontent.com/EqJo7Hns4epBc160fhBzhbsZJMZBjDX2Xt0qMe-q0xjXUCkUpdTw0K0eD9bCVqPy4ZvoUPy38b5soxoO3k0H-G2T91aYiyuJG6vAaAV-HIFMDZD9Y96BqDrg-XJYJtZ12-Uqu04coEz1240wXViXFLzLQgL1MXsaf2zUiMZev_86hMF-4oRbdlB086YQrdxjDCDb2zLFzGSKamM6bV4Mb0u1WvLdkKdPsy31vYtc0LMt44mEi9a-o6EGAJOIlfOtC6Gjqie3Bn94YsiS2S3EZ5ttbIO3somKfMvEfTKKeaW85jwen6-8DFaw9UUZOqslCnC6xP3Pl_sozpqO3_IMGwMA8bVB8LljPiB6V41QAdUpLPNCL82RbHINIFgkvw9Jqkq4Uxjx4Vq5rfjFv5jRFbrnF2TA3HBdEB8EUhP3lJcufdS48QvKKThjgvXT9T28I9LykMOhspgSK4g-MLPv_ngOP-grCLAoqcWPvu07QmghC0UpttI4cPuuLEQUs8sUXZLSYIbsFzKWn9vNDVrIP9_7EPtCejB018biPL5Sd97x_6q7FAOV4edCX9kd7kIxF2TmK9QDzNMioC-c-9dNRLWD-ZXLJVeg1afsdQyFy9sPLWq7rgxfRgVnyDJA81LWg0L_jjZr9Cl-gmf_9keYQpA0aDWgeKFqOIFWviViOPs_jp-raL9JyVk=s250-no"
-                alt="" id="wwtreeLogo"></a>
-        <p>William Word Tree Services is a business website built for a local tree servicing company. </p>
+    <div class="row-center">
+        <div class="work-examples-section">
+            <h2>Work Examples</h2>
+            <a href="https://www.appliedsystems.com" target="_blank"><img
+                    src="https://lh3.googleusercontent.com/yThbfDGHs3oel8onahcXqaJHZ6vv-gJvsvumX4q3INJhOVRbURx1ytGq4UAPAW50DlFLOKUMfeFUrigEI8Ldgl1yaFe4ehoQOByizUloqOQxBlPn7wJm0thQA4922MjreYM7LnRpko6cb-2R269ycB8vGe8lO5-jVwHd-0ZC4luuKKrEShi2QkStDNnHy3Ay5tHoDfnMs9Cv4boEXciqYAcsyhZ-4jK_WdOqjFHbUkTJGM4_v56IY857VdjUtY0vke9eIFAcdOkv7rdXSLp_J_TGir3PV0v6V2s6IfECCB3oKqP1ynhnlchP8XCeq_6OKb_HMz5THmg3OYKD__kJJDlCpDo_jwQdFMADt7LZ1UzFvQR4sJTIjTElNVyswvth0dndPMkdhoj8K1kHNTKSjqiynYoFY1XwIlMmXhcUEz4dDaQGB7dcuPNHwEbfnIhEQiH9NDrFBcFH3-UhB-A4inQXG7kKKNFkcq3N8TyDivKjdEboSLIoefP58ltHZtXsOIb2SbMuFwd0lCnFQbVz1yMhdNimUJBMMl4K2XgrUTb45SgF4KuOCzfkOmgwc_0Q00loKY4KGKh4kRDcawiLPMuGvPp_hzO_wfsfESiTd5NypHIEfX7NgkA14P5XakonmZ80YXeBkG-wGndrDA6b2dYM5OSDT2LaBrDW2NvSTa0wM0tqa7f8sGc=w796-h270-no"
+                    alt="applied-systems-logo2" id="workExamplesAppliedLogo"></a>
+            <p>At Applied Systems, I built out content blocks and page types within Episerver (.NET) for both the
+                international corporate site and blogs.</p>
+            <a href="http://www.williamwordtree.com" target="_blank"> <img
+                    src="https://lh3.googleusercontent.com/EqJo7Hns4epBc160fhBzhbsZJMZBjDX2Xt0qMe-q0xjXUCkUpdTw0K0eD9bCVqPy4ZvoUPy38b5soxoO3k0H-G2T91aYiyuJG6vAaAV-HIFMDZD9Y96BqDrg-XJYJtZ12-Uqu04coEz1240wXViXFLzLQgL1MXsaf2zUiMZev_86hMF-4oRbdlB086YQrdxjDCDb2zLFzGSKamM6bV4Mb0u1WvLdkKdPsy31vYtc0LMt44mEi9a-o6EGAJOIlfOtC6Gjqie3Bn94YsiS2S3EZ5ttbIO3somKfMvEfTKKeaW85jwen6-8DFaw9UUZOqslCnC6xP3Pl_sozpqO3_IMGwMA8bVB8LljPiB6V41QAdUpLPNCL82RbHINIFgkvw9Jqkq4Uxjx4Vq5rfjFv5jRFbrnF2TA3HBdEB8EUhP3lJcufdS48QvKKThjgvXT9T28I9LykMOhspgSK4g-MLPv_ngOP-grCLAoqcWPvu07QmghC0UpttI4cPuuLEQUs8sUXZLSYIbsFzKWn9vNDVrIP9_7EPtCejB018biPL5Sd97x_6q7FAOV4edCX9kd7kIxF2TmK9QDzNMioC-c-9dNRLWD-ZXLJVeg1afsdQyFy9sPLWq7rgxfRgVnyDJA81LWg0L_jjZr9Cl-gmf_9keYQpA0aDWgeKFqOIFWviViOPs_jp-raL9JyVk=s250-no"
+                    alt="" id="wwtreeLogo"></a>
+            <p>William Word Tree Services is a business website built for a local tree servicing company. </p>
+        </div>
     </div>
     <!--Work Examples Section Ends-->
 
     <!--Research Section Starts-->
     <div class="research-section">
         <h1>Research</h1>
-        <div id="research-typed-element-container"><div id="research-typed-element"></div> <span id="typed"></span></div>
+        <div id="research-typed-element-container">
+            <div id="research-typed-element"></div> <span id="typed"></span>
+        </div>
         <div class="research-item-section">
-<a href="https://www.tensorflow.org/js/" target="_blank"><img src="https://lh3.googleusercontent.com/AD6nsZ4SwqVUJYZNnfRdXI6sKfsi0megZcoJeAqt3S3nws3HPnhg2CwPYgRfue08RZMFIva9blyUnm_xWvGWmCseGcBPBZkgHJdrS2E49GhR4-lqSdqUw7yixzEG9tKJrPnKbu_bTyP4edZY2GGKQyrXxsVas9CB9RIvfRtZPsMCKZXmpEmHLmBZWdO8PfM347rfK6Y3PXCQsMYvX_p7s2BtIKiWX43QgXwgWo9EzRUMl2E_PtLRntlMDodU2A_4xxIObcQSk83tiNJpb-dbqT4oP-bblM1F88P1ASkL8Ew7yWS0svM1RroqDt4lm7IVIh5GJEmlxPeWTwRC3Ifil00y3WPElApxKHki8dMaNQe-loRb1NcFWZTiO3Oe3ySKEvQeAht1636sCoRwJl8kO7RutpCpRK7YMo2NBu-vSdQSWW4IIgcl4T7dXAnQgVxdC9CK8F0S-e7a8Osql3_XKvFel803pH0ZR9TdOL1gzVSJrLz0qJOqs-GqBNw8v0SKYXgSvJEDrSL637YOUT83Pp4LlbMiPWnEut3JOXnjCTamL_yNoi5nUJprxMNwuqSb7tyZtQkWiibM1i9QD1AbjYsx86nmoGJ7ZfXep8sdFRkcUNwverh9A97BsLb7oezWK7wnUmCSHus6gMOrbxKjdXkNDy1vLL6QkOTM2nov2KAkIBYdoWwWysE=s500-no" alt="" class="sticky-note"></a>
-<a href="https://dotnet.microsoft.com/" target="_blank"><img src="https://lh3.googleusercontent.com/GPkGyq3u1g8YdfRyBHXLF8qoxUwuofl215mOTtTMIBIjjOzy1im37SxWGQ1HzPgsIanHluLkiFnXgobpnXrZkDSJZ62fqUBZAMQwhui85DLbNa5lXwOTk-e-MHjuPAGIMz4Wfa1zoP9puXaYUPF0aWiyAWX-sU-ornD8P1olRp3-ocJNTHJy23KH6Rirtw28r5YxBgw0Clus66Dg2NkjrD6HbClNd9LUVcFh0pIb2eXCHe8muiZoIgrOZle1JT4kHdcnw6qhUmGg52Y7xdu5OmTALX4MOowqmDfP0XVY5M4QC9wcmYYpUEfVsz8qdqF445HbIdeQW_vObYEW-GcajGVetx1y-AQmPsENXoBxQFplK2yt6t-9XuxB2iA8Ycrg8a6a5WztXTvktFILWtNeOtGpzF9jdenmG1nKAqa91ygkp87qOn_o8ZBe-Lrp7rayU1haPPP-zYu5JT3o242409N4tvgWtgnjaNwOoBSCZhLJcxLrU07JxBDk8GWRbxcVu6N_hZs3uTvDU2sPVNn9eG44-cZMt7WYg9ru_4EBPf0FI81OKa078kcmEMqBpLbyvo_q1iklMOVSr0KdYyymBnrqpa3HyqNkXZMDFGYgNXHzSPeQ3ICoVzzOL8g_POTFn24L3f-jpPMX6kQDPPVfXK2EHE9YplJrgRfxRPjVfBLVvMmB9LF9XkI=s500-no" alt="" class="sticky-note"></a>
-<a href="https://www.ibm.com/watson/developer" target="_blank"><img src="https://lh3.googleusercontent.com/f0r5TX3J8NOUpQ0iqC-udlzNGuCPcl8ZUdgkhRF3DtYT9BAZbGovHj3wqU-xzty9l7T65lrCJTGLElGERi8fcyllDWvxD3kzX__m89d6cV53GYaw0gNI2Fdq0G42owkZcWhs44OPHfptqsvS-_xMbKMzkIcAM8dYLWoLXxpyGYk32XWOVQnEnhQ2Fnwm3DCDvrJffJYu3kz98_R3IDh9bRiEAuxivMIO9cn12vMkw13JDtgkdyleQpqBf06OSu5fR_LV6BLXiIcYI5hkzqBiSaIE-QTR8ogsQOMzd9JgF3HYmX-0h-o6-p54Mvbjfi_vF2E9LcDj1ulNRNxZZKdFy8Xs1henrBz6eg5uHwzt6qUQZgXf67SwjMfEpr6j4NK59cKzYyvtCnvAyaMLQi60oCDFRjCuc5dz95AJ2KzZ4RvWdSS6VYZvOkOsElEDqze8RaAf8jSettZO126iRNsBdHpXoxAuClNTB3UCJEY-BV1hPjixZJciC2m01nVJS301YVBMP1CEqvCX39-9oKVycEGex1sav-LXBC-SS75bvmFCnx_-ms41A1cUOWcQrzVTOPJ0NIPHiESQOXxmZg_WxefnXQQif_qUjGn__3gFTazBAAd2-x2u17FWHGI4J1vDuIij8YdL_Dr0SHoboTvRR0pXvsz-oOXoFI8CE5xAfRaxLOOLsFqaVt4=s500-no" alt="" class="sticky-note"></a>
-<a href="https://threejs.org/" target="_blank"><img src="https://lh3.googleusercontent.com/uaNKZ-WfY7oMp6fMcjlWEUpSqsoBkg1ampBXr3Gc6AGZDJgNVxBr-c0TbfsGZoxWudM8fmyAjc6f9zKjZ4bpjbdaI_Ik7qp_4XhSnHYkHf02OnzZCN57YQXDn3G0aRTgdC1Ye_nKJnld8b9WBU6hpW7_PBunHmVVQvtuHkkUflIqdub1ziZyKAfo6_bDnzqoiyJEc7Hll3TsMtoYddksEI1Tsj-9j7JAVD_BXw3yUYw0ir-buKdf4j9Wkwt9gsY4Ffg0WSrv-krBNP76HEMdGq1g8fggTnJ8dtapx3AfwWlHEOsVUMTHJMW_csTDZDYF-gZOQs64twHtCLT2_q1N5ginrZhw-kucudk7J8aHucVEninyRifMyE8ZBEgZdbEPd64rGNT7iW43FjRNrrkKHL_hu0BfA1Q9BYOoNNEOhrTl_Uup2vQaFjw1kcOSQ7gcaifZ98WilTejxdiSo8zfhP94UUc5gbYxAbI280Wec2BmbpTK1rsyBXCZyCoU5w0jFANxfcoz20M7GtucHWxsayNY9d4S1ZoKfYNWh3f7vXZe-D-TIK79yto0zk62B9SQiTttyMTvi--MZ_f1Bod_25YkACC5OVzTDWPhdwKVmopKLQ6wf_87w8scPXnDhbNoLJSYnXtgg8R5B4TYOlrm8DuOAjiP823NPlWGKvImaMbJMRjRZxwi54U=s500-no" class="sticky-note" alt=""></a>
-</div>
-       
+            <a href="https://www.tensorflow.org/js/" target="_blank"><img
+                    src="https://lh3.googleusercontent.com/AD6nsZ4SwqVUJYZNnfRdXI6sKfsi0megZcoJeAqt3S3nws3HPnhg2CwPYgRfue08RZMFIva9blyUnm_xWvGWmCseGcBPBZkgHJdrS2E49GhR4-lqSdqUw7yixzEG9tKJrPnKbu_bTyP4edZY2GGKQyrXxsVas9CB9RIvfRtZPsMCKZXmpEmHLmBZWdO8PfM347rfK6Y3PXCQsMYvX_p7s2BtIKiWX43QgXwgWo9EzRUMl2E_PtLRntlMDodU2A_4xxIObcQSk83tiNJpb-dbqT4oP-bblM1F88P1ASkL8Ew7yWS0svM1RroqDt4lm7IVIh5GJEmlxPeWTwRC3Ifil00y3WPElApxKHki8dMaNQe-loRb1NcFWZTiO3Oe3ySKEvQeAht1636sCoRwJl8kO7RutpCpRK7YMo2NBu-vSdQSWW4IIgcl4T7dXAnQgVxdC9CK8F0S-e7a8Osql3_XKvFel803pH0ZR9TdOL1gzVSJrLz0qJOqs-GqBNw8v0SKYXgSvJEDrSL637YOUT83Pp4LlbMiPWnEut3JOXnjCTamL_yNoi5nUJprxMNwuqSb7tyZtQkWiibM1i9QD1AbjYsx86nmoGJ7ZfXep8sdFRkcUNwverh9A97BsLb7oezWK7wnUmCSHus6gMOrbxKjdXkNDy1vLL6QkOTM2nov2KAkIBYdoWwWysE=s500-no"
+                    alt="" class="sticky-note"></a>
+            <a href="https://dotnet.microsoft.com/" target="_blank"><img
+                    src="https://lh3.googleusercontent.com/GPkGyq3u1g8YdfRyBHXLF8qoxUwuofl215mOTtTMIBIjjOzy1im37SxWGQ1HzPgsIanHluLkiFnXgobpnXrZkDSJZ62fqUBZAMQwhui85DLbNa5lXwOTk-e-MHjuPAGIMz4Wfa1zoP9puXaYUPF0aWiyAWX-sU-ornD8P1olRp3-ocJNTHJy23KH6Rirtw28r5YxBgw0Clus66Dg2NkjrD6HbClNd9LUVcFh0pIb2eXCHe8muiZoIgrOZle1JT4kHdcnw6qhUmGg52Y7xdu5OmTALX4MOowqmDfP0XVY5M4QC9wcmYYpUEfVsz8qdqF445HbIdeQW_vObYEW-GcajGVetx1y-AQmPsENXoBxQFplK2yt6t-9XuxB2iA8Ycrg8a6a5WztXTvktFILWtNeOtGpzF9jdenmG1nKAqa91ygkp87qOn_o8ZBe-Lrp7rayU1haPPP-zYu5JT3o242409N4tvgWtgnjaNwOoBSCZhLJcxLrU07JxBDk8GWRbxcVu6N_hZs3uTvDU2sPVNn9eG44-cZMt7WYg9ru_4EBPf0FI81OKa078kcmEMqBpLbyvo_q1iklMOVSr0KdYyymBnrqpa3HyqNkXZMDFGYgNXHzSPeQ3ICoVzzOL8g_POTFn24L3f-jpPMX6kQDPPVfXK2EHE9YplJrgRfxRPjVfBLVvMmB9LF9XkI=s500-no"
+                    alt="" class="sticky-note"></a>
+            <a href="https://www.ibm.com/watson/developer" target="_blank"><img
+                    src="https://lh3.googleusercontent.com/f0r5TX3J8NOUpQ0iqC-udlzNGuCPcl8ZUdgkhRF3DtYT9BAZbGovHj3wqU-xzty9l7T65lrCJTGLElGERi8fcyllDWvxD3kzX__m89d6cV53GYaw0gNI2Fdq0G42owkZcWhs44OPHfptqsvS-_xMbKMzkIcAM8dYLWoLXxpyGYk32XWOVQnEnhQ2Fnwm3DCDvrJffJYu3kz98_R3IDh9bRiEAuxivMIO9cn12vMkw13JDtgkdyleQpqBf06OSu5fR_LV6BLXiIcYI5hkzqBiSaIE-QTR8ogsQOMzd9JgF3HYmX-0h-o6-p54Mvbjfi_vF2E9LcDj1ulNRNxZZKdFy8Xs1henrBz6eg5uHwzt6qUQZgXf67SwjMfEpr6j4NK59cKzYyvtCnvAyaMLQi60oCDFRjCuc5dz95AJ2KzZ4RvWdSS6VYZvOkOsElEDqze8RaAf8jSettZO126iRNsBdHpXoxAuClNTB3UCJEY-BV1hPjixZJciC2m01nVJS301YVBMP1CEqvCX39-9oKVycEGex1sav-LXBC-SS75bvmFCnx_-ms41A1cUOWcQrzVTOPJ0NIPHiESQOXxmZg_WxefnXQQif_qUjGn__3gFTazBAAd2-x2u17FWHGI4J1vDuIij8YdL_Dr0SHoboTvRR0pXvsz-oOXoFI8CE5xAfRaxLOOLsFqaVt4=s500-no"
+                    alt="" class="sticky-note"></a>
+            <a href="https://threejs.org/" target="_blank"><img
+                    src="https://lh3.googleusercontent.com/uaNKZ-WfY7oMp6fMcjlWEUpSqsoBkg1ampBXr3Gc6AGZDJgNVxBr-c0TbfsGZoxWudM8fmyAjc6f9zKjZ4bpjbdaI_Ik7qp_4XhSnHYkHf02OnzZCN57YQXDn3G0aRTgdC1Ye_nKJnld8b9WBU6hpW7_PBunHmVVQvtuHkkUflIqdub1ziZyKAfo6_bDnzqoiyJEc7Hll3TsMtoYddksEI1Tsj-9j7JAVD_BXw3yUYw0ir-buKdf4j9Wkwt9gsY4Ffg0WSrv-krBNP76HEMdGq1g8fggTnJ8dtapx3AfwWlHEOsVUMTHJMW_csTDZDYF-gZOQs64twHtCLT2_q1N5ginrZhw-kucudk7J8aHucVEninyRifMyE8ZBEgZdbEPd64rGNT7iW43FjRNrrkKHL_hu0BfA1Q9BYOoNNEOhrTl_Uup2vQaFjw1kcOSQ7gcaifZ98WilTejxdiSo8zfhP94UUc5gbYxAbI280Wec2BmbpTK1rsyBXCZyCoU5w0jFANxfcoz20M7GtucHWxsayNY9d4S1ZoKfYNWh3f7vXZe-D-TIK79yto0zk62B9SQiTttyMTvi--MZ_f1Bod_25YkACC5OVzTDWPhdwKVmopKLQ6wf_87w8scPXnDhbNoLJSYnXtgg8R5B4TYOlrm8DuOAjiP823NPlWGKvImaMbJMRjRZxwi54U=s500-no"
+                    class="sticky-note" alt=""></a>
+        </div>
+
     </div>
     <!--Research Section Ends-->
 

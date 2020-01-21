@@ -1,4 +1,12 @@
 /*Navbar*/
+$(document).ready(function() {
+
+  $(".fancybox").fancybox({
+    width  : 600,
+    height : 300,
+    type   :'iframe'
+});
+});
 
 
 /*Navbar End*/
@@ -123,6 +131,19 @@ particlesJS.load('particles-jsResearch', './particles3.json', function () {
 })
 
 /*Skills Sections Ends*/
+/*Certificates Section Starts*/
+var borderCounter = 0;
+$(window).on('resize scroll', function () {
+  $('.certificates-section').each(function () {
+    if ($('.certificates-section').isInViewport()) {
+borderCounter++;
+if (borderCounter <= 1){
+  $('.certificates-section').css("transition", "border 5s");
+$('.certificates-section').css("border", "solid red 1px");
+}
+    }}
+    )});
+/*Certificates Section Starts*/
 /*Animation Section Start*/
 $(window).on('resize scroll', function () {
   $('.animation-trigger').each(function () {
@@ -175,3 +196,13 @@ var counterFour = 0;
 
 var counterFive = 0;
 /*Skills Section*/
+$(document).ready(function() {
+  /* Apply fancybox to multiple items */
+  
+  $("a.iframe").fancybox({
+  'width': 640, // or whatever you want
+  'height': 480, // or whatever you want
+  'type': 'iframe'
+  });
+  
+  });

@@ -1,25 +1,28 @@
 /*Font Imports Start*/
 
-@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display|Gelasio|Ibarra+Real+Nova|Source+Sans+Pro|VT323&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display|Gelasio|Ibarra+Real+Nova|Source+Sans+Pro|VT323|Libre+Caslon+Text|PT+Sans|Poppins&display=swap');
 
 /*Font Imports End*/
 /*Font Globals Start*/
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Major Mono Display';
 }
 
 p {
-  font-family: 'Ibarra Real Nova';
+  font-family: 'Libre Caslon Text';
   margin-bottom: 0px;
   font-size: 16px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 414px) {
   p {
     font-size: 16px;
-    width: 80%;
+
     text-align: center;
   }
 }
@@ -30,6 +33,8 @@ p {
 
 /*Font Globals Start*/
 /*Globals Start*/
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -58,7 +63,7 @@ html {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   align-content: center;
 }
@@ -184,8 +189,11 @@ html {
   justify-content: center;
   align-items: center;
   align-content: center;
-  background-color: #c2c2c2;
-  height: 325px;
+  background-image: url('https://lh3.googleusercontent.com/x3-t8_mOlmKZ-unY0osVg1PfY-nAkbPlcvXiHgDgU8X_X0swig6oWqyWh_paGbGCuQeS0hk6q-7ODjTjkpHaYT6TeV05Ckoics-Whu0YnMvirY-5ZAklCugzRxTxlxdIyiGEUgAJl1FHujYG6ZjSD3Pm9JvRkCMUK2lRPtDUlRi_mQn5F-UxmsBEOLsvd398vQn1E488a4IVZ9CtLuQh_k8H5HSwcm9sLBWJz0TEyeqnR4pL7IMnWPIHYi4r76LDmPwY6JzN0I5Axz-y2W69XhIQg6HlHId7ac0GScY356EXuVqQwl8ng3DMgvy1Vh1WlOV2HKEdjvjBG2DhCGk-NNGoUf80k5FfQTTn0CFgJFyXbRXZnTIt1jA3NH8GG9MG55_gohuN19gW0WZrV6bOTljbH9mdwSkBQdCZ0Ioa9-PkmvxtxiSMwzJDlqmvBrBCL3oojVPhk1jyU9xzi74Wtz8DReC_aWKpo38fMrhZ_9SrbRBjKKQ1S0ouPmYp_YqGTWUxbWPQzFm96cgAMcVRPPZ30HKpp97xsC_tB4nqswL3lWCtKe9TaQ694FF-wDpcbTFp80SP_SEAeC7F1hTdIlU5CPLemkZ06epYGRNTZmvH_1lqbMUFoRt_BwaoDmdHf5-FICueZBI5atzJs4Y4eoE9YGA8676hk6ajEJ8Hod5ySwHwcYOyhQM=w1362-h851-no');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: 25% 100%;
 }
 
 #heroLogo {
@@ -197,8 +205,8 @@ html {
 }
 
 #profilePic {
-  width: 125px;
-  height: 125px;
+  width: auto;
+  height: 20vh;
   border-radius: 50%;
   margin-top: 5%;
   opacity: 0;
@@ -233,6 +241,8 @@ html {
   justify-content: center;
   align-items: center;
   align-content: center;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
 }
 
 .skill-section-img-left-section {
@@ -243,6 +253,8 @@ html {
   justify-content: center;
   align-items: center;
   align-content: center;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
 }
 
 .skill-section-img-right {
@@ -253,30 +265,31 @@ html {
   align-items: center;
   align-content: center;
   text-align: center;
-  width: 45vh;
+  width: 40vw;
   height: 45vh;
   border: solid black 2px;
-
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
 }
 
 #particles-js {
   z-index: -200;
   position: absolute;
-  width: 45vh;
+  width: 40vw;
   height: 45vh;
 }
 
 #particles-jsTwo {
   z-index: -200;
   position: absolute;
-  width: 45vh;
+  width: 40vw;
   height: 45vh;
 }
 
 #particles-jsThree {
   z-index: -200;
   position: absolute;
-  width: 45vh;
+  width: 40vw;
   height: 45vh;
 }
 
@@ -288,11 +301,12 @@ html {
   align-items: center;
   align-content: center;
   text-align: center;
-  width: 45vh;
+  width: 40vw;
   height: 45vh;
   border: solid black 2px;
   background-size: contain;
-
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
 }
 
 .skill-section-img-right-text-area {
@@ -302,16 +316,17 @@ html {
   align-items: center;
   align-content: center;
   text-align: center;
-  width: 45vh;
+  width: 40vw;
   height: 45vh;
   border: solid black 2px;
   margin: 10px;
-
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
 }
 
 .skill-section-img-right-text-area p {
   line-height: 2px;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 
@@ -323,25 +338,27 @@ html {
   align-items: center;
   align-content: center;
   text-align: center;
-  width: 45vh;
+  width: 40vw;
   height: 45vh;
   border: solid black 2px;
   margin: 10px;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
 
 }
 
 .skill-section-img-left-text-area p {
   line-height: 2px;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 @media (max-width: 500px) {
   .skill-section-img-left-text-area p {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .skill-section-img-right-text-area p {
-    font-size: 14px;
+    font-size: 16px;
   }
 
 }
@@ -404,8 +421,8 @@ html {
   text-align: center;
   width: 100%;
   background-color: #c2c2c2;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
 }
 
 .experience-section-companies {
@@ -488,7 +505,7 @@ html {
   align-items: center;
   align-content: center;
   padding-bottom: 10%;
-  border: solid red 1px;
+  border: solid transparent 1px;
   padding: 2.5%;
 }
 
@@ -518,6 +535,21 @@ html {
 }
 
 /*Certificates Section Ends*/
+/*Resume Section Start*/
+.resume-section {
+  width: 100%;
+  height: 250px;
+  border: solid red 1px;
+  padding: 2.5%;
+  margin: 2.5%;
+
+}
+#resume-icon {
+  width: auto;
+  height: 10vh;
+}
+/*Resume Section Ends*/
+
 
 /*Work Examples Section Start*/
 .work-examples-section {
@@ -527,8 +559,10 @@ html {
   justify-content: center;
   align-items: center;
   align-content: center;
-  margin-bottom: 5%;
-  margin-top: 2.5%;
+  border: solid 1px blue;
+  padding: 2.5%;
+  margin: 2.5%;
+
 
 }
 
@@ -565,26 +599,28 @@ html {
   justify-content: center;
   align-items: center;
   align-content: center;
-  height: 400px;
+  height: 70vh;
   border: solid rgb(118, 162, 212) 1px;
-  margin: 5%;
+  margin-bottom: 2.5%;
   text-align: center;
-  
 }
+
 .sticky-note {
   width: 250px;
   height: 250px;
 }
 
-@media (max-width: 500px){
+@media (max-width: 500px) {
   .research-section {
     height: 1150px;
   }
+
   #research-typed-element-container {
     min-height: 50px;
   }
 
 }
+
 .research-section p {
   width: 80%;
   margin-bottom: 5%;
@@ -598,6 +634,7 @@ html {
   align-items: center;
   align-content: center;
 }
+
 .research-item-section p {
   width: 50%;
   text-align: left;
@@ -610,12 +647,14 @@ html {
   margin-right: 5%;
   margin-top: -5%
 }
+
 #ibmWatsonIcon {
   width: 100px;
   height: 75px;
   margin-right: 5%;
   margin-top: -5%;
 }
+
 #threeJSIcon {
   width: 100px;
   height: 50px;
@@ -665,3 +704,19 @@ html {
 }
 
 /*Footer Section Stop*/
+
+/*Tutoring Starts*/
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.tutor-contact-form {
+  height: 50vh;
+}
+
+/*Tutoring Stops*/
