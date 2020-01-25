@@ -13,8 +13,8 @@ $("#menu-icon-section").click(function (event) {
     });
     anime({
         targets: '#navbar',
-        translateX: 0,
-        duration: 1000,
+        translateX: 102,
+        duration: 750,
         rotate: 8
 
     });
@@ -30,7 +30,7 @@ $("#menu-icon-section").click(function (event) {
 $(document).click(function () {
         anime({
             targets: '#navbar',
-            translateX: 202,
+            translateX: 402,
             rotate: 0
         });  
         $('#hero-section').css("opacity", "1")
@@ -43,7 +43,6 @@ $(document).click(function () {
 })
 
     $("#navbar").click(function (event) {
-        alert('clicked inside');
         event.stopPropagation();
     });
 

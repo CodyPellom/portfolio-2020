@@ -27,25 +27,24 @@ html, body {
 /*-----*/
 /*Navbar Starts*/
 #navbar{
-    transition-duration: 0.25s;
-    background-image: url('https://lh3.googleusercontent.com/2Sz-1vJ7sytOOebLKaK3tPckEPFji-kqA8TadNi-SdHbDi72Hu2A5QW-3pdrVAHGR7Y_KwDZGotCmu-6RJk6xfOMUEfpTdvdTdq7HY_6nvSavxJnUUYEGbCNmk6aYyeICauxDmzHeaNOo3QF9CafnJ3TRY3LM9hCafuLn5G6CQURYbd20oY8dNtwdWvFpfNwaqH50TuoAMjULYG4r9jARQ0y_Z-n6iQCexTGXh4bgwtIXT25Zldp3PvGGDpcebp82uIsB9lkgOp5rUJU-Yfj_S7HzCtgZSCgU91-WX3dh1jD_ijiRbf1Hoo3rXXH3eeg238oca_l7_EkQ_LkdJCaFUMw1_HzpEX5zjNni-W3rmdq-SW-5r-78sWnabmEfIdDP8QqIm9QhwfVEWBKCJabg37jq514AQOKHAuXhrrCWh5QYnWdHXC5mQF-_Gw_cnwGFdyZDOWNAJdwENsfEBMfthERuCXUyisOmM0VemmGuTEqWGQ2MSAxeG2HNmrQ2FzBjQsK5vPnLL6Sac8fP3AIdVwyUPR_MEOMDNzBn1whY6voYEV4AuthuWm93_kBxIMq_D6X_hvcwveAax5Jx56NKomLShO1TjtKufj4pjgxWxJ05bo1MiiMfQzQq_Ul6SvRGHlIskTrY7UAvAWU-yAO2_TjGBFxXTFIM5B8sGbrWtCBFMF5vl1kuco=w300-h800-no');
-background-repeat: no-repeat;
-background-size: contain;
-height: 100%;
-width: 202px;
-position: fixed;
+height: 350px;
+width: 450px;
+position: fixed;;
 right: 0;
-transform: translateX(202px);
+background-image: url('https://lh3.googleusercontent.com/RM2SOFBsF4gu08dgEWPfGt3iJspG5tokcYGa8GTAX4Su_lJXgh5U9QZyBowaGHnJRmsHWiqNgjGr-Cqei9NBkec4QVJSpuqR2fBYfg2K0HwrKXx6suU5Qeien9BQMcLJ19_mJ9cqv87poRCQmbn5FT8OSmjnMInEZZvdOMFEtLJM46sAeiITikpgAJDERB5xoX6aI16g5F7FwpC5ijO4LfNs11uawMX-etA56qcHtzr6iH0rWvvKS_brt4phOwm2eiWMeVhO0H-dKZJpmE4ql8WviHzWgdo8n2h63Fs-71vq7MsMHp5CBksQIJSs_Km4J17SE75sWto2gfjGrYs3J4r85jQe93k9TlVLUiQg9zN3lhZZ3jhbe3zNID7OR0XGwta1JTKeKfWbbot425b8L_0rDXMoSUIJuOxx0D1ddXbdMO_O2qsOZVU7bCCXOPn6YVqzLKey5FUnq8TDD37wjT3-8Me_zEHZ7TRqiaYClW1TIPuqjw6R9MGIkTE-JASgsoqpPgCU_w-lKsrPpEIUgPUl8bV1i4U4SoWcGytV0swI--9OQl_KxpM_dN2yD0g1lDlFWDCCTOKjgsilQFOleIc4pvT6eY9_sWByN9JELxouibESNv-avXYwchcm9xE7kA-3lYCM4QENQyVYrcDV8G-zcIdqpRfu70opj0wWcrHmAutSNVcmfqU=w840-h859-no');
+background-size: 100% 100%;
+transform: translateX(502px);
        transform:rotate(10px);
        z-index: 1;
 
 }
+
 .nav-row{
     width: 100%;
     position: relative;
 transform: rotate(3deg);
-
 }
+
 /*Bebas+Neue|Inconsolata|Oswald|Special+Elite*/
 .nav-link {
 font-size: 35px;
