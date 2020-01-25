@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Inconsolata|Oswald|Special+Elite&display=swap');
+
+/*-----*/
+html, body {
+    background-color: black;
+}
+/*Globals Start*/
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+}
+.flex-column {
+    display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+    align-content: stretch;
+    height: 100%;
+}
+/*Globals End*/
+/*-----*/
+
+/*-----*/
+/*Navbar Starts*/
+#navbar{
+    transition-duration: 0.25s;
+    background-image: url('https://lh3.googleusercontent.com/2Sz-1vJ7sytOOebLKaK3tPckEPFji-kqA8TadNi-SdHbDi72Hu2A5QW-3pdrVAHGR7Y_KwDZGotCmu-6RJk6xfOMUEfpTdvdTdq7HY_6nvSavxJnUUYEGbCNmk6aYyeICauxDmzHeaNOo3QF9CafnJ3TRY3LM9hCafuLn5G6CQURYbd20oY8dNtwdWvFpfNwaqH50TuoAMjULYG4r9jARQ0y_Z-n6iQCexTGXh4bgwtIXT25Zldp3PvGGDpcebp82uIsB9lkgOp5rUJU-Yfj_S7HzCtgZSCgU91-WX3dh1jD_ijiRbf1Hoo3rXXH3eeg238oca_l7_EkQ_LkdJCaFUMw1_HzpEX5zjNni-W3rmdq-SW-5r-78sWnabmEfIdDP8QqIm9QhwfVEWBKCJabg37jq514AQOKHAuXhrrCWh5QYnWdHXC5mQF-_Gw_cnwGFdyZDOWNAJdwENsfEBMfthERuCXUyisOmM0VemmGuTEqWGQ2MSAxeG2HNmrQ2FzBjQsK5vPnLL6Sac8fP3AIdVwyUPR_MEOMDNzBn1whY6voYEV4AuthuWm93_kBxIMq_D6X_hvcwveAax5Jx56NKomLShO1TjtKufj4pjgxWxJ05bo1MiiMfQzQq_Ul6SvRGHlIskTrY7UAvAWU-yAO2_TjGBFxXTFIM5B8sGbrWtCBFMF5vl1kuco=w300-h800-no');
+background-repeat: no-repeat;
+background-size: contain;
+height: 100%;
+width: 202px;
+position: fixed;
+right: 0;
+transform: translateX(202px);
+       transform:rotate(10px);
+       z-index: 1;
+
+}
+.nav-row{
+    width: 100%;
+    position: relative;
+transform: rotate(3deg);
+
+}
+/*Bebas+Neue|Inconsolata|Oswald|Special+Elite*/
+.nav-link {
+font-size: 35px;
+text-decoration: none;
+color: black;
+font-family: 'Special Elite';
+margin: 0 0 5px 0;
+
+}
+.nav-link:hover {
+    color: gray;
+}
+#menu-icon-section {
+right: 10px;
+top: 10px;
+position: fixed;
+z-index: 1;
+}
+/*Navbar Ends*/
+/*-----*/
+/*Hero Section*/
+#hero-section {
+    background-image: url('https://lh3.googleusercontent.com/EO8Vs3zLs-KfmJJvsDUl7WC3i81U3eJkujocXspR3hwbA3gsulfaQ4Lr9Yz-F58yhxOaaTMUwXu2ci_gny3sw-HKoRG4pKBVEauy171a861QPfLc9RX2ZVYsMYkIAU7mrVopTzffijQS8MhX9CT-XGAadaG09riy_HavwCQ2w9F7CTaeea8tAIFPCdqwiFLLTLG86cHiO2gZq1lWzYMni7EvYMNQnpAcOfjcqv9QWl-1qXAKUoJJQbNnTMr_PNXOjVmB9cx0mB8tTYYC8GyRKxZDUPK9_RPCMiZhAO30Ykv40ZRTlcXcIQBRh8ZqmdR4LcpyQpbkN59b-wbI7cqiQemWyyZFsa3FgVnAUvZlmuC_jY7AT8Lc3XNRfOU-pm4cd8M8atWzE9r1dbbfgIJehCyq7znYW81uQvNlTXzBADb9EDyDw7y4ZLzIPQZpVoAfFn2aAxguK9y8ppDNcFjD_O6juwqfpjA1VCucMqZkBibNtIU6HelX_Erzd25HYMrs6N_MWzoGxiJJeZF31-mBCyzAQK0AvAjzVbNRgpj0RYkK6FIOA9zecaxO0ZFaul9ZdR254oejJxzWwnaGaC6vPOE2ZYa3806F5Mk0DxkaF4PNtelVocipfJqcrMwoxwdtBlTmWrlAHFqmo92YIKcDCI0DwPkDAd-4sTNa3d-X0ZZ6nu9CYsAyDLg=w1512-h851-no');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 0;
+}
+/*Hero Section Ends*/

@@ -196,8 +196,8 @@ html {
   position: absolute;
   right: 0;
   bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+  min-width: 100vw;
+  min-height: 100vh;
 }
 .videoContent {
   display: flex;
@@ -208,6 +208,9 @@ html {
   align-content: center;
   
 
+}
+.hero-section h1 span{
+  font-size: 48px;
 }
 @media(max-width: 500px){
 .hero-section h1 span{
@@ -605,7 +608,7 @@ html {
   margin-right: 25px;
 }
 #certTwo {
-  width: 200px;
+  width: 150px;
   height: auto;
   margin-top: 5%;
 }
@@ -635,10 +638,7 @@ html {
 
 }
 
-#resume-icon {
-  width: auto;
-  height: 10vh;
-}
+
 
 /*Resume Section Ends*/
 
@@ -653,7 +653,8 @@ html {
   align-content: center;
   border: solid 1px blue;
   padding: 2.5%;
-  margin: 2.5%;
+  margin-top: 5%;
+  margin-bottom: 7.5%;
   width: 80vw;
   background-color: #c2c2c2;
   color: white;
@@ -698,6 +699,11 @@ html {
   border: solid rgb(118, 162, 212) 1px;
   margin-bottom: 2.5%;
   text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+
 }
 
 .sticky-note {
