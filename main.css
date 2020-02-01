@@ -30,6 +30,11 @@ p {
 #disabled-link {
   color: #c2c2c2;
 }
+@media (max-width:414px){
+  #tutoring-link {
+    display: none;
+  }
+}
 
 /*Font Globals Start*/
 /*Globals Start*/
@@ -426,6 +431,15 @@ html {
   line-height: 2px;
 
 
+}
+#skills-header {
+  position: absolute;
+}
+#language-header {
+  position: absolute;
+}
+#framework-header {
+  position: absolute;
 }
 
 #skillsFrameworksText {

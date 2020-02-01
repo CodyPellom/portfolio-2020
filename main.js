@@ -1,11 +1,11 @@
 /*Navbar*/
-$(document).ready(function() {
+$(document).ready(function () {
 
   $(".fancybox").fancybox({
-    width  : 600,
-    height : 300,
-    type   :'iframe'
-});
+    width: 600,
+    height: 300,
+    type: 'iframe'
+  });
 });
 
 
@@ -136,13 +136,14 @@ var borderCounter = 0;
 $(window).on('resize scroll', function () {
   $('.certificates-section').each(function () {
     if ($('.certificates-section').isInViewport()) {
-borderCounter++;
-if (borderCounter <= 1){
-  $('.certificates-section').css("transition", "border 5s");
-$('.certificates-section').css("border", "solid red 1px");
-}
-    }}
-    )});
+      borderCounter++;
+      if (borderCounter <= 1) {
+        $('.certificates-section').css("transition", "border 5s");
+        $('.certificates-section').css("border", "solid red 1px");
+      }
+    }
+  })
+});
 /*Certificates Section Starts*/
 /*Animation Section Start*/
 $(window).on('resize scroll', function () {
@@ -175,18 +176,138 @@ var typedCounter = 0;
 $(window).on('resize scroll', function () {
   $('#research-typed-element').each(function () {
     if ($('#research-typed-element').isInViewport()) {
-typedCounter++;
-if (typedCounter <= 1){
-var typed = new Typed('#typed', {
-  strings: ['Here are some examples of the areas of web development and software engineering that interest me the most!','Click on the sticky notes to find out more!'],
-  typeSpeed: 50,
-  backSpeed: 15,
-  backDelay: 1000,
-  showCursor: false,
-  
-});
-}
-    }})})
+      typedCounter++;
+      if (typedCounter <= 1) {
+        var typed = new Typed('#typed', {
+          strings: ['Click the examples to find out more!'],
+          typeSpeed: 50,
+          backSpeed: 15,
+          backDelay: 1000,
+          showCursor: false,
+
+        });
+      }
+    }
+  })
+})
+
+
+var headerCounter1 = 0;
+$(window).on('resize scroll', function () {
+  $('#skills-header').each(function () {
+    if ($('#skills-header').isInViewport()) {
+      headerCounter1++;
+      if (headerCounter1 <= 1) {
+        var typed = new Typed('#skills-header', {
+          strings: ['Skills'],
+          typeSpeed: 100,
+          backSpeed: 15,
+          backDelay: 1000,
+          showCursor: false,
+
+        });
+      }
+    }
+  })
+})
+
+var headerCounter2 = 0;
+$(window).on('resize scroll', function () {
+  $('#language-header').each(function () {
+    if ($('#language-header').isInViewport()) {
+      headerCounter2++;
+      if (headerCounter2 <= 1) {
+        var typed = new Typed('#language-header', {
+          strings: ['Languages +'],
+          typeSpeed: 100,
+          backSpeed: 15,
+          backDelay: 1000,
+          showCursor: false,
+
+        });
+      }
+    }
+  })
+})
+
+var headerCounter3 = 0;
+$(window).on('resize scroll', function () {
+  $('#framework-header').each(function () {
+    if ($('#framework-header').isInViewport()) {
+      headerCounter3++;
+      if (headerCounter3 <= 1) {
+        var typed = new Typed('#framework-header', {
+          strings: ['Frameworks / <br/> Libraries'],
+          typeSpeed: 100,
+          backSpeed: 15,
+          backDelay: 1000,
+          showCursor: false,
+
+        });
+      }
+    }
+  })
+})
+
+
+var headerCounter4 = 0;
+$(window).on('resize scroll', function () {
+  $('#certificates-header').each(function () {
+    if ($('#certificates-header').isInViewport()) {
+      headerCounter4++;
+      if (headerCounter4 <= 1) {
+        var typed = new Typed('#certificates-header', {
+          strings: ['Certificates'],
+          typeSpeed: 100,
+          backSpeed: 15,
+          backDelay: 1000,
+          showCursor: false,
+        });
+      }
+    }
+  })
+})
+
+var headerCounter5 = 0;
+$(window).on('resize scroll', function () {
+  $('#reseach-header').each(function () {
+    if ($('#reseach-header').isInViewport()) {
+      headerCounter5++;
+      if (headerCounter5 <= 1) {
+        var typed = new Typed('#reseach-header', {
+          strings: ['Research'],
+          typeSpeed: 100,
+          backSpeed: 15,
+          backDelay: 1000,
+          showCursor: false,
+
+        });
+      }
+    }
+  })
+})
+
+var headerCounter6 = 0;
+$(window).on('resize scroll', function () {
+  $('#work-examples-header').each(function () {
+    if ($('#work-examples-header').isInViewport()) {
+      headerCounter6++;
+      if (headerCounter6 <= 1) {
+        var typed = new Typed('#work-examples-header', {
+          strings: ['Work Examples'],
+          typeSpeed: 100,
+          backSpeed: 15,
+          backDelay: 1000,
+          showCursor: false,
+
+        });
+      }
+    }
+  })
+})
+
+
+
 /*Research Area Ends*/
 /*Skills Section*/
 var counterThree = 0;
@@ -196,13 +317,13 @@ var counterFour = 0;
 
 var counterFive = 0;
 /*Skills Section*/
-$(document).ready(function() {
+$(document).ready(function () {
   /* Apply fancybox to multiple items */
-  
+
   $("a.iframe").fancybox({
-  'width': 640, // or whatever you want
-  'height': 480, // or whatever you want
-  'type': 'iframe'
+    'width': 640, // or whatever you want
+    'height': 480, // or whatever you want
+    'type': 'iframe'
   });
-  
-  });
+
+});
