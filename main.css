@@ -12,7 +12,11 @@ h5,
 h6 {
   font-family: 'Major Mono Display';
 }
-
+.gLink {
+  text-decoration: none;
+  color: rgb(10, 235, 122); 
+  font-weight: 900;
+}
 p {
   font-family: 'Libre Caslon Text';
   margin-bottom: 0px;
@@ -71,6 +75,7 @@ html {
   justify-content: center;
   align-items: center;
   align-content: center;
+  text-align: center;
 }
 
 /*Globals End*/
@@ -303,7 +308,7 @@ html {
 @media(max-width: 767px){
   .skill-section-img-right {
     width: 80vw;
-    height: 50vh;
+    min-height: 50vw;
   }
 }
 
@@ -346,7 +351,7 @@ html {
 @media(max-width: 767px) {
   .skill-section-img-left {
     width: 80vw;
-    height: 50vh;
+    min-height: 50vw;
   }
 }
 
@@ -432,6 +437,11 @@ html {
 
 
 }
+@media (max-width: 767px){
+  #skillsLanguagesText {
+    min-height: 50vw;
+  }
+}
 #skills-header {
   position: absolute;
 }
@@ -450,6 +460,11 @@ html {
   line-height: 2px;
 
 }
+@media (max-width: 767px){
+  #skillsFrameworksText {
+    min-height: 50vw;
+  }
+}
 
 #skillsExpText {
   font-size: 10px;
@@ -460,6 +475,11 @@ html {
   line-height: 2px;
 
 
+}
+@media(max-width: 767px){
+  #skillsExpText {
+    min-height: 50vw;
+  }
 }
 
 @media (max-width: 500px) {
@@ -778,6 +798,22 @@ html {
 }
 
 /*Research Section Ends*/
+
+/*Recent Projects Starts*/
+#recent-projects {
+  width: 100%;
+  min-height: 500px;
+  margin-bottom: 25px;
+  
+}
+
+
+#issMap {
+  height: 300px;
+  width: 100%;
+  margin-top: 50px;
+}
+/*Recent Projects Ends*/
 
 /*Blog Section Start*/
 .blog-section {

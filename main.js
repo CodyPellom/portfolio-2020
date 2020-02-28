@@ -1,3 +1,12 @@
+/*Browser Dection Start*/
+var isSafari = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
+  navigator.userAgent &&
+  navigator.userAgent.indexOf('CriOS') == -1 &&
+  navigator.userAgent.indexOf('FxiOS') == -1;
+if (isSafari) {
+  alert('<p><i><b>If images do not appear, please use chrome or a differnt browser if you are using an iPhone to view this site.</b></i></p>;');
+};
+/*Browser Dection End
 /*Navbar*/
 $(document).ready(function () {
 
@@ -120,7 +129,7 @@ $(window).on('resize scroll', function () {
 particlesJS.load('particles-js', './particles.json', function () {
   console.log('callback - particles.js config loaded');
 })
-particlesJS.load('particles-jsTwo', './particle2.json', function () {
+particlesJS.load('particles-jsTwo', './particles3.json', function () {
   console.log('callback - particles.js config loaded');
 })
 particlesJS.load('particles-jsThree', './particles3.json', function () {

@@ -19,7 +19,18 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <!--Where Is the ISS API JS Start -->
+    <!--Leaflet CDN-->
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+    <!--Leaflet CDN End-->
 
+    <!--Where Is the ISS API JS End -->
 
 </head>
 <!--Navbar Start-->
@@ -67,12 +78,16 @@
     <!--Hero Section End-->
     <!--Overview Section Start-->
     <div class="overview-section" id="overviewSec">
-        <p id="overviewText">Hello! I'm web developer from Atlanta, GA. Some
-            of my interests include machine learning, Windows application development in .NET
-            animation and interactive UX/UI design.<br /><br />Some of my hobbies include playing the guitar
-            and practicing Brazilian Jiu Jitsu!
+        <p id="overviewText">Hello! My name is Cody Pellom. I'm a Web Developer living in Atlanta, GA. I have
+            a creative mind and enjoy using development, design and object oriented programming to create interactive
+            and immersive experiences.
+            <br /> <br /> My interests include animation (SVG and otherwise), machine learning, cryptocurrency tracking
+            / analysis, geolocation and working with a wide range of APIs which vary in complexity.
+            Some of my personal hobbies include playing the guitar and learning Brazilian Jiu Jitsu.
+            <br/><br/>To learn more about me, my projects and my experience, please check out the information below.
+             You can find my contact information in the footer, which is located at the very bottom of this page.
         </p>
-        <img src="https://lh3.googleusercontent.com/4TrwnJXsotQ36PKAgDMEuAZkV5uh9E8WmG83gVjF_hKnx_wLfmO1QYGO3pBMM3U6ciq4f4LGsQGvWNOYTLjzKFld8p8Lb1BSUa9DvjTeb0JEiPaXfOXTjSQXbY832dZ1Acd6x7WqrDkMtF73YyGXyYkFCjihFpZTIX_7uXhjC4rCn3aCkujK9OW18G-5c4ZcBJq3HhtP8dWJ1UYQ7AVuG74dFaCQIWEf405hrM06gV8IgsrRfnTJMK2ePlEyCRvOpYPX4NyyQ027v-z69PUvExX5dDOWdpxtEE4RZiOkMSJnLopWXEoAGPjOMo4aISuJxCQsvfrysuT2Tvg-e2qlSGSj5kGZclSQlhA69h50VUafYoRL42yDIv28na-_XURpGFs2sR8EP4-mkyUWsKg0U7FmySrrBSHWVWZqWGH9xQi1zKcWbXp7PpmZc_XIe2CsEhZFij5CefFtlxEUZ3a2U3IPKFFVtVoyXKdGIEWVK4X1yLvkv-5_gUaGuSQlFTC_W9oa7oW9xFsFJBTod6URaJyqwKKsEzMZHQNnKoLHGFEi2ielzgQloWhHewAL6c3lPx8_TdDP4S41-_XDl8ME0MowHSlGSk8AVQmJHfzlzLdXTzA9_wSFdbBM2LbVzgqhfi0Mcp-0kH05i0VGf3ObwqovmUMguofOGXpLzPocYgT61tuminm3bXA=s500-no"
+        <img src="./images/profile-pic.png"
             alt="profile-pic" id="profilePic">
 
     </div>
@@ -85,18 +100,36 @@
         <div class="experience-section">
             <p>Here are some of the companies I've collaborated with:</p>
             <div class="experience-section-companies">
-                <img src="https://lh3.googleusercontent.com/yThbfDGHs3oel8onahcXqaJHZ6vv-gJvsvumX4q3INJhOVRbURx1ytGq4UAPAW50DlFLOKUMfeFUrigEI8Ldgl1yaFe4ehoQOByizUloqOQxBlPn7wJm0thQA4922MjreYM7LnRpko6cb-2R269ycB8vGe8lO5-jVwHd-0ZC4luuKKrEShi2QkStDNnHy3Ay5tHoDfnMs9Cv4boEXciqYAcsyhZ-4jK_WdOqjFHbUkTJGM4_v56IY857VdjUtY0vke9eIFAcdOkv7rdXSLp_J_TGir3PV0v6V2s6IfECCB3oKqP1ynhnlchP8XCeq_6OKb_HMz5THmg3OYKD__kJJDlCpDo_jwQdFMADt7LZ1UzFvQR4sJTIjTElNVyswvth0dndPMkdhoj8K1kHNTKSjqiynYoFY1XwIlMmXhcUEz4dDaQGB7dcuPNHwEbfnIhEQiH9NDrFBcFH3-UhB-A4inQXG7kKKNFkcq3N8TyDivKjdEboSLIoefP58ltHZtXsOIb2SbMuFwd0lCnFQbVz1yMhdNimUJBMMl4K2XgrUTb45SgF4KuOCzfkOmgwc_0Q00loKY4KGKh4kRDcawiLPMuGvPp_hzO_wfsfESiTd5NypHIEfX7NgkA14P5XakonmZ80YXeBkG-wGndrDA6b2dYM5OSDT2LaBrDW2NvSTa0wM0tqa7f8sGc=w796-h270-no"
+                <img src="./images/applied-systems-logo.png"
                     alt="applied-systems-logo" id="appliedLogo">
-                <img src="https://lh3.googleusercontent.com/m_HGJA2xIbJIejXdb4z2CT0K89VRshzHzOYKyLmAaXou1Tgl6Ivcp0SITGsYYShaCkiXwPG4MZ_ZG8IDuedy6EbNxki5aiXcg4o7sTUJFBw6l7z1kEFgEcZ6TKU_YICA_Jl6r_puSmILLzNX4VeVr-u86LWYSXCGXsSiR6cSrvT2SFVrd7ozATMbpa4Qox3llRr0O7vSsgMvMY0vLYz8D6GIiAn2WPHSfJubui9OW5s1SmKRLdt8h37ABn8QI1o8ZgzfICZjlrxq6PIKWB-vr_DuhHHWYCS2zPyDze6M4UG-N38JIrNyVdEAcoJAT-Joswhb0qglHNoaf9cuhDvjJyWzYwJOiUfS3OHKymeZ6_9tcnepGexg2l0j4W4S-LvC2xcRvAjo4v_efN9C6hUCDFXrvsZ3BY8nXZmIUnG78VH_OfNPx5p4LBXXkOJeNo-l1WB0rf8QkFeR3cEt7V0_QUlyWJU2ftc4tYec-9ZxftCDTjrKmJj7td6--Pvt0heIIOFa6jd5MwZXInKSbBa36eZpo-CIhI6gXGy8piyrhEh-19yRh0Xs9Wms32sfqDkdU8q3JxOcAwIz7q-2vpmUYo9LaZFuYan6iGCHjcUys-Lqtu8CniEI1aMJgAnKMH4rkGojPZqjH2BpTLDvM-StkrrFFmqb9m9MMOyqnPeT0YhmH14ANHoyP_8=w800-h334-no"
+                <img src="./images/hewlett-packard-logo.png"
                     alt="hewlett-packard-logo" id="hpLogo">
-                <img src="https://lh3.googleusercontent.com/Y1OtaTnvI_ZlYjd-c7CO6uRt0F0NBAWD70im3odoXMVKYgIGc7JJps00kV-4QDhn7RGFr5YGPWjOx17sH-VYRRRWvSn-TKT0i6ceNzyxBWQzTp9RMAk_Z0O8H5EtlDalE09bI10UxGAgkHohy4U5n9i7jmdmBvB6zMDktisNZ_V8qfA-Gu9AzShw2asUNjbkjO_0RIjPPTfNxXXZMGRrC0PnmInHpFzMJpihKTpzhz8f-wwJ84B1qmi9sM2yKWsUGTx5eqaKsQe7z-OJ6vrMTdh5Xv5MqEeeXdTeIN2ou7V0Mr-Isqa3HhIozKk_-wX-X9pt_LDCdsdTM0mqcq3c3GT9g4JLhSvsUHGOQK0M6HDi75VGePKhaKuHOJZ7R4zDmjcNg3GF2XsiEv7fDeKsaiepdK6eeEvqNar2IEiFIrAmEI7sjGXpJGtkP48x2OyFQ8pj1KdlgAU3PS218yZ9wTh7awY7cRvwWD1NX2wK7NHjZekfVLE3Bg3n8NitnMPNQM2968fIR1k_G7bH2g3Z8-OhreDRvM9s4UlxcnnuJKGWz7PgFh-x_NjehNR5hWn0A4hQUI-wXao7rReDBFOonLTY3Z1Mt-AhotCeTqO6uk7IdyT44Yz7r7zbD5uucH2973WXrjlBhFtuSlHj4xX_HBx2RsGT2CROaR36LGE9FAVFYmgHFUzaCsQ=w200-h150-no"
+                <img src="./images/home-depot-logo.png"
                     alt="home-depot-logo" id="hdLogo">
-                <img src="https://lh3.googleusercontent.com/UnCttOCQPF-bK_fCr4FORvzl-WBPXfii7LUTLc1MrC7SaniKryuQ8F-IpX3wPDS4A7eF_YCvUfc6KPf6sgPX1u_Z57bF5lZIFy7NMlpXC7oVMvjXToOz98Sx7K5Dqv3D1G-RqGAZn4cYDQ7wD7C8-1AFvVeFaJrIil3kX3l3f7ltFwusaBf3WmjhFnr3dcEQeXBE5c4-kORlQ7JsVKWcivE_4T_NcKqFxsHgqrYeXIj_DHGyX_-RQJqs-0nEzme80uW-yU8_UOvTFjynZGPqd9DV6_4glql3YPzx0CW49q5EshMOfRTdNVjn8BIn-QpzKipNEJv95W1cp9ymJD9D021U3T1rgZmSLUBgUFRQ_xONOPGb6jCJTJrmIZt20yo4-xcg_XJo9IGhrYyeULgLQxzqYBv5t_TlXx-2uNB0hqepNtMAB6h57C9q11B-lZoy79_s6Zis23VzVrZOw-WGAZTwUoP8v3VugxlJuFTgp6FBsYBGwVCVkSClPsfNltpcNm0kck2JCbqlhXRhSaKRcrAodHoOuCFZNjtnybPkfJWJPANrdHCA5BxXbatX_s5BEaqWJV1uloKbTMFbREqVTeWGHWJwybTWnAea1QUVXTF1VZn9DKif2UpGKwfeh_hKisU6IifysbTcdVu1Xf2qVPcfdn0OEv6cYKqI2F9-zL2pmx_P3PMPBnM=w200-h150-no"
+                <img src="./images/trustfuel-logo.png"
                     alt="trustfuel-logo" id="trustfuelLogo">
             </div>
         </div>
     </div>
     <!--Experience Section End-->
+
+    <!--Recent Projects Start-->
+    <div id="recent-projects">
+        <div class="column-center">
+            <h1>Recent Projects</h1>
+            <h3>Where Is the ISS?</h5>
+                <p>This is a fun one. I <a href="https://github.com/CodyPellom/WhereIsTheISS" target="_blank" class="gLink">built</a> this around 02/09. <i>Where is the ISS</i> consumes data from a <s>NASA</s> <a class="gLink" href="https://wheretheiss.at/w/developer" target="_blank">API</a> and uses the
+                    latitude
+                    and longitude
+                    of the International Space Station to display it's location on an open source map. The map was created using a combination of leaflet.js and openStreetMaps. </p>
+                <p><span id="lat"></span></p>
+                <p><span id="long"></span></p>
+                <div id="issMap"></div>
+
+        </div>
+    </div>
+    <!--Recent Projects End-->
+
 
     <!--Skill Section Starts-->
     <div class="skill-section-img-right-section" id="skillsExp">
@@ -108,26 +141,26 @@
             <div style="padding: 50px 0 50px 0;"></div>
             <h2 id="skills-header"></h2>
 
-            <div id=" particles-jsThree">
+            <div id="particles-jsThree">
+            </div>
         </div>
-    </div>
-    <div class="skill-section-img-right-text-area" id="skillsExpText">
-        <code>
-            <p>Team & Project Management</p>
-        </code>
-        <p>Live Webinar Production</p>
-        <p>Photo & Video Editing</p>
-        <p>Adobe Creative Suite</p>
-        <p>Agile Methodology</p>
-        <p>Mobile Development</p>
-        <p>Responsive Design</p>
-        <p>Email Development</p>
-        <p>Version Control</p>
-        <p>Wireframing</p>
+        <div class="skill-section-img-right-text-area" id="skillsExpText">
+            <code>
+                <p>Team & Project Management</p>
+            </code>
+            <p>Live Webinar Production</p>
+            <p>Photo & Video Editing</p>
+            <p>Adobe Creative Suite</p>
+            <p>Agile Methodology</p>
+            <p>Mobile Development</p>
+            <p>Responsive Design</p>
+            <p>Email Development</p>
+            <p>Version Control</p>
+            <p>Wireframing</p>
 
 
 
-    </div>
+        </div>
     </div>
     <!--Languages S-->
     <div class="skill-section-img-left-section" id="skillsLanguages">
@@ -185,10 +218,10 @@
     <div class="row-center">
         <div class="certificates-section">
             <h2 id="certificates-header"></h2>
-            <img src="https://lh3.googleusercontent.com/cE7OJqOYMgZ5_fZCtg-Hbd5ENK9G3vDvpqX8hK9GbHdd-rijAAlMz-L6p40dyhB4xljOO2vr1agyTaEkwF6zYiC39aJC50imOlpGA3ZKlraibJj9EfpktpjagFzorliW62joKlHoxDMiS2m7vhjUmRQGKk4D-WinVWS9I8ZGoM6hm7ayvIXyAq5cK2khEdrJlnKbBFcK0ieY4uIg4Q0Kxqu65jRLghpbzde2o3V31cmfj7b0-jQnbHkTPNNofg8JpMQP7758TwfK3ilyb3EvAfHjU6uHAalxAcS_326rB3O8PSayS8R4L0phons_OgYMe2NyycRDFaKJePPFPd1oICm7txJGV_5UwDRlKxmXCUCGpNUvH5c9nwVazsRLwXsMMooyqfYbmPiZYUvYN4WN79YShYZpH3I085ILG4genbLcvp_nnKtw7Wkmaa004fM0EJ6Z7MOrmjf9r6yHa6SqAI-e3pYcplkPJB-ze_zyjPVumnC_yLyNGTZdEX_MEZDkrhR7UvX7b4DbFfhb1zNM2Nq8unCg15bNT4yxN_M2r3netnUJYhxFy39llRC7veq3yQg96brF6wNg0p5nPl3ZmA74m00YFQcthw79nfkSBaxSurJoSPT0MwtIb5dIBK6nC3PWqoucR7E_VOP71KvzhFllARI4vdrpx_U6Jww_Dyue7m71j9mL748=w1200-h630-no"
+            <img src="./images/general-assembly-logo-2.png"
                 alt="ga-logo" id="certOne">
             <p>General Assembly's Web Development Immersive Program (2018)</p>
-            <img src="https://lh3.googleusercontent.com/OFAY56koJFkWvLj3QSbI7y1tREQixVZjjYokPRgCj96uyGkgB7H55YweqHjOLoIlvBkfHeWtzdptDDwj-tH7tx_1zC-8Gx-ZgLo6ckODiemG1yVkAUTMy43NKv0fjjZ3doMZMXQHwsN-Y3l9rMS7kCz87p10hHMkBnwvvoJRxPdNrWloi3OCJ69cW7iKWUFyH2JjYUSHiZ8u-4Ppkeb0K5XGs5ge-5b29RH-wTz1yHQyQcvp3scpj4_MO2oDf8ta10VlQInOr4bG5PBpHpN0zytJH10HbVelXzFhkdkH9kfnYh_Sjno7cBemGO7Kw93sOn9FEysMQq728P2fwYjW-Es1EZBwaTLXK8W9AP5irrno1Eorsbax0lxI0EvRSl2qEppEXJ0SUcwzJ1Y1aP0J8CDVv4KmnzcEs4jXjjKZibE5a5Vp44urbS75-EDIjevmxgKuK-qhAvuqCDL1zjvpoxhQUgH6cQezblqkWZmXw1Mc8atwgsQHos3cCGeNb_rr4SYkZ1gO5H4BGIiQigCe3pTRKgyX2nRyAkWMqTAx93jZGVZQSW1H4Gt7XsqYAbh99JUEehGb-YYFhPN4DT73wZsGLB9CHKHMdHGvsE-WZsJeefQJCRVgIsWrOl5WH2VwfYTj4rOkyfLxBJkYP_ImwMQxN9bE2aKWpoV4U2N7oTLci1L9OrBLSmY=s851-no"
+            <img src="./images/epi-logo-1.png"
                 alt="epi" id="certTwo">
             <p>Episerver's Development Fundamentals (2019)</p>
         </div>
@@ -205,16 +238,16 @@
             </div>
             <div class="research-item-section">
                 <a href="https://www.tensorflow.org/js/" target="_blank"><img
-                        src="https://lh3.googleusercontent.com/AD6nsZ4SwqVUJYZNnfRdXI6sKfsi0megZcoJeAqt3S3nws3HPnhg2CwPYgRfue08RZMFIva9blyUnm_xWvGWmCseGcBPBZkgHJdrS2E49GhR4-lqSdqUw7yixzEG9tKJrPnKbu_bTyP4edZY2GGKQyrXxsVas9CB9RIvfRtZPsMCKZXmpEmHLmBZWdO8PfM347rfK6Y3PXCQsMYvX_p7s2BtIKiWX43QgXwgWo9EzRUMl2E_PtLRntlMDodU2A_4xxIObcQSk83tiNJpb-dbqT4oP-bblM1F88P1ASkL8Ew7yWS0svM1RroqDt4lm7IVIh5GJEmlxPeWTwRC3Ifil00y3WPElApxKHki8dMaNQe-loRb1NcFWZTiO3Oe3ySKEvQeAht1636sCoRwJl8kO7RutpCpRK7YMo2NBu-vSdQSWW4IIgcl4T7dXAnQgVxdC9CK8F0S-e7a8Osql3_XKvFel803pH0ZR9TdOL1gzVSJrLz0qJOqs-GqBNw8v0SKYXgSvJEDrSL637YOUT83Pp4LlbMiPWnEut3JOXnjCTamL_yNoi5nUJprxMNwuqSb7tyZtQkWiibM1i9QD1AbjYsx86nmoGJ7ZfXep8sdFRkcUNwverh9A97BsLb7oezWK7wnUmCSHus6gMOrbxKjdXkNDy1vLL6QkOTM2nov2KAkIBYdoWwWysE=s500-no"
+                        src="./images/tensorflow-sticky.png"
                         alt="" class="sticky-note"></a>
                 <a href="https://dotnet.microsoft.com/" target="_blank"><img
-                        src="https://lh3.googleusercontent.com/GPkGyq3u1g8YdfRyBHXLF8qoxUwuofl215mOTtTMIBIjjOzy1im37SxWGQ1HzPgsIanHluLkiFnXgobpnXrZkDSJZ62fqUBZAMQwhui85DLbNa5lXwOTk-e-MHjuPAGIMz4Wfa1zoP9puXaYUPF0aWiyAWX-sU-ornD8P1olRp3-ocJNTHJy23KH6Rirtw28r5YxBgw0Clus66Dg2NkjrD6HbClNd9LUVcFh0pIb2eXCHe8muiZoIgrOZle1JT4kHdcnw6qhUmGg52Y7xdu5OmTALX4MOowqmDfP0XVY5M4QC9wcmYYpUEfVsz8qdqF445HbIdeQW_vObYEW-GcajGVetx1y-AQmPsENXoBxQFplK2yt6t-9XuxB2iA8Ycrg8a6a5WztXTvktFILWtNeOtGpzF9jdenmG1nKAqa91ygkp87qOn_o8ZBe-Lrp7rayU1haPPP-zYu5JT3o242409N4tvgWtgnjaNwOoBSCZhLJcxLrU07JxBDk8GWRbxcVu6N_hZs3uTvDU2sPVNn9eG44-cZMt7WYg9ru_4EBPf0FI81OKa078kcmEMqBpLbyvo_q1iklMOVSr0KdYyymBnrqpa3HyqNkXZMDFGYgNXHzSPeQ3ICoVzzOL8g_POTFn24L3f-jpPMX6kQDPPVfXK2EHE9YplJrgRfxRPjVfBLVvMmB9LF9XkI=s500-no"
+                        src="./images/net-sticky.png"
                         alt="" class="sticky-note"></a>
                 <a href="https://www.ibm.com/watson/developer" target="_blank"><img
-                        src="https://lh3.googleusercontent.com/f0r5TX3J8NOUpQ0iqC-udlzNGuCPcl8ZUdgkhRF3DtYT9BAZbGovHj3wqU-xzty9l7T65lrCJTGLElGERi8fcyllDWvxD3kzX__m89d6cV53GYaw0gNI2Fdq0G42owkZcWhs44OPHfptqsvS-_xMbKMzkIcAM8dYLWoLXxpyGYk32XWOVQnEnhQ2Fnwm3DCDvrJffJYu3kz98_R3IDh9bRiEAuxivMIO9cn12vMkw13JDtgkdyleQpqBf06OSu5fR_LV6BLXiIcYI5hkzqBiSaIE-QTR8ogsQOMzd9JgF3HYmX-0h-o6-p54Mvbjfi_vF2E9LcDj1ulNRNxZZKdFy8Xs1henrBz6eg5uHwzt6qUQZgXf67SwjMfEpr6j4NK59cKzYyvtCnvAyaMLQi60oCDFRjCuc5dz95AJ2KzZ4RvWdSS6VYZvOkOsElEDqze8RaAf8jSettZO126iRNsBdHpXoxAuClNTB3UCJEY-BV1hPjixZJciC2m01nVJS301YVBMP1CEqvCX39-9oKVycEGex1sav-LXBC-SS75bvmFCnx_-ms41A1cUOWcQrzVTOPJ0NIPHiESQOXxmZg_WxefnXQQif_qUjGn__3gFTazBAAd2-x2u17FWHGI4J1vDuIij8YdL_Dr0SHoboTvRR0pXvsz-oOXoFI8CE5xAfRaxLOOLsFqaVt4=s500-no"
+                        src="./images/ibm-sticky.png"
                         alt="" class="sticky-note"></a>
                 <a href="https://threejs.org/" target="_blank"><img
-                        src="https://lh3.googleusercontent.com/uaNKZ-WfY7oMp6fMcjlWEUpSqsoBkg1ampBXr3Gc6AGZDJgNVxBr-c0TbfsGZoxWudM8fmyAjc6f9zKjZ4bpjbdaI_Ik7qp_4XhSnHYkHf02OnzZCN57YQXDn3G0aRTgdC1Ye_nKJnld8b9WBU6hpW7_PBunHmVVQvtuHkkUflIqdub1ziZyKAfo6_bDnzqoiyJEc7Hll3TsMtoYddksEI1Tsj-9j7JAVD_BXw3yUYw0ir-buKdf4j9Wkwt9gsY4Ffg0WSrv-krBNP76HEMdGq1g8fggTnJ8dtapx3AfwWlHEOsVUMTHJMW_csTDZDYF-gZOQs64twHtCLT2_q1N5ginrZhw-kucudk7J8aHucVEninyRifMyE8ZBEgZdbEPd64rGNT7iW43FjRNrrkKHL_hu0BfA1Q9BYOoNNEOhrTl_Uup2vQaFjw1kcOSQ7gcaifZ98WilTejxdiSo8zfhP94UUc5gbYxAbI280Wec2BmbpTK1rsyBXCZyCoU5w0jFANxfcoz20M7GtucHWxsayNY9d4S1ZoKfYNWh3f7vXZe-D-TIK79yto0zk62B9SQiTttyMTvi--MZ_f1Bod_25YkACC5OVzTDWPhdwKVmopKLQ6wf_87w8scPXnDhbNoLJSYnXtgg8R5B4TYOlrm8DuOAjiP823NPlWGKvImaMbJMRjRZxwi54U=s500-no"
+                        src="./images/threejs-sticky.png"
                         class="sticky-note" alt=""></a>
             </div>
 
@@ -226,18 +259,17 @@
         <div class="work-examples-section">
             <h2 id="work-examples-header"></h2>
             <a href="https://www.appliedsystems.com" target="_blank"><img
-                    src="https://lh3.googleusercontent.com/yThbfDGHs3oel8onahcXqaJHZ6vv-gJvsvumX4q3INJhOVRbURx1ytGq4UAPAW50DlFLOKUMfeFUrigEI8Ldgl1yaFe4ehoQOByizUloqOQxBlPn7wJm0thQA4922MjreYM7LnRpko6cb-2R269ycB8vGe8lO5-jVwHd-0ZC4luuKKrEShi2QkStDNnHy3Ay5tHoDfnMs9Cv4boEXciqYAcsyhZ-4jK_WdOqjFHbUkTJGM4_v56IY857VdjUtY0vke9eIFAcdOkv7rdXSLp_J_TGir3PV0v6V2s6IfECCB3oKqP1ynhnlchP8XCeq_6OKb_HMz5THmg3OYKD__kJJDlCpDo_jwQdFMADt7LZ1UzFvQR4sJTIjTElNVyswvth0dndPMkdhoj8K1kHNTKSjqiynYoFY1XwIlMmXhcUEz4dDaQGB7dcuPNHwEbfnIhEQiH9NDrFBcFH3-UhB-A4inQXG7kKKNFkcq3N8TyDivKjdEboSLIoefP58ltHZtXsOIb2SbMuFwd0lCnFQbVz1yMhdNimUJBMMl4K2XgrUTb45SgF4KuOCzfkOmgwc_0Q00loKY4KGKh4kRDcawiLPMuGvPp_hzO_wfsfESiTd5NypHIEfX7NgkA14P5XakonmZ80YXeBkG-wGndrDA6b2dYM5OSDT2LaBrDW2NvSTa0wM0tqa7f8sGc=w796-h270-no"
+                    src="./images/applied-systems-logo.png"
                     alt="applied-systems-logo2" id="workExamplesAppliedLogo"></a>
             <p>At Applied Systems, I built out content blocks and page types within Episerver (.NET) for both the
                 international corporate site and blogs.</p>
             <a href="http://www.williamwordtree.com" target="_blank"> <img
-                    src="https://lh3.googleusercontent.com/EqJo7Hns4epBc160fhBzhbsZJMZBjDX2Xt0qMe-q0xjXUCkUpdTw0K0eD9bCVqPy4ZvoUPy38b5soxoO3k0H-G2T91aYiyuJG6vAaAV-HIFMDZD9Y96BqDrg-XJYJtZ12-Uqu04coEz1240wXViXFLzLQgL1MXsaf2zUiMZev_86hMF-4oRbdlB086YQrdxjDCDb2zLFzGSKamM6bV4Mb0u1WvLdkKdPsy31vYtc0LMt44mEi9a-o6EGAJOIlfOtC6Gjqie3Bn94YsiS2S3EZ5ttbIO3somKfMvEfTKKeaW85jwen6-8DFaw9UUZOqslCnC6xP3Pl_sozpqO3_IMGwMA8bVB8LljPiB6V41QAdUpLPNCL82RbHINIFgkvw9Jqkq4Uxjx4Vq5rfjFv5jRFbrnF2TA3HBdEB8EUhP3lJcufdS48QvKKThjgvXT9T28I9LykMOhspgSK4g-MLPv_ngOP-grCLAoqcWPvu07QmghC0UpttI4cPuuLEQUs8sUXZLSYIbsFzKWn9vNDVrIP9_7EPtCejB018biPL5Sd97x_6q7FAOV4edCX9kd7kIxF2TmK9QDzNMioC-c-9dNRLWD-ZXLJVeg1afsdQyFy9sPLWq7rgxfRgVnyDJA81LWg0L_jjZr9Cl-gmf_9keYQpA0aDWgeKFqOIFWviViOPs_jp-raL9JyVk=s250-no"
+                    src="./images/WilliamWordLogo.png"
                     alt="" id="wwtreeLogo"></a>
             <p>William Word Tree Services is a business website built for a local tree servicing company. </p>
         </div>
     </div>
     <!--Work Examples Section Ends-->
-
 
 
     <!--Footer Start-->
@@ -275,7 +307,7 @@
                 <svg id="resume-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
                     <path
                         d="M12.23 15.5c-6.801 0-10.367-1.221-12.23-2.597v9.097h24v-8.949c-3.218 2.221-9.422 2.449-11.77 2.449zm1.77 2.532c0 1.087-.896 1.968-2 1.968s-2-.881-2-1.968v-1.032h4v1.032zm-14-8.541v-2.491h24v2.605c0 5.289-24 5.133-24-.114zm9-7.491c-1.104 0-2 .896-2 2v2h2v-1.5c0-.276.224-.5.5-.5h5c.276 0 .5.224.5.5v1.5h2v-2c0-1.104-.896-2-2-2h-6z" />
-                    </svg>
+                </svg>
             </a>
 
         </div>
@@ -283,6 +315,8 @@
     <!--Footer End-->
 </body>
 <script src="./main.js"></script>
+<script src="./wheredaiss.js"></script>
+
 <script src="./snap-file.js"></script>
 
 </html>
