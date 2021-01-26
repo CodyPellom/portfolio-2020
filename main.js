@@ -106,6 +106,7 @@ $(window).on('resize scroll', function () {
         $('#hdLogo').css("opacity", "1");
         $('#hpLogo').css("opacity", "1");
         $('#trustfuelLogo').css("opacity", "1");
+        $('#apteanlogo').css('opacity', '1');
       };
     }
   })

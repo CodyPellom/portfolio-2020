@@ -1,7 +1,7 @@
 /*Font Imports Start*/
 
 @import url('https://fonts.googleapis.com/css?family=Major+Mono+Display|Gelasio|Ibarra+Real+Nova|Source+Sans+Pro|VT323|Libre+Caslon+Text|PT+Sans|Poppins&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 /*Font Imports End*/
 /*Font Globals Start*/
 h1,
@@ -18,7 +18,7 @@ h6 {
   font-weight: 900;
 }
 p {
-  font-family: 'Libre Caslon Text';
+  font-family: 'Open Sans';
   margin-bottom: 0px;
   font-size: 16px;
 }
@@ -419,12 +419,16 @@ html {
 
 @media (max-width: 500px) {
   .skill-section-img-left-text-area p {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .skill-section-img-right-text-area p {
-    font-size: 24px;
+    font-size: 20px;
   }
+
+  #framework-header {
+    margin-top: 150px;
+}
 
 }
 
@@ -444,12 +448,15 @@ html {
 }
 #skills-header {
   position: absolute;
+  margin-top: 50px;
 }
 #language-header {
   position: absolute;
+  margin-top: 50px;
 }
 #framework-header {
   position: absolute;
+  margin-top: 50px;
 }
 
 #skillsFrameworksText {
@@ -457,7 +464,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  line-height: 2px;
+  line-height: 5px;
 
 }
 @media (max-width: 767px){
@@ -557,6 +564,13 @@ html {
   height: 85px;
   margin-right: 25px;
   transition: opacity 8s;
+  opacity: 0;
+}
+#apteanlogo {
+  width: 220px;
+  height: 75px;
+  margin-right: 25px;
+  transition: opacity 2s;
   opacity: 0;
 }
 @media(max-width: 767px){
