@@ -39,7 +39,13 @@ p {
     display: none;
   }
 }
-
+#apteanlogo {
+  width: 220px;
+  height: 75px;
+  margin-right: 25px;
+  transition: opacity 2s;
+  opacity: 0;
+}
 /*Font Globals Start*/
 /*Globals Start*/
 
@@ -589,6 +595,7 @@ html {
   #trustfuelLogo {
     margin-right: 0;
   }
+  
 }
 
 #devVector {
