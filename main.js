@@ -101,7 +101,6 @@ $(window).on('resize scroll', function () {
     if ($('.experience-section-companies').isInViewport()) {
       counterTwo++;
       if (counterTwo <= 1) {
-
         $('#appliedLogo').css("opacity", "1");
         $('#hdLogo').css("opacity", "1");
         $('#hpLogo').css("opacity", "1");

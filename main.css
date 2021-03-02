@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Major+Mono+Display|Gelasio|Ibarra+Real+Nova|Source+Sans+Pro|VT323|Libre+Caslon+Text|PT+Sans|Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap');
 /*Font Imports End*/
 /*Font Globals Start*/
 h1,
@@ -11,6 +12,9 @@ h4,
 h5,
 h6 {
   font-family: 'Major Mono Display';
+}
+.ibm-font {
+  font-family: 'IBM Plex Mono';
 }
 .gLink {
   text-decoration: none;
